@@ -14,7 +14,7 @@
     <!-- Brand Logo -->
     <a href="{{ asset('admin/dasbor') }}" class="brand-link">
       <img src="{{ asset('assets/upload/image/'.website('icon')) }}"
-         alt="{{ website('namaweb') }}"
+         alt="{{ website('nama_singkat') }}"
          class="brand-image img-circle elevation-3"
          style="opacity: .8">
       <span class="brand-text font-weight-light">{{ website('nama_singkat') }}</span>
@@ -75,24 +75,6 @@
               </li>
             </ul>
           </li>
-
-
-
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-calendar"></i>
-              <p>Event &amp; Agenda<i class="fas fa-angle-left right"></i></p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item"><a href="{{ asset('admin/agenda') }}" class="nav-link"><i class="fas fa-newspaper nav-icon"></i><p>Data Event &amp; Agenda</p></a>
-              </li>
-              <li class="nav-item"><a href="{{ asset('admin/agenda/tambah') }}" class="nav-link"><i class="fa fa-plus nav-icon"></i><p>Tambah Event &amp; Agenda</p></a>
-              </li>
-              <li class="nav-item"><a href="{{ asset('admin/kategori_agenda') }}" class="nav-link"><i class="fa fa-tags nav-icon"></i><p>Kategori Event &amp; Agenda</p></a>
-              </li>
-            </ul>
-          </li>
-
 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
