@@ -78,7 +78,7 @@
       <hr>
 
       <p class="text-center link-bawah">
-        <a href="{{ asset('/') }}">Back to Homepage</a> | <a href="{{ asset('login/forgot') }}">Forgot password?</a>
+        <a href="{{ asset('/') }}">Back to Homepage</a>
       </p>
 
     </div>

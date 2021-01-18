@@ -31,11 +31,11 @@
        </style>
    </head>
    <body>
-   <?php 
+   <?php
    include('include/header.php');
    include('include/menu.php');
-   ?>   
-            
+   ?>
+
          <!--Slider Start-->
          <section id="home-slider" class="owl-carousel owl-theme wf100">
             <div class="item">
@@ -46,7 +46,7 @@
                      <a href="#">Read more</a>
                   </div>
                </div>
-               <img src="images/web-01.jpg" alt=""> 
+               <img src="images/web-01.jpg" alt="">
             </div>
             <div class="item">
                <div class="slider-caption h3slider">
@@ -56,7 +56,7 @@
                      <a href="#">Read more</a>
                   </div>
                </div>
-               <img src="images/web-02.jpg" alt=""> 
+               <img src="images/web-02.jpg" alt="">
             </div>
             <div class="item">
                <div class="slider-caption h3slider">
@@ -66,21 +66,21 @@
                      <a href="#">Read more</a>
                   </div>
                </div>
-               <img src="images/web-04.jpg" alt=""> 
+               <img src="images/web-04.jpg" alt="">
             </div>
          </section>
-         <!--Slider End--> 
+         <!--Slider End-->
          <!--Service Area Start-->
          <section class="donation-join wf100">
             <div class="container text-center">
                <div class="row">
-                  
+
                   <div class="col-md-4 col-sm-6">
                      <div class="volbox">
                         <img src="images/shakehandicon.png" alt="">
                         <h5>Keanggotaan AWS</h5>
                         <p>Anggota regional dan global kami tumbuh dan memperkuat komunitas praktik penatalayanan...</p>
-                        <a href="#">Lihat detail</a> 
+                        <a href="#">Lihat detail</a>
                      </div>
                   </div>
                   <div class="col-md-4 col-sm-6">
@@ -88,7 +88,7 @@
                         <img src="images/icon-1.png" alt="">
                         <h5>Pelatihan, Akreditasi & Kredensial</h5>
                         <p>Program pelatihan kami dapat membantu Anda memperoleh pengetahuan untuk mengimplementasikan Standar AWS...</p>
-                        <a href="#">Lihat detail</a> 
+                        <a href="#">Lihat detail</a>
                      </div>
                   </div>
                   <div class="col-md-4 col-sm-6">
@@ -96,13 +96,13 @@
                         <img src="images/sertifikasi-1.png" alt="">
                         <h5>Sertifikasi AWS</h5>
                         <p>Sertifikasi memungkinkan wilayah operasional yang menggunakan air untuk membuat klaim yang kredibel.</p>
-                        <a href="#">Lihat detail</a> 
+                        <a href="#">Lihat detail</a>
                      </div>
                   </div>
                </div>
             </div>
          </section>
-         <!--Service Area End--> 
+         <!--Service Area End-->
          <section class="wf100 about">
             <!--About Txt Video Start-->
             <div class="about-video-section wf100">
@@ -116,7 +116,7 @@
                            <p>Yayasan Aliansi Wali Sumber Daya Air (dikenal sebagai AWS Indonesia) adalah organisasi terkemuka dalam penatalayanan air yang baik di Indonesia. Kami bekerja untuk membangun jaringan yang berkomitmen serta mampu untuk implementasi tata kelola air yang baik juga mendorong aksi penatalayanan air yang berkelanjutan di Indonesia.</p>
                            <p>Penata layanan air didefinisikan sebagai penggunaan air yang adil secara sosial dan budaya, berkelanjutan secara lingkungan dan menguntungkan secara ekonomi, dicapai melalui proses inklusif pemangku kepentingan yang mencakup tindakan berbasis wilayah operasional dan daerah tangkapan air (DAS).</p>
 
-                           <a href="kontak.php">Kontak Kami</a> 
+                           <a href="kontak.php">Kontak Kami</a>
                         </div>
                      </div>
                      <div class="col-lg-5">
@@ -125,9 +125,9 @@
                   </div>
                </div>
             </div>
-            <!--About Txt Video End--> 
+            <!--About Txt Video End-->
             <!--About Section Start-->
-         <section class="home2-about wf100 p100 gallery" style="background: url(images/news-artilcesbg.jpg) no-repeat; background-size: cover;">
+         <section class="home2-about wf100 p100 gallery" style="background:) no-repeat; background-size: cover;">
             <div class="container">
                <div class="row">
                   <div class="col-md-5">
@@ -138,14 +138,14 @@
                         <h3>Webinar</h3>
                         <h2>Eco-friendly products can be made from scratch.</h2>
                         <p> If anything’s hot in today’s economy, it’s saving money, including a broad range of green businesses helping people save energy, water, and other resources. </p>
-                        <a class="aboutus" href="#">More About us</a> 
+                        <a class="aboutus" href="#">More About us</a>
                      </div>
                   </div>
                </div>
             </div>
-            
+
          </section>
-         <!--About Section End--> 
+         <!--About Section End-->
          <!--Our Core Projects Start-->
          <section class="our-core-projects wf100 p80">
             <div class="container-fluid">
@@ -154,7 +154,7 @@
                      <div class="h3-stitle">
                         <h1>Apa yang terjadi?</h1>
                         <p>
-                           <a href="#" class="btn btn-success"><i class="fa fa-check"></i> Situs Terdaftar</a> 
+                           <a href="#" class="btn btn-success"><i class="fa fa-check"></i> Situs Terdaftar</a>
                            <a href="#" class="btn btn-info"><i class="fa fa-book"></i> Situs Terakreditasi</a>
                            <a href="map.php" class="btn btn-primary"><i class="fa fa-map"></i> Lihat Peta Site</a>
                         </p>
@@ -196,7 +196,7 @@
                 </div>
             </div>
          </section>
-         <!--Our Core Projects End--> 
+         <!--Our Core Projects End-->
          <!--Current Projects Start-->
          <section class="wf100 p80 current-projects">
             <div class="container">
@@ -230,11 +230,11 @@
                                     <div class="pro-hover">
                                        <h6>Action Learning Project in Rubber Processing in Sumatra and Kalimantan</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
@@ -243,45 +243,45 @@
                                     <div class="pro-hover">
                                        <h6>Recycling & Waste Management</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro3.jpg" alt="">
                                     <h5>Solar & Wind
-                                       Energy 
+                                       Energy
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Solar & Wind
-                                          Energy 
+                                          Energy
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro4.jpg" alt="">
                                     <h5>Saving Wildlife
-                                       & their Cubs 
+                                       & their Cubs
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Saving Wildlife
-                                          & their Cubs 
+                                          & their Cubs
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
@@ -290,11 +290,11 @@
                                     <div class="pro-hover">
                                        <h6>Forest & Tree Planting</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
@@ -303,48 +303,48 @@
                                     <div class="pro-hover">
                                        <h6>Recycling & Waste Management</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro7.jpg" alt="">
                                     <h5>Solar & Wind
-                                       Energy 
+                                       Energy
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Solar & Wind
-                                          Energy 
+                                          Energy
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro8.jpg" alt="">
                                     <h5>Saving Wildlife
-                                       & their Cubs 
+                                       & their Cubs
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Saving Wildlife
-                                          & their Cubs 
+                                          & their Cubs
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                            </div>
                         </div>
-                        <!--WildLife Slider End--> 
+                        <!--WildLife Slider End-->
                         <!--Water Resources Slider Start-->
                         <div class="tab-pane fade" id="water" role="tabpanel" aria-labelledby="water-tab">
                            <div class="cpro-slider owl-carousel owl-theme">
@@ -356,11 +356,11 @@
                                     <div class="pro-hover">
                                        <h6>Water Stewardship in Hospitality Sector in Bali</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
@@ -369,45 +369,45 @@
                                     <div class="pro-hover">
                                        <h6>Recycling & Waste Management</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro7.jpg" alt="">
                                     <h5>Solar & Wind
-                                       Energy 
+                                       Energy
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Solar & Wind
-                                          Energy 
+                                          Energy
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro8.jpg" alt="">
                                     <h5>Saving Wildlife
-                                       & their Cubs 
+                                       & their Cubs
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Saving Wildlife
-                                          & their Cubs 
+                                          & their Cubs
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
@@ -416,11 +416,11 @@
                                     <div class="pro-hover">
                                        <h6>Forest & Tree Planting</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
@@ -429,48 +429,48 @@
                                     <div class="pro-hover">
                                        <h6>Recycling & Waste Management</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro3.jpg" alt="">
                                     <h5>Solar & Wind
-                                       Energy 
+                                       Energy
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Solar & Wind
-                                          Energy 
+                                          Energy
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro4.jpg" alt="">
                                     <h5>Saving Wildlife
-                                       & their Cubs 
+                                       & their Cubs
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Saving Wildlife
-                                          & their Cubs 
+                                          & their Cubs
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                            </div>
                         </div>
-                        <!--Water Resources Slider End--> 
+                        <!--Water Resources Slider End-->
                         <!--Solar Energy Slider Start-->
                         <div class="tab-pane fade" id="solar" role="tabpanel" aria-labelledby="solar-tab">
                            <div class="cpro-slider owl-carousel owl-theme">
@@ -479,35 +479,35 @@
                                  <div class="pro-box">
                                     <img src="images/current-pro7.jpg" alt="">
                                     <h5>Solar & Wind
-                                       Energy 
+                                       Energy
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Solar & Wind
-                                          Energy 
+                                          Energy
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro8.jpg" alt="">
                                     <h5>Saving Wildlife
-                                       & their Cubs 
+                                       & their Cubs
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Saving Wildlife
-                                          & their Cubs 
+                                          & their Cubs
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
@@ -516,11 +516,11 @@
                                     <div class="pro-hover">
                                        <h6>Forest & Tree Planting</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
@@ -529,45 +529,45 @@
                                     <div class="pro-hover">
                                        <h6>Recycling & Waste Management</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro3.jpg" alt="">
                                     <h5>Solar & Wind
-                                       Energy 
+                                       Energy
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Solar & Wind
-                                          Energy 
+                                          Energy
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro4.jpg" alt="">
                                     <h5>Saving Wildlife
-                                       & their Cubs 
+                                       & their Cubs
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Saving Wildlife
-                                          & their Cubs 
+                                          & their Cubs
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
@@ -576,11 +576,11 @@
                                     <div class="pro-hover">
                                        <h6>Forest & Tree Planting</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
@@ -589,14 +589,14 @@
                                     <div class="pro-hover">
                                        <h6>Recycling & Waste Management</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                            </div>
                         </div>
-                        <!--Solar Energy Slider End--> 
+                        <!--Solar Energy Slider End-->
                         <!--Recycling Slider Start-->
                         <div class="tab-pane fade" id="recycling" role="tabpanel" aria-labelledby="recycling-tab">
                            <div class="cpro-slider owl-carousel owl-theme">
@@ -605,69 +605,69 @@
                                  <div class="pro-box">
                                     <img src="images/current-pro7.jpg" alt="">
                                     <h5>Solar & Wind
-                                       Energy 
+                                       Energy
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Solar & Wind
-                                          Energy 
+                                          Energy
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro8.jpg" alt="">
                                     <h5>Saving Wildlife
-                                       & their Cubs 
+                                       & their Cubs
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Saving Wildlife
-                                          & their Cubs 
+                                          & their Cubs
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro3.jpg" alt="">
                                     <h5>Solar & Wind
-                                       Energy 
+                                       Energy
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Solar & Wind
-                                          Energy 
+                                          Energy
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
                                     <img src="images/current-pro4.jpg" alt="">
                                     <h5>Saving Wildlife
-                                       & their Cubs 
+                                       & their Cubs
                                     </h5>
                                     <div class="pro-hover">
                                        <h6>Saving Wildlife
-                                          & their Cubs 
+                                          & their Cubs
                                        </h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
@@ -676,11 +676,11 @@
                                     <div class="pro-hover">
                                        <h6>Forest & Tree Planting</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                               <!--Pro Box-->
                               <div class="item">
                                  <div class="pro-box">
@@ -689,20 +689,20 @@
                                     <div class="pro-hover">
                                        <h6>Recycling & Waste Management</h6>
                                        <p>We are working over 20 years on Waste Management & Material Recycling Projects.</p>
-                                       <a href="#">Read More</a> 
+                                       <a href="#">Read More</a>
                                     </div>
                                  </div>
                               </div>
-                              <!--Pro Box End--> 
+                              <!--Pro Box End-->
                            </div>
                         </div>
-                        <!--Recycling Slider End--> 
+                        <!--Recycling Slider End-->
                      </div>
                   </div>
                </div>
             </div>
          </section>
-         <!--Current Projects End--> 
+         <!--Current Projects End-->
          <!--News & Articles Start-->
          <section class="h2-news wf100 p80">
             <div class="container">
@@ -736,25 +736,25 @@
                         <div class="post-txt">
                            <span class="pdate"> <i class="fas fa-calendar-alt"></i> 29 September, 2020</span>
                            <h5><a href="#">Water in landscape and jurisdictional approaches in Indonesia Blog</a></h5>
-                           <a href="#" class="rm">Baca detail</a> 
+                           <a href="#" class="rm">Baca detail</a>
                         </div>
                      </div>
-                     <!--Blog Small Post End--> 
+                     <!--Blog Small Post End-->
                      <!--Blog Small Post Start-->
                      <div class="blog-small-post">
                         <div class="post-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="images/h2news3.jpg" alt=""> </div>
                         <div class="post-txt">
                            <span class="pdate"> <i class="fas fa-calendar-alt"></i> 29 September, 2020</span>
                            <h5><a href="#">AWS at WWWeek #AtHome 2020</a></h5>
-                           <a href="#" class="rm">Baca detail</a> 
+                           <a href="#" class="rm">Baca detail</a>
                         </div>
                      </div>
-                     <!--Blog Small Post End--> 
-                     
+                     <!--Blog Small Post End-->
+
                   </div>
                </div>
             </div>
          </section>
-         <!--News & Articles End--> 
-         
+         <!--News & Articles End-->
+
 <?php include('include/footer.php') ?>

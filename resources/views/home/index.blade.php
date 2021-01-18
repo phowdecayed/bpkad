@@ -29,8 +29,8 @@
          <div class="row">
             <div class="col-md-6">
                <div class="section-title-2">
-                  <h5>Baca update kami</h5>
-                  <h2>Berita & Updates</h2>
+                  <h5>Berita Terbaru</h5>
+                  <h2>Berita & Artikel</h2>
                </div>
             </div>
             <div class="col-md-6"> <a href="{{ asset('berita') }}" class="view-more">Lihat berita lainnya</a> </div>

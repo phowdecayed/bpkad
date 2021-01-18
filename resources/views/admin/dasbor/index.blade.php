@@ -1,6 +1,5 @@
 <div class="alert alert-info">
   <p>Hai <strong>{{ Session()->get('nama') }}</strong>, Selamat datang di Halaman Dashboard Administrator</p>
-  <p>Bagi teman-teman yang sudah mengunduh website ini, mohon follow dan like akun Instagram kami di <a href="https://www.instagram.com/javawebmedia/" class="btn btn-warning">https://www.instagram.com/javawebmedia/</a></p>
 </div>
 <hr>
 <!-- Info boxes -->
@@ -12,8 +11,8 @@
       <div class="info-box-content">
         <span class="info-box-text">Artikel &amp; Berita</span>
         <span class="info-box-number">
-          <?php 
-          $berita = DB::table('berita')->where('jenis_berita','Berita')->get(); 
+          <?php
+          $berita = DB::table('berita')->where('jenis_berita','Berita')->get();
           echo $berita->count();
           ?>
           <small>Sudah dibuat</small>
@@ -33,8 +32,8 @@
           Layanan
         </span>
         <span class="info-box-number">
-        <?php 
-          $berita = DB::table('berita')->where('jenis_berita','Layanan')->get(); 
+        <?php
+          $berita = DB::table('berita')->where('jenis_berita','Layanan')->get();
           echo $berita->count();
           ?>
           <small>Sudah Dipublikasikan</small>
@@ -56,8 +55,8 @@
       <div class="info-box-content">
         <span class="info-box-text">File &amp; Dokumen</span>
         <span class="info-box-number">
-        <?php 
-          $download = DB::table('berita')->get(); 
+        <?php
+          $download = DB::table('berita')->get();
           echo $download->count();
           ?>
           <small>File</small>
@@ -75,8 +74,8 @@
       <div class="info-box-content">
         <span class="info-box-text">Galeri</span>
         <span class="info-box-number">
-        	<?php 
-          $galeri = DB::table('galeri')->get(); 
+        	<?php
+          $galeri = DB::table('galeri')->get();
           echo $galeri->count();
           ?>
           <small>Gambar</small>
@@ -99,8 +98,8 @@
       <div class="info-box-content">
         <span class="info-box-text">Rekening</span>
         <span class="info-box-number">
-          <?php 
-          $rekening = DB::table('rekening')->get(); 
+          <?php
+          $rekening = DB::table('rekening')->get();
           echo $rekening->count();
           ?>
           <small>Bank</small>
@@ -120,8 +119,8 @@
           Staff dan Team
         </span>
         <span class="info-box-number">
-        <?php 
-          $staff = DB::table('staff')->get(); 
+        <?php
+          $staff = DB::table('staff')->get();
           echo $staff->count();
           ?>
           <small>Orang</small>
@@ -143,8 +142,8 @@
       <div class="info-box-content">
         <span class="info-box-text">Video Youtube</span>
         <span class="info-box-number">
-        <?php 
-          $video = DB::table('video')->get(); 
+        <?php
+          $video = DB::table('video')->get();
           echo $video->count();
           ?>
           <small>Video</small>
@@ -162,8 +161,8 @@
       <div class="info-box-content">
         <span class="info-box-text">Agenda Kegiatan</span>
         <span class="info-box-number">
-        	<?php 
-          $agenda = DB::table('agenda')->get(); 
+        	<?php
+          $agenda = DB::table('agenda')->get();
           echo $agenda->count();
           ?>
           <small>Acara</small>
