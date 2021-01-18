@@ -1,5 +1,5 @@
 <!--Slider Start-->
-         <section id="home-slider" class="owl-carousel owl-theme wf100">
+         <section id="home-slider" class="owl-carousel owl-theme wf100 parallax">
             <?php foreach($slider as $slider) { ?>
             <div class="item">
                <div class="slider-caption h3slider">
