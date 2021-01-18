@@ -117,34 +117,14 @@
           </li>
 
           <!-- Website Content -->
-          <li class="batas"><hr> <span class="infoku"><i class="fa fa-certificate"></i> Profil &amp; Layanan</span></li>
+          <li class="batas"><hr> <span class="infoku"><i class="fa fa-certificate"></i> Website Setting</span></li>
           <li class="batas"><hr></li>
-
           <li class="nav-item">
             <a href="{{ asset('admin/konfigurasi/profil') }}" class="nav-link">
               <i class="nav-icon fas fa-leaf"></i>
               <p>Update Profil</p>
             </a>
           </li>
-
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-users"></i>
-              <p>Board &amp; Team<i class="fas fa-angle-left right"></i></p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item"><a href="{{ asset('admin/staff') }}" class="nav-link"><i class="fas fa-newspaper nav-icon"></i><p>Data Board &amp; Team</p></a>
-              </li>
-              <li class="nav-item"><a href="{{ asset('admin/staff/tambah') }}" class="nav-link"><i class="fa fa-plus nav-icon"></i><p>Tambah Board &amp; Team</p></a>
-              </li>
-              <li class="nav-item"><a href="{{ asset('admin/kategori_staff') }}" class="nav-link"><i class="fa fa-tags nav-icon"></i><p>Kategori Board &amp; Team</p></a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- Website Content -->
-          <li class="batas"><hr> <span class="infoku"><i class="fa fa-certificate"></i> Website Setting</span></li>
-          <li class="batas"><hr></li>
           <li class="nav-item">
             <a href="{{ asset('admin/user') }}" class="nav-link">
               <i class="nav-icon fas fa-lock"></i>
