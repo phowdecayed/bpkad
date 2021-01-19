@@ -20,9 +20,9 @@ class Video extends Controller
                     ->paginate(10);
        	$site 	= DB::table('konfigurasi')->first();
 
-		$data = array(  'title'		=> 'Video and Webinar '.$site->namaweb,
-						'deskripsi'	=> 'Video and Webinar '.$site->namaweb,
-						'keywords'	=> 'Video and Webinar '.$site->namaweb,
+		$data = array(  'title'		=> 'Video '.$site->namaweb,
+						'deskripsi'	=> 'Video '.$site->namaweb,
+						'keywords'	=> 'Video '.$site->namaweb,
 						'videos'	=> $video,
 						'site'		=> $site,
                         'content'	=> 'video/index'
