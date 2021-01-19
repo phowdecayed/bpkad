@@ -95,20 +95,6 @@ class Konfigurasi extends Controller
         return view('admin/layout/wrapper',$data);
     }
 
-    // pembayaran
-    public function pembayaran()
-    {
-        if(Session()->get('username')=="") { return redirect('login')->with(['warning' => 'Mohon maaf, Anda belum login']);}
-        $mykonfigurasi  = new Konfigurasi_model();
-        $site           = $mykonfigurasi->listing();
-
-        $data = array(  'title'        => 'Update Panduan Pembayaran',
-                        'site'         => $site,
-                        'content'      => 'admin/konfigurasi/pembayaran'
-                    );
-        return view('admin/layout/wrapper',$data);
-    }
-
     // Proses
     public function proses(Request $request)
     {
@@ -144,7 +130,6 @@ class Konfigurasi extends Controller
             'google_map'        => $request->google_map,
             'text_bawah_peta'   => $request->text_bawah_peta,
             'link_bawah_peta'   => $request->link_bawah_peta,
-            'cara_pesan'        => $request->cara_pesan,
             'id_user'           => Session()->get('id_user'),
         ]);
         return redirect('admin/konfigurasi')->with(['sukses' => 'Data telah diupdate']);
@@ -298,46 +283,5 @@ class Konfigurasi extends Controller
             'gambar'     => $input['nama_file']
         ]);
         return redirect('admin/konfigurasi/gambar')->with(['sukses' => 'Gambar Banner telah diupdate']);
-    }
-
-    // edit
-    public function proses_pembayaran(Request $request)
-    {
-        if(Session()->get('username')=="") { return redirect('login')->with(['warning' => 'Mohon maaf, Anda belum login']);}
-        request()->validate([
-                            'judul_pembayaran'  => 'required',
-                            'isi_pembayaran'    => 'required',
-                            'gambar_pembayaran' => 'image|mimes:jpeg,png,jpg|max:8024',
-                            ]);
-        // UPLOAD START
-        $image                  = $request->file('gambar_pembayaran');
-        if(!empty($image)) {
-            $filenamewithextension  = $request->file('gambar_pembayaran')->getClientOriginalName();
-            $filename               = pathinfo($filenamewithextension, PATHINFO_FILENAME);
-            $input['nama_file']     = Str::slug($filename, '-').'-'.time().'.'.$image->getClientOriginalExtension();
-            $destinationPath        = './assets/upload/image/thumbs/';
-            $img = Image::make($image->getRealPath(),array(
-                'width'     => 150,
-                'height'    => 150,
-                'grayscale' => false
-            ));
-            $img->save($destinationPath.'/'.$input['nama_file']);
-            $destinationPath = './assets/upload/image/';
-            $image->move($destinationPath, $input['nama_file']);
-            // END UPLOAD
-            DB::table('konfigurasi')->where('id_konfigurasi',$request->id_konfigurasi)->update([
-                'judul_pembayaran'  => $request->judul_pembayaran,
-                'isi_pembayaran'    => $request->isi_pembayaran,
-                'gambar_pembayaran' => $input['nama_file'],
-                'id_user'           => Session()->get('id_user'),
-            ]);
-        }else{
-             DB::table('konfigurasi')->where('id_konfigurasi',$request->id_konfigurasi)->update([
-                'judul_pembayaran'  => $request->judul_pembayaran,
-                'isi_pembayaran'    => $request->isi_pembayaran,
-                'id_user'           => Session()->get('id_user'),
-            ]);
-        }
-        return redirect('admin/konfigurasi/pembayaran')->with(['sukses' => 'Data metode pembayaran telah diupdate']);
     }
 }

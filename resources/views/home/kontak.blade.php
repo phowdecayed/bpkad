@@ -49,7 +49,7 @@ $bg   = DB::table('heading')->where('halaman','Kontak')->orderBy('id_heading','D
                      <input type="text" class="form-control" placeholder="Email">
                   </li>
                   <li class="half pr-15">
-                     <input type="text" class="form-control" placeholder="Contact">
+                     <input type="text" class="form-control" placeholder="Phone Number">
                   </li>
                   <li class="half pl-15">
                      <input type="text" class="form-control" placeholder="Subject">

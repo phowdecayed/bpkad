@@ -35,31 +35,25 @@
             <h3>Basic information:</h3>
             <hr>
             <div class="form-group">
-                <label>Company name</label>
+                <label>Nama Dinas</label>
                 <input type="text" name="namaweb" placeholder="Nama organisasi/perusahaan"
                     value="<?php echo $site->namaweb ?>" required class="form-control">
             </div>
 
             <div class="form-group">
-                <label>Nama Singkat</label>
-                <input type="text" name="nama_singkat" placeholder="Nama singkat organisasi/perusahaan"
-                    value="<?php echo $site->nama_singkat ?>" required class="form-control">
-            </div>
-
-            <div class="form-group">
-                <label>Singkatan</label>
+                <label>Nama Singkatan</label>
                 <input type="text" name="singkatan" placeholder="ABC" value="<?php echo $site->singkatan ?>" required
                     class="form-control">
             </div>
 
             <div class="form-group">
-                <label>Company tagline/motto</label>
+                <label>Moto Dinas</label>
                 <input type="text" name="tagline" placeholder="Company tagline/motto"
                     value="<?php echo $site->tagline ?>" class="form-control">
             </div>
 
             <div class="form-group">
-                <label>Company tagline/motto 2</label>
+                <label>Moto Provinsi</label>
                 <input type="text" name="tagline2" placeholder="Company tagline/motto 2"
                     value="<?php echo $site->tagline2 ?>" class="form-control">
             </div>

@@ -29,7 +29,7 @@
 <div class="col-md-9">
 <select name="jenis_download" class="form-control">
 	<option value="Download">Download Biasa</option>
-	<option value="Panduan">Panduan Penelitian</option>}
+	<option value="Artikel">Artikel</option>}
 </select>
 </div>
 </div>

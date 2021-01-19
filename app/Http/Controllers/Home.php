@@ -72,4 +72,22 @@ class Home extends Controller
         return view('layout/wrapper',$data);
     }
 
+    public function ContactUs(Request $request) {
+
+        // Form validation
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+            'subject'=>'required',
+            'message' => 'required'
+         ]);
+
+        //  Store data in database
+        Contact::create($request->all());
+
+        //
+        return back()->with('success', 'We have received your message and would like to thank you for writing to us.');
+    }
+
 }

@@ -16,9 +16,9 @@
     <!-- Brand Logo -->
     <a href="{{ asset('admin/dasbor') }}" class="brand-link">
         <img src="{{ asset('assets/upload/image/'.website('icon')) }}"
-            alt="{{ website('nama_singkat') }}" class="brand-image img-circle elevation-3"
+            alt="{{ website('singkatan') }}" class="brand-image img-circle elevation-3"
             style="opacity: .8">
-        <span class="brand-text font-weight-light">{{ website('nama_singkat') }}</span>
+        <span class="brand-text font-weight-light">{{ website('singkatan') }}</span>
     </a>
 
     <!-- Sidebar -->

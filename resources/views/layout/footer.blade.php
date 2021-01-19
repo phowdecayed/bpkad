@@ -15,15 +15,16 @@ $nav_layananf = $myprofil->nav_layanan();
             <div class="col-md-4 col-sm-6">
                 <div class="footer-widget">
                     <h3>{{ $site_config->namaweb }}</h3>
-                    <p>{{ $site_config->deskripsi }}</p>
-                    <hr style="border-top: solid thin #EEE;padding:0; margin: 5px 0;">
+                    <p align=”justify”>Motto {{ $site_config->singkatan }} : {{ $site_config->tagline }}</p>
+                    <p align=”justify”>Motto Pemerintah Provinsi Jawa Barat : {{ $site_config->tagline2 }}</p>
+                    <hr style="border-top: solid thin #EEE;padding:10; margin: 15px 0;">
                     <p>
                         <?php echo nl2br($site_config->alamat) ?>
                         <br><strong>Phone / Fax:</strong> {{ $site_config->telepon }} <strong>/</strong>
                         {{ $site_config->fax }}
                         <br><strong>Email:</strong> {{ $site_config->email }}
                         <br><strong>Website:</strong> {{ $site_config->website }}</p>
-                    <div class="footer-social">
+                    <div class="footer-social" align=”justify”>
                         <a href={{ $site_config->facebook }} target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href={{ $site_config->instagram }} target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href={{ $site_config->twitter }} target="_blank"><i class="fab fa-twitter"></i></a>

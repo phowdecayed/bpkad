@@ -29,9 +29,9 @@
 	<div class="col-md-9">
 		<select name="jenis_download" class="form-control">
 			<option value="Download">Download Biasa</option>
-			<option value="Panduan" 
-			<?php if($download->jenis_download=="Panduan") { echo "selected"; } ?>
-			>Panduan Penelitian</option>
+			<option value="Artikel"
+			<?php if($download->jenis_download=="Artikel") { echo "selected"; } ?>
+			>Artikel</option>
 		</select>
 	</div>
 </div>
@@ -41,7 +41,7 @@
 	<div class="col-md-9">
 		<select name="id_kategori_download" class="form-control">
 			<?php foreach($kategori_download as $kategori_download) { ?>
-				<option value="<?php echo $kategori_download->id_kategori_download ?>" 
+				<option value="<?php echo $kategori_download->id_kategori_download ?>"
 					<?php if($download->id_kategori_download==$kategori_download->id_kategori_download) { echo "selected"; } ?>
 					><?php echo $kategori_download->nama_kategori_download ?></option>
 				<?php } ?>

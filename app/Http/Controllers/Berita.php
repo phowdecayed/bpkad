@@ -8,7 +8,7 @@ Paginator::useBootstrap();
 
 class Berita extends Controller
 {
- 
+
     // Beritapage
     public function index()
     {
@@ -17,9 +17,9 @@ class Berita extends Controller
     	$model 	= new Berita_model();
 		$berita = $model->listing();
 
-        $data = array(  'title'     => 'Berita dan Update',
-                        'deskripsi' => 'Berita dan Update',
-                        'keywords'  => 'Berita dan Update',
+        $data = array(  'title'     => 'Berita dan Artikel',
+                        'deskripsi' => 'Berita dan Artikel',
+                        'keywords'  => 'Berita dan Artikel',
                         'site'		=> $site,
                         'berita'	=> $berita,
                         'beritas'    => $berita,
