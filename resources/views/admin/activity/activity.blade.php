@@ -21,7 +21,7 @@
     <th width="25%">TANGGAL</th>
     <th width="10%">IP ADDRESS</th>
     <th width="45%">HALAMAN</th>
-    
+
 </tr>
 </thead>
 <tbody>
@@ -33,7 +33,7 @@
     <td><?php echo $this->website->hari_bulan($user_log->tanggal); ?></td>
     <td><?php if($user_log->ip_address=='::1') { echo '127.0.0.1/localhost'; }else{ echo $user_log->ip_address; } ?></td>
     <td><?php echo $user_log->url ?></td>
-    
+
 </tr>
 
 <?php $i++; } ?>

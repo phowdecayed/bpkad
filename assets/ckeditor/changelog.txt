@@ -1,4 +1,4 @@
-Responsive Filemanager Changelog 
+Responsive Filemanager Changelog
 
 *********************************************************
 *  RFM 9.14.0
@@ -235,7 +235,7 @@ source folder (you can control it in config.php) (thanks to Stephane MERCIER)
 *********************************************************
 - add compatibility with free full resolution with aviary image editor
 - convert all include(); with include ‘’;
-- fix a problem with lowercase automatically change 
+- fix a problem with lowercase automatically change
 
 *********************************************************
 *  RFM 9.8
@@ -304,7 +304,7 @@ source folder (you can control it in config.php) (thanks to Stephane MERCIER)
 
 ***** Detailed *****
 - Cross domain feature:To enable cross-domain file selector, where files are hosted on one server (for example, serverA.com) and URL is being sent to another (for example, serverB.com), include crossdomain=1 in the URL.
-For example, to instantiate image picker, use the following URL: http://serverA.com/[path to filemanager]/filemanager/dialog.php?type=1&field_id=fieldID&crossdomain=1
+For example, to instantiate image picker, use the following URL:http://serverA.com/[path to filemanager]/filemanager/dialog.php?type=1&field_id=fieldID&crossdomain=1
 Then on serverB.com, the following code can be used to retrieve the URL after file selection is made. Please note, that the code is written for jQuery with FancyBox plug-in.
 
 //
@@ -377,10 +377,10 @@ NOTE: Changed upload button's icon!
 - Language Changing
 	You can now change the language dynamicly from the menu.
 	The button is located next to the refresh button (a globe icon)
-	
-	If adding new language, it should be added to the languages.php file as 
+
+	If adding new language, it should be added to the languages.php file as
 	well for it to show up.
-	
+
 	I tried to identify all language codes and add the name on there own
 	language but I might messed up so please check it and correct it if
 	necessary. (Because I'm only a human and speak only 2 languages)
@@ -468,13 +468,13 @@ NOTE: Changed upload button's icon!
 ***** Detailed *****
 - Cut/copy/paste
 	You can configure the actions in config.php file and disable/ limit them if needed.
-	When right clicking on a folder/file there will be options for copy and cut 
+	When right clicking on a folder/file there will be options for copy and cut
 	(and paste if files on clipboard and righ clicked on a file)
 	There's icon for paste to this dir and clear clipboard after the 'new dir' icons
 	They will grey out if there's nothing on the clipboard.
 
 - Drag&drop
-	Now you can drag n drop files/folders to other folders 
+	Now you can drag n drop files/folders to other folders
 	(this will overwrite existing files if encountered any!)
 
 - Icons
@@ -484,7 +484,7 @@ NOTE: Changed upload button's icon!
 - Code Refator
 	- Added bunch of comments and change a lot of codes.
 
-	- Changed all $_SESSION vars to be in a separet array 
+	- Changed all $_SESSION vars to be in a separet array
 	eg.:$_SESSION["verify"] -> $_SESSION['RF']["verify"]
 	So now there won't be any problem with big projecfts integrating RF
 
@@ -512,5 +512,5 @@ NOTE: Changed upload button's icon!
 
 	- Fixed issue #71 The uploaded file exceeds the max size allowed
 	Now when uploading it properly check for max post size
-	It is dealt with in config.php after definning the max upload size and if it's bigger 
-	than server's ini it will revert it back to it. 
+	It is dealt with in config.php after definning the max upload size and if it's bigger
+	than server's ini it will revert it back to it.
