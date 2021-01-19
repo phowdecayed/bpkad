@@ -15,6 +15,7 @@
     </div>
     <?php } ?>
 </section>
+
 <section class="h2-news wf100 p80 blog">
     <div class="blog-grid">
         <div class="container">
@@ -71,6 +72,3 @@
     </div>
 </section>
 <!--Blog End-->
-
-<!--Testimonials Start-->
-<!--Testimonials End-->

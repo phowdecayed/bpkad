@@ -25,7 +25,7 @@ class Berita extends Controller
                         'beritas'    => $berita,
                         'content'   => 'berita/index'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
     // Beritapage
@@ -51,7 +51,7 @@ class Berita extends Controller
                         'beritas'    => $berita,
                         'content'   => 'berita/index'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
     // kontak
@@ -75,7 +75,7 @@ class Berita extends Controller
                         'layanan'   => $layanan,
                         'content'   => 'berita/layanan'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
     // kontak
@@ -99,7 +99,7 @@ class Berita extends Controller
                         'layanan'   => $layanan,
                         'content'   => 'berita/terjadi'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
     // kontak
@@ -124,6 +124,6 @@ class Berita extends Controller
                         'read'      => $read,
                         'content'   => 'berita/read'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 }

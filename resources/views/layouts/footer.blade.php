@@ -57,10 +57,12 @@ $nav_layananf = $myprofil->nav_layanan();
 <!--Footer End-->
 </div>
 <!--   JS Files Start  -->
-<script src="{{ asset('assets/aws/js/jquery-3.3.1.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery-1.12.3.min.js') }}"></script>
+<script src="{{ asset('assets/js/plugins.js') }}"></script>
+<script src="{{ asset('assets/js/core.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.js') }}"></script>
 <script src="{{ asset('assets/aws/js/jquery-migrate-1.4.1.min.js') }}"></script>
 <script src="{{ asset('assets/aws/js/popper.min.js') }}"></script>
-<script src="{{ asset('assets/aws/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('assets/aws/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('assets/aws/js/jquery.prettyPhoto.js') }}"></script>
 <script src="{{ asset('assets/aws/js/isotope.min.js') }}"></script>

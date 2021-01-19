@@ -18,7 +18,6 @@ $bg   = DB::table('heading')->where('halaman','AWS')->orderBy('id_heading','DESC
                <div class="about-text">
                   <h2>{{ $site_config->nama_singkat }}</h2>
                   <?php echo $site_config->tentang ?>
-
                </div>
             </div>
          </div>

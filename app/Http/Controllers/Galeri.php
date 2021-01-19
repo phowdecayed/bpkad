@@ -26,7 +26,7 @@ class Galeri extends Controller
 						'site'		=> $site,
                         'content'	=> 'galeri/index'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
      // detail
@@ -48,7 +48,7 @@ class Galeri extends Controller
 						'galeri'	=> $galeri,
                         'content'	=> 'galeri/detail'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
 }

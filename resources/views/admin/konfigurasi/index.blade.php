@@ -16,15 +16,6 @@
 
         <div class="col-md-12">
             <div class="form-group">
-                <label>Ringkasan tentang badan</label>
-                <textarea name="tentang" rows="3" class="form-control" id="kontenku" id="isi"
-                    placeholder="Ringkasan tentang badan"><?php echo $site->tentang ?></textarea>
-            </div>
-        </div>
-
-
-        <div class="col-md-12">
-            <div class="form-group">
                 <label>Web Description</label>
                 <textarea name="deskripsi" rows="3" class="form-control"
                     placeholder="Web Description"><?php echo $site->deskripsi ?></textarea>

@@ -24,7 +24,7 @@ class Download extends Controller
 						'kategori_download'	  => $kategori_download,
                         'content'	          => 'download/kategori'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
     // Main page
@@ -48,7 +48,7 @@ class Download extends Controller
                         'kategori'  => $kategori,
                         'content'   => 'download/index'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
     // detail
@@ -66,7 +66,7 @@ class Download extends Controller
                         'download'  => $download,
                         'content'   => 'download/detail'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
     // Unduh

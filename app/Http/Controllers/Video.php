@@ -27,7 +27,7 @@ class Video extends Controller
 						'site'		=> $site,
                         'content'	=> 'video/index'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
      // detail
@@ -49,7 +49,7 @@ class Video extends Controller
 						'videos'	=> $video,
                         'content'	=> 'video/detail'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
 }

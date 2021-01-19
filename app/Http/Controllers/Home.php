@@ -33,7 +33,7 @@ class Home extends Controller
                         'video'         => $video,
                         'content'       => 'home/index'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
     // Homepage
@@ -55,7 +55,7 @@ class Home extends Controller
                         'kategori_staff'     => $kategori_staff,
                         'content'   => 'home/aws'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
     // kontak
@@ -69,7 +69,7 @@ class Home extends Controller
                         'site_config'      => $site_config,
                         'content'   => 'home/kontak'
                     );
-        return view('layout/wrapper',$data);
+        return view('layouts/wrapper',$data);
     }
 
     public function ContactUs(Request $request) {
