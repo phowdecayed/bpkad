@@ -56,11 +56,12 @@ $nav_materi  = $myprofil->nav_materi();
         </li>
         <li class="nav"> <a href="{{ asset('kontak') }}">Kontak</a>
         </li>
-        <!-- Menu Toggle -->
-        <div class="menu-toggle">
-            <a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a>
-        </div>
+
     </ul>
+       <!-- Menu Toggle -->
+       <div class="menu-toggle">
+        <a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a>
+    </div>
     </nav>
     </header>
     <!--Header End-->
