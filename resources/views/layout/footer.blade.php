@@ -48,7 +48,8 @@ $nav_layananf = $myprofil->nav_layanan();
             <div class="row footer-copyr">
                 <div class="col-md-10 col-sm-10"> <img
                         src="{{ asset('assets/upload/image/'.$site_config->logo) }}" alt=""
-                        style="max-height: 50px; width: auto;"> Copyright © 2021. {{ $site_config->namaweb }} All Rights Reserved.
+                        style="max-height: 50px; width: auto;"> Copyright © 2021. {{ $site_config->namaweb }} All
+                    Rights Reserved.
                 </div>
             </div>
         </div>
