@@ -20,7 +20,7 @@ $nav_materi  = $myprofil->nav_materi();
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Profil Organisasi <span class="pull-right"><i class="fas fa-caret-down"></i></span></a>
           <ul class="dropdown-menu" >
-            <li><a href=""><i class="fa fa-angle-double-right" aria-hidden="true"></i> Struktur Organisasi </a></li>
+            <li><a href="{{ asset('tentang') }}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Struktur Organisasi </a></li>
           </ul>
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Pojok Media <span class="pull-right"><i class="fas fa-caret-down"></i></span></a>

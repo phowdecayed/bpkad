@@ -16,9 +16,9 @@
 
         <div class="col-md-12">
             <div class="form-group">
-                <label>Summary of the company</label>
+                <label>Ringkasan tentang badan</label>
                 <textarea name="tentang" rows="3" class="form-control" id="kontenku" id="isi"
-                    placeholder="Summary of the company"><?php echo $site->tentang ?></textarea>
+                    placeholder="Ringkasan tentang badan"><?php echo $site->tentang ?></textarea>
             </div>
         </div>
 
