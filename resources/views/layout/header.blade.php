@@ -3,7 +3,7 @@ $site_config = DB::table('konfigurasi')->first();
 ?>
 <div class="wrapper home3">
    <!--Header Start-->
-      <div class="h3-logo-row rellax">
+      <div class="h3-logo-row">
          <div class="container">
                 <div class="row" style=" height:100px; padding-top:2px;">
                     <div class="col-md-2  col-sm-2" style="text-align:center;">

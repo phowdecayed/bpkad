@@ -649,7 +649,7 @@ Home Page Content Start
 
 section#home-slider img {
     width: 100%;
-    height: auto;
+    height: 650px;
 }
 
 #home-slider.owl-theme .owl-nav {
@@ -668,7 +668,7 @@ section#home-slider img {
     background: rgba(0, 0, 0, .5);
     border-radius: 3px;
     border-radius: 100%;
-    font-size: 0;
+    font-size: 50;
 }
 
 #home-slider.owl-theme .owl-nav [class*=owl-]:hover {
@@ -690,7 +690,7 @@ section#home-slider img {
     content: "\f060";
     color: #fff;
     font-size: 16px;
-    font-family: FontAwesome;
+    font-family: Verdana;
 }
 
 #home-slider.owl-theme .owl-nav button.owl-next:after {
@@ -8221,6 +8221,8 @@ section.wf100.p80.fcampaigns {
 .post-comments.wf100 {
     margin-bottom: 40px;
 }
+
+
 
 .volbox h5,
 .newsletter input[type=submit],
