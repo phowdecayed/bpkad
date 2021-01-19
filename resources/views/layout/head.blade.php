@@ -14,6 +14,7 @@ $site_config = DB::table('konfigurasi')->first();
 <!-- Font Awesome -->
 <link rel="stylesheet" href="{{ asset('assets/admin/plugins/fontawesome-free/css/all.min.css') }}">
 <!-- CSS FILES START -->
+
 <link href="{{ asset('assets/aws/css/custom.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/aws/css/color.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/aws/css/responsive.css') }}" rel="stylesheet">

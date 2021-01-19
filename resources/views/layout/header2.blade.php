@@ -15,7 +15,7 @@ $nav_profil           = $myprofil->nav_profil();
           <img src="{{ asset('public/upload/image/'.$site->logo) }}" alt="Nitrico" style="min-height: 50px; width: auto;">
         </span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="{{ asset('/') }}"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <a href="{{ asset('/') }}"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
@@ -41,11 +41,6 @@ $nav_profil           = $myprofil->nav_profil();
               </ul>
             </li>
             <li><a href="{{ asset('kontak') }}">Kontak</a></li>
-              <li>
-                  <a href="{{ asset('pemesanan') }}" class="orange" title="Form Pemesanan"><div class="belanja"><i class="fa fa-shopping-cart"></i> Form Order</div></a>
-              </li>
-
-
         </ul>
       </nav><!-- .nav-menu -->
 

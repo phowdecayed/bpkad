@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "gulp": "^4.0.2"
+        "gulp": "^4.0.2",
+        "rellax": "^1.12.1"
     }
 }
