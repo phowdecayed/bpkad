@@ -34,21 +34,21 @@ $nav_layananf = $myprofil->nav_layanan();
             </div>
             <!--Footer Widget End-->
             <!--Footer Widget Start-->
-            <div class="col-md-5 col-sm-6">
-                <div class="container"> </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="facebook-plugin">
+                    <?php echo $site_config->facebook_page ?>
+                </div>
+                <br>
+                <br>
             </div>
-            <!--Footer Widget End-->
-            <!--Footer Widget Start-->
-            <div class="col-md-6">
-            </div>
-            <!--Footer Widget End-->
-        </div>
-        <div class="container">
-            <div class="row footer-copyr">
-                <div class="logo-wrapper">
-                    <img src="{{ asset('assets/upload/image/'.$site_config->logo) }}" alt=""
-                        style="max-height: 25px; width: auto;">
-                    <strong>Copyright © <?php echo date("Y"); ?>. {{ $site_config->namaweb }} All Rights Reserved.</strong>
+            <div class="container">
+                <div class="row footer-copyr">
+                    <div class="logo-wrapper">
+                        <img src="{{ asset('assets/upload/image/'.$site_config->logo) }}"
+                            alt="" style="max-height: 25px; width: auto;">
+                        <strong>Copyright © <?php echo date("Y"); ?>. {{ $site_config->namaweb }} All Rights
+                            Reserved.</strong>
+                    </div>
                 </div>
             </div>
         </div>

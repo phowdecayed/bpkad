@@ -133,12 +133,14 @@
         </div>
 
         <div class="col-md-6">
-            <h3>Text di bawah peta dan link downloadnya</h3>
+            <h3>Integrasi Sosial Media</h3>
+            <hr>
+            <h3>Facebook Page</h3>
             <hr>
             <div class="form-group">
-                <label>Text bawah peta</label>
-                <input type="text" name="text_bawah_peta" placeholder="Text bawah peta"
-                    value="<?php echo $site->text_bawah_peta ?>" class="form-control">
+                <label>Facebook Page</label>
+                <textarea name="facebook_page" rows="5" class="form-control"
+                    placeholder="Iframe dari facebook page plugin"><?php echo $site->facebook_page ?></textarea>
             </div>
 
             <div class="form-group">

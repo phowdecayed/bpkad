@@ -128,7 +128,7 @@ class Konfigurasi extends Controller
             'nama_instagram'    => $request->nama_instagram,
             'nama_youtube'      => $request->nama_youtube,
             'google_map'        => $request->google_map,
-            'text_bawah_peta'   => $request->text_bawah_peta,
+            'facebook_page'     => $request->facebook_page,
             'link_bawah_peta'   => $request->link_bawah_peta,
             'id_user'           => Session()->get('id_user'),
         ]);
