@@ -8,7 +8,7 @@ $nav_profilf  = $myprofil->nav_profil();
 $nav_layananf = $myprofil->nav_layanan();
 ?>
 <!--Footer Start-->
-<footer class="h3footer wf100">
+<footer id="footer" class="h3footer wf100">
     <div class="container">
         <div class="row">
             <!--Footer Widget Start-->
@@ -35,21 +35,20 @@ $nav_layananf = $myprofil->nav_layanan();
             <!--Footer Widget End-->
             <!--Footer Widget Start-->
             <div class="col-md-5 col-sm-6">
-                <div class"container"> </div>
+                <div class="container"> </div>
             </div>
             <!--Footer Widget End-->
             <!--Footer Widget Start-->
             <div class="col-md-6">
-
             </div>
             <!--Footer Widget End-->
         </div>
         <div class="container">
             <div class="row footer-copyr">
-                <div class="col-md-10 col-sm-10"> <img
-                        src="{{ asset('assets/upload/image/'.$site_config->logo) }}" alt=""
-                        style="max-height: 50px; width: auto;"> Copyright © 2021. {{ $site_config->namaweb }} All
-                    Rights Reserved.
+                <div class="logo-wrapper">
+                    <img src="{{ asset('assets/upload/image/'.$site_config->logo) }}" alt=""
+                        style="max-height: 25px; width: auto;">
+                    <strong>Copyright © <?php echo date("Y"); ?>. {{ $site_config->namaweb }} All Rights Reserved.</strong>
                 </div>
             </div>
         </div>
@@ -60,7 +59,8 @@ $nav_layananf = $myprofil->nav_layanan();
 <script src="{{ asset('assets/js/jquery-1.12.3.min.js') }}"></script>
 <script src="{{ asset('assets/js/plugins.js') }}"></script>
 <script src="{{ asset('assets/js/core.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap.js') }}"></script>
+<script src="{{ asset('assets/aws/js/bootstrap.js') }}"></script>
+<script src="{{ asset('assets/js/parallax.js') }}"></script>
 <script src="{{ asset('assets/aws/js/jquery-migrate-1.4.1.min.js') }}"></script>
 <script src="{{ asset('assets/aws/js/popper.min.js') }}"></script>
 <script src="{{ asset('assets/aws/js/owl.carousel.min.js') }}"></script>

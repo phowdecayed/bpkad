@@ -682,7 +682,7 @@ Home Page Content Start
 
 section#home-slider img {
     width: 100%;
-    height: 650px;
+    height: 600px;
 }
 
 #home-slider.owl-theme .owl-nav {
@@ -720,14 +720,14 @@ section#home-slider img {
 
 #home-slider.owl-theme .owl-nav button.owl-next:after,
 #home-slider.owl-theme .owl-nav button.owl-prev:after {
-    content: "\f060";
+    content: "<";
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
     font-family: Verdana;
 }
 
 #home-slider.owl-theme .owl-nav button.owl-next:after {
-    content: "\f061";
+    content: ">";
 }
 
 /***************  Home 1 Slider End  *****************/

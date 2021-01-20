@@ -40,30 +40,9 @@ $bg   = DB::table('heading')->where('halaman','Kontak')->orderBy('id_heading','D
    <div class="container">
       <div class="row">
          <div class="col-md-6">
-            <div class="contact-form">
-               <ul class="cform">
-                  <li class="half pr-15">
-                     <input type="text" class="form-control" placeholder="Full Name">
-                  </li>
-                  <li class="half pl-15">
-                     <input type="text" class="form-control" placeholder="Email">
-                  </li>
-                  <li class="half pr-15">
-                     <input type="text" class="form-control" placeholder="Phone Number">
-                  </li>
-                  <li class="half pl-15">
-                     <input type="text" class="form-control" placeholder="Subject">
-                  </li>
-                  <li class="full">
-                     <textarea class="textarea-control" placeholder="Message"></textarea>
-                  </li>
-                  <li class="full">
-                     <input type="submit" value="Contact us" class="btn btn-info btn-lg btn-block">
-                  </li>
-               </ul>
-            </div>
+            <iframe src="https://www.powr.io/poll/u/5760816a_1611115094#platform=iframe" style="width:100%;" height="471px" frameborder="0"></iframe>
          </div>
-         <div class="col-md-6">
+            <div class="col-md-6">
             <div class="google-map">
                <?php echo $site_config->google_map ?>
             </div>

@@ -14,7 +14,7 @@ $nav_materi  = $myprofil->nav_materi();
 <!-- Primary Menu -->
 <div class="module menu left">
     <ul id="nav-primary" class="nav nav-primary">
-        <li class="nav-primary"><a href="{{ asset('/') }}">Beranda</a>
+        <li><a href="{{ asset('/') }}">Beranda</a>
         </li>
         <li class="has-dropdown">
             <a href="#" role="button"> Profil Organisasi </a>
@@ -50,18 +50,19 @@ $nav_materi  = $myprofil->nav_materi();
                 <li><a href="{{ asset('download') }}">Lihat Semua Data</a></li>
             </ul>
         </li>
-        <li class="nav-primary"> <a href="{{ asset('video') }}">Video</a>
+        <li> <a href="{{ asset('video') }}">Video</a>
         </li>
-        <li class="nav-primary"> <a href="{{ asset('galeri') }}">Galeri</a>
+        <li> <a href="{{ asset('galeri') }}">Galeri</a>
         </li>
-        <li class="nav-primary"> <a href="{{ asset('kontak') }}">Kontak</a>
+        <li> <a href="{{ asset('kontak') }}">Kontak</a>
         </li>
-
     </ul>
-       <!-- Menu Toggle -->
-       <div class="menu-toggle">
-        <a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a>
-    </div>
-    </nav>
-    </header>
-    <!--Header End-->
+</div>
+<!-- Menu Toggle -->
+<div class="menu-toggle">
+    <a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a>
+</div>
+</nav>
+</div>
+</header>
+<!--Header End-->

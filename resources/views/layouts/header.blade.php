@@ -11,8 +11,6 @@ $site_config = DB::table('konfigurasi')->first();
             <img class="logo logo-dark"
                 src="{{ asset('assets/upload/image/'.$site_config->logo) }}"
                 alt="{{ $site_config->namaweb }}">
-        </a>
-        <a class="logo-wrapper" href="">
-            <p>{{ $site_config->namaweb }}</p>
+            {{ $site_config->namaweb }}
         </a>
         <nav class="module-group right">

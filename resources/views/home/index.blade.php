@@ -2,6 +2,7 @@
 <section id="home-slider" class="owl-carousel owl-theme wf100">
     <?php foreach($slider as $slider) { ?>
     <div class="item">
+        <img src="{{ asset('assets/upload/image/'.$slider->gambar) }}" alt="">
         <div class="slider-caption h3slider">
             <div class="container">
                 <?php if($slider->status_text=="Ya") { ?>
@@ -11,7 +12,6 @@
                 <?php } ?>
             </div>
         </div>
-        <img src="{{ asset('assets/upload/image/'.$slider->gambar) }}" alt="">
     </div>
     <?php } ?>
 </section>
