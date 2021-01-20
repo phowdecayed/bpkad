@@ -122,12 +122,12 @@
                     </ul>
                 </li>
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="{{ asset('admin/video') }}" class="nav-link">
                         <i class="nav-icon fas fa-film"></i>
                         <p>Video</p>
                     </a>
-                </li>
+                </li> -->
 
                 <!-- Website Content -->
                 <li class="batas">
