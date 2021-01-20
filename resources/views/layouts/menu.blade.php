@@ -50,7 +50,7 @@ $nav_materi  = $myprofil->nav_materi();
                 <li><a href="{{ asset('download') }}">Lihat Semua Data</a></li>
             </ul>
         </li>
-        <li> <a href="{{ asset('video') }}">Video</a>
+        <!-- <li> <a href="{{ asset('video') }}">Video</a> -->
         </li>
         <li> <a href="{{ asset('galeri') }}">Galeri</a>
         </li>
