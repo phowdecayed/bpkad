@@ -68,6 +68,21 @@
                 <?php } ?>
             </div>
 
+            <section class="h2-news wf100 p80 blog">
+                <div class="blog-grid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="section-title-2">
+                                    <h5>FACEBOOK</h5>
+                                    <?php echo $site_config->facebook_page ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </div>
 </section>

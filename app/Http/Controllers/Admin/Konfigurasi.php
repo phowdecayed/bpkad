@@ -104,11 +104,9 @@ class Konfigurasi extends Controller
                             ]);
        DB::table('konfigurasi')->where('id_konfigurasi',$request->id_konfigurasi)->update([
             'namaweb'           => $request->namaweb,
-            'nama_singkat'      => $request->nama_singkat,
             'singkatan'         => $request->singkatan,
             'tagline'           => $request->tagline,
             'tagline2'          => $request->tagline2,
-            'tentang'           => $request->tentang,
             'website'           => $request->website,
             'email'             => $request->email,
             'email_cadangan'    => $request->email_cadangan,
@@ -214,8 +212,7 @@ class Konfigurasi extends Controller
             DB::table('konfigurasi')->where('id_konfigurasi',$request->id_konfigurasi)->update([
                 'id_user'       => Session()->get('id_user'),
                 'nama_singkat'  => $request->nama_singkat,
-                'tentang'       => $request->tentang,
-                'gambar'        => $input['nama_file']
+                'tentang'       => $request->tentang
             ]);
         }else{
             DB::table('konfigurasi')->where('id_konfigurasi',$request->id_konfigurasi)->update([

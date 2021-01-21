@@ -36,7 +36,7 @@ $nav_layananf = $myprofil->nav_layanan();
             <!--Footer Widget Start-->
             <div class="col-md-4 col-sm-6">
                 <div class="facebook-plugin">
-                    <?php echo $site_config->facebook_page ?>
+                    
                 </div>
                 <br>
                 <br>
