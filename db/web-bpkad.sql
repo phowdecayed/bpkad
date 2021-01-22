@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.29, for Win64 (x86_64)
 --
--- Host: localhost    Database: web-bpkad
+-- Host: localhost    Database: bpkad-web
 -- ------------------------------------------------------
 -- Server version	5.5.5-10.4.17-MariaDB
 
@@ -187,7 +187,7 @@ CREATE TABLE `galeri` (
   `status_text` enum('Ya','Tidak','','') NOT NULL,
   `tanggal` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (`id_galeri`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -196,7 +196,7 @@ CREATE TABLE `galeri` (
 
 LOCK TABLES `galeri` WRITE;
 /*!40000 ALTER TABLE `galeri` DISABLE KEYS */;
-INSERT INTO `galeri` VALUES (15,4,4,'ID','BPKAD','Homepage',NULL,'test-1611028117.png','http://bpkad.jabarprov.go.id',NULL,'Publish',1,'Tidak','2021-01-19 09:42:41'),(19,6,4,'ID','Gedung Sate','Homepage',NULL,'2d182c0b00f8fbfbf9ced554271176ba-1611049382.jpg',NULL,NULL,'Publish',2,'Tidak','2021-01-19 09:43:03');
+INSERT INTO `galeri` VALUES (20,6,4,'ID','BPKAD','Homepage','Test','12-1611305339.jpg','http://bpkad.jabarprov.go.id',NULL,'Publish',NULL,'Ya','2021-01-22 08:48:59'),(21,6,4,'ID','BPKAD-Test','Homepage','Donk','13-1611305324.jpg','http://bpkad.jabarprov.go.id',NULL,'Publish',NULL,'Ya','2021-01-22 08:48:44');
 /*!40000 ALTER TABLE `galeri` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -225,7 +225,7 @@ CREATE TABLE `heading` (
 
 LOCK TABLES `heading` WRITE;
 /*!40000 ALTER TABLE `heading` DISABLE KEYS */;
-INSERT INTO `heading` VALUES (1,0,'Berita dan Artikel','<p>Berita dan Artikel</p>','heading-03-1600256326-1611032712.jpg','Berita','2021-01-19 05:05:12'),(2,0,'AWS Indonesia','<p>AWS Indonesia</p>','aws-indonesia-1600259780-1611032677.jpg','AWS','2021-01-19 05:04:37'),(3,0,'Halaman Kontak','<p>Halaman Kontak</p>','kontak-1600257025-1611032631.jpg','Kontak','2021-01-19 05:03:51'),(4,0,'Board and Team','<p>Board and Team</p>','board-and-team-300-1600260175-1611032756.jpg','Team','2021-01-19 05:05:56'),(5,0,'Layanan','<p>Layanan</p>','layanan-1600315713-1611032802.jpg','Layanan','2021-01-19 05:06:53'),(6,0,'Dokumen','<p>Dokumen</p>','dokumen-1600317093-1611032780.jpg','Dokumen','2021-01-19 05:06:20');
+INSERT INTO `heading` VALUES (1,0,'Berita dan Artikel','<p>Berita dan Artikel</p>','heading-03-1600256326-1611032712.jpg','Berita','2021-01-19 05:05:12'),(2,0,'Tentang','<p>Tentang</p>','aws-indonesia-1600259780-1611032677.jpg','Tentang','2021-01-22 02:00:50'),(3,0,'Halaman Kontak','<p>Halaman Kontak</p>','kontak-1600257025-1611032631.jpg','Kontak','2021-01-19 05:03:51'),(4,0,'Board and Team','<p>Board and Team</p>','board-and-team-300-1600260175-1611032756.jpg','Team','2021-01-19 05:05:56'),(5,0,'Layanan','<p>Layanan</p>','layanan-1600315713-1611032802.jpg','Layanan','2021-01-19 05:06:53'),(6,0,'Dokumen','<p>Dokumen</p>','dokumen-1600317093-1611032780.jpg','Dokumen','2021-01-19 05:06:20');
 /*!40000 ALTER TABLE `heading` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -380,30 +380,6 @@ CREATE TABLE `konfigurasi` (
   `nama_google_plus` varchar(255) NOT NULL,
   `singkatan` varchar(255) NOT NULL,
   `google_map` text DEFAULT NULL,
-  `judul_1` varchar(200) DEFAULT NULL,
-  `pesan_1` varchar(200) DEFAULT NULL,
-  `judul_2` varchar(200) DEFAULT NULL,
-  `pesan_2` varchar(200) DEFAULT NULL,
-  `judul_3` varchar(200) DEFAULT NULL,
-  `pesan_3` varchar(200) DEFAULT NULL,
-  `judul_4` varchar(200) DEFAULT NULL,
-  `pesan_4` varchar(200) DEFAULT NULL,
-  `judul_5` varchar(200) DEFAULT NULL,
-  `pesan_5` varchar(200) NOT NULL,
-  `judul_6` varchar(200) DEFAULT NULL,
-  `pesan_6` varchar(200) NOT NULL,
-  `isi_1` varchar(500) DEFAULT NULL,
-  `isi_2` varchar(500) DEFAULT NULL,
-  `isi_3` varchar(500) DEFAULT NULL,
-  `isi_4` varchar(500) DEFAULT NULL,
-  `isi_5` varchar(500) DEFAULT NULL,
-  `isi_6` varchar(500) DEFAULT NULL,
-  `link_1` varchar(255) DEFAULT NULL,
-  `link_2` varchar(255) DEFAULT NULL,
-  `link_3` varchar(255) DEFAULT NULL,
-  `link_4` varchar(255) DEFAULT NULL,
-  `link_5` varchar(255) DEFAULT NULL,
-  `link_6` varchar(255) DEFAULT NULL,
   `gambar` varchar(255) DEFAULT NULL,
   `video` varchar(255) DEFAULT NULL,
   `gambar_berita` varchar(255) DEFAULT NULL,
@@ -430,7 +406,7 @@ CREATE TABLE `konfigurasi` (
 
 LOCK TABLES `konfigurasi` WRITE;
 /*!40000 ALTER TABLE `konfigurasi` DISABLE KEYS */;
-INSERT INTO `konfigurasi` VALUES (1,'ID','Badan Pengelolaan Keuangan dan Aset Daerah',NULL,'Bersama Kita Bisa','Jabar Juara Lahir Batin Dengan Kolaborasi dan Inovasi',NULL,'Website Resmi Badan Pengelolaan Keuangan dan Aset Daerah','https://bpkad.jabarprov.go.id','bpkad@jabarprov.go.id',NULL,'Jl. Diponegoro No.22, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115','022 - 4233347',NULL,'022 - 4233347','logo-dinas.png','favicon.png',NULL,NULL,'https://web.facebook.com/BpkadJabar','https://twitter.com/bpkadjabarprov','https://www.instagram.com/bpkadjabarprov/','https://www.youtube.com/channel/UCmm6mFZXYQ3ZylUMa0Tmc2Q','Badan Pengelolaan Keuangan dan Aset Daerah','BPKAD PROV JABAR','BPKAD Provinsi Jawa Barat','','BPKAD','<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.634383807166!2d107.618288!3d-6.901534000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5543cd68e7b6719d!2sBadan%20Pengelolaan%20Keuangan%20dan%20Aset%20Daerah%20Provinsi%20Jawa%20Barat!5e0!3m2!1sen!2sid!4v1610946848456!5m2!1sen!2sid\" width=\"250\" height=\"250\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>','Tempat belajar nyaman','fa fa-home','Materi Kursus Selalu Update','fa fa-laptop','Jadwal Flexibel','fa fa-thumbs-up','Menjaga Amanah','fa-check-square-o','Tempat belajar nyaman','fa-home','Online service','fa-laptop','Kami menyediakan tempat belajar yang nyaman dan menyenangkan serasa di rumah sendiri','Materi kursus kamu selalu uptodate, Anda bisa mengunduh apa yang dipelajari','Bagi Anda siswa yang ingin belajar, kami menerapkan jadwal flexibel','Kami senantiasa menjaga amanah yang diberikan kepada donatur agar sampai di tangan yang berhak.','Kami menyediakan tempat belajar yang nyaman dan menyenangkan','Website kamu selalu uptodate, Anda bisa mengunduh apa yang dipelajari','','','','','','','logo-dinas.png','fsH_KhUWfho','balairung-budiutomo-01.jpg','smtp','ssl://mail.mail.com','465','12','info@mail.com','1234','bpkad.jabarprov.go.id','Badan Pengelolaan Keuangan dan Aset Daerah',4,'2021-01-20 08:17:39','BPKAD PROV JABAR','https://www.youtube.com/channel/UCZPhYb-0GV5t_FKE1c2u1ZA','<iframe src=\"https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2FBpkadJabar&tabs=timeline%2C%20messages&width=450&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=424845868955585\" width=\"450\" height=\"500\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"1\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>');
+INSERT INTO `konfigurasi` VALUES (1,'ID','Badan Pengelolaan Keuangan dan Aset Daerah',NULL,'Bersama Kita Bisa','Jabar Juara Lahir Batin Dengan Kolaborasi dan Inovasi',NULL,'Website Resmi Badan Pengelolaan Keuangan dan Aset Daerah','https://bpkad.jabarprov.go.id','bpkad@jabarprov.go.id',NULL,'Jl. Diponegoro No.22, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115','022 - 4233347',NULL,'022 - 4233347','logo-bpkad.png','favicon.png',NULL,NULL,'https://web.facebook.com/BpkadJabar','https://twitter.com/bpkadjabarprov','https://www.instagram.com/bpkadjabarprov/','https://www.youtube.com/channel/UCmm6mFZXYQ3ZylUMa0Tmc2Q','Badan Pengelolaan Keuangan dan Aset Daerah','BPKAD PROV JABAR','BPKAD Provinsi Jawa Barat','','BPKAD','<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.634383807166!2d107.618288!3d-6.901534000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5543cd68e7b6719d!2sBadan%20Pengelolaan%20Keuangan%20dan%20Aset%20Daerah%20Provinsi%20Jawa%20Barat!5e0!3m2!1sen!2sid!4v1610946848456!5m2!1sen!2sid\" width=\"250\" height=\"250\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>','logo-dinas.png','fsH_KhUWfho','balairung-budiutomo-01.jpg','smtp','ssl://mail.mail.com','465','12','info@mail.com','1234','bpkad.jabarprov.go.id','Badan Pengelolaan Keuangan dan Aset Daerah',4,'2021-01-22 09:03:20','BPKAD PROV JABAR','https://www.youtube.com/channel/UCZPhYb-0GV5t_FKE1c2u1ZA','<iframe src=\"https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2FBpkadJabar&tabs=timeline%2C%20messages&width=450&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=424845868955585\" width=\"450\" height=\"500\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"1\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>');
 /*!40000 ALTER TABLE `konfigurasi` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -524,7 +500,7 @@ INSERT INTO `video` VALUES (68,'Video Profil Nanin Nayani Adam','Homepage','BPKA
 UNLOCK TABLES;
 
 --
--- Dumping routines for database 'web-bpkad'
+-- Dumping routines for database 'bpkad-web'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -536,4 +512,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-01-20 15:18:18
+-- Dump completed on 2021-01-22 16:15:00

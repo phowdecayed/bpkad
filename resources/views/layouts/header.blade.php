@@ -14,4 +14,8 @@ $site_config = DB::table('konfigurasi')->first();
                         data-dark-logo="{{ asset('assets/upload/image/'.$site_config->logo) }}">
                         <img src="{{ asset('assets/upload/image/'.$site_config->logo) }}"
                             alt="{{ $site_config->namaweb }}"></a>
+                    <a href="{{ asset('/') }}" class="retina-logo"
+                        data-dark-logo="{{ asset('assets/upload/image/'.$site_config->logo) }}">
+                        <img src="{{ asset('assets/upload/image/'.$site_config->logo) }}"
+                            alt="{{ $site_config->namaweb }}"></a>
                 </div><!-- #logo end -->

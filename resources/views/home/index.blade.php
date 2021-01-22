@@ -9,7 +9,7 @@
                                 <?php if($slider->status_text=="Ya") { ?>
                                     <h2 data-animate="fadeInUp">{{ strip_tags($slider->isi) }}</h2>
                                     <p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">{{ $slider->judul_galeri }}</p>
-                                    <p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="250"><a href="{{ $slider->website }}" class="button button-reveal button-large button-circle text-right m-0"><i class="icon-angle-right"></i>>Baca detail</a></p>
+                                    <p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="250"><a href="{{ $slider->website }}" class="button button-reveal button-large button-circle text-right m-0"><i class="icon-angle-right"></i>Baca detail</a></p>
                                     <?php } ?>
                         </div>
                     </div>
