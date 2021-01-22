@@ -53,7 +53,7 @@ class Home extends Controller
                         'berita'    => $berita,
                         'layanan'   => $layanan,
                         'kategori_staff'     => $kategori_staff,
-                        'content'   => 'home/aws'
+                        'content'   => 'home/tentang'
                     );
         return view('layouts/wrapper',$data);
     }
