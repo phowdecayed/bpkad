@@ -6,15 +6,17 @@ $site_config = DB::table('konfigurasi')->first();
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ $title }}</title>
     <meta name="description" content="{{ $deskripsi }}">
     <meta name="keywords" content="{{ $keywords }}">
     <meta name="author" content="{{ $site_config->namaweb }}">
     <!-- icon -->
     <link rel="shortcut icon" href="{{ asset('assets/upload/image/'.$site_config->icon) }}">
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="{{ asset('assets/admin/plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/plugins/fontawesome-free/css/all.min.css') }}">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
     <!-- CSS FILES START -->
