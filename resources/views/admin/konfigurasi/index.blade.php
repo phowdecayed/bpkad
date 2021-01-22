@@ -144,9 +144,9 @@
             </div>
 
             <div class="form-group">
-                <label>Link text di bawah peta <i class="fa fa-link"></i></label>
-                <input type="text" name="link_bawah_peta" placeholder="Link text di bawah peta"
-                    value="<?php echo $site->link_bawah_peta ?>" class="form-control">
+                <label>Twitter Feeds</label>
+                <textarea name="twitter_feeds" rows="5" class="form-control"
+                    placeholder="Iframe dari twitter publish plugin"><?php echo $site->twitter_feeds ?></textarea>
             </div>
 
             <h3>Modul SEO (Search Engine Optimization)</h3>

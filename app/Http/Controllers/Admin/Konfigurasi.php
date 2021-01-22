@@ -127,7 +127,7 @@ class Konfigurasi extends Controller
             'nama_youtube'      => $request->nama_youtube,
             'google_map'        => $request->google_map,
             'facebook_page'     => $request->facebook_page,
-            'link_bawah_peta'   => $request->link_bawah_peta,
+            'twitter_feeds'     => $request->twitter_feeds,
             'id_user'           => Session()->get('id_user'),
         ]);
         return redirect('admin/konfigurasi')->with(['sukses' => 'Data telah diupdate']);

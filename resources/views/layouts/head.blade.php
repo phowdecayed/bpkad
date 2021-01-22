@@ -2,12 +2,10 @@
 $site_config = DB::table('konfigurasi')->first();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en-US">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ $title }}</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="{{ $deskripsi }}">
     <meta name="keywords" content="{{ $keywords }}">
     <meta name="author" content="{{ $site_config->namaweb }}">
@@ -30,12 +28,14 @@ $site_config = DB::table('konfigurasi')->first();
 
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- CSS Base -->
-    <link id="theme" href="{{ asset('assets/css/themes/theme-classic.css') }}" rel="stylesheet">
     <?php echo $site_config->metatext ?>
+    <!-- Document Title
+    ============================================= -->
+    <title>{{ $title }}</title>
+
 </head>
 
-<body class="stretched">
+<body class="sticky-footer stretched page-transition" data-loader="1" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800">
     <!-- Document Wrapper
 	============================================= -->
     <div id="wrapper" class="clearfix">
