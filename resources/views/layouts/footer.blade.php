@@ -36,7 +36,7 @@ $nav_layananf = $myprofil->nav_layanan();
             <!--Footer Widget Start-->
             <div class="col-md-4 col-sm-6">
                 <div class="facebook-plugin">
-                    
+
                 </div>
                 <br>
                 <br>
@@ -56,18 +56,10 @@ $nav_layananf = $myprofil->nav_layanan();
 <!--Footer End-->
 </div>
 <!--   JS Files Start  -->
-<script src="{{ asset('assets/js/jquery-1.12.3.min.js') }}"></script>
-<script src="{{ asset('assets/js/plugins.js') }}"></script>
-<script src="{{ asset('assets/js/core.js') }}"></script>
-<script src="{{ asset('assets/aws/js/bootstrap.js') }}"></script>
-<script src="{{ asset('assets/js/parallax.js') }}"></script>
-<script src="{{ asset('assets/aws/js/jquery-migrate-1.4.1.min.js') }}"></script>
-<script src="{{ asset('assets/aws/js/popper.min.js') }}"></script>
-<script src="{{ asset('assets/aws/js/owl.carousel.min.js') }}"></script>
-<script src="{{ asset('assets/aws/js/jquery.prettyPhoto.js') }}"></script>
-<script src="{{ asset('assets/aws/js/isotope.min.js') }}"></script>
-<script src="{{ asset('assets/aws/js/slick.min.js') }}"></script>
-<script src="{{ asset('assets/aws/js/custom.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.js') }}"></script>
+<script src="{{ asset('assets/js/plugins.min.js') }}"></script>
+<script src="{{ asset('assets/js/functions.js') }}"></script>
+
 </body>
 
 </html>
