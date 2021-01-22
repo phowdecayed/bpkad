@@ -23,7 +23,7 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Notifications Dropdown Menu -->
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="{{ asset('admin/akun') }}">
+                    <a class="nav-link text-success" href="#">
                         <i class="fa fa-lock"></i> <?php echo Session()->get('nama'); ?>
                         (<?php echo Session()->get('akses_level'); ?>)
                     </a>

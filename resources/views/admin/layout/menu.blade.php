@@ -1,3 +1,9 @@
+<?php
+use Illuminate\Support\Facades\DB;
+use App\Models\Nav_model;
+$site_config = DB::table('konfigurasi')->first();
+?>
+
 <style type="text/css" media="screen">
     .nav ul li p !important {
         font-size: 12px;
@@ -16,9 +22,9 @@
     <!-- Brand Logo -->
     <a href="{{ asset('admin/dasbor') }}" class="brand-link">
         <img src="{{ asset('assets/upload/image/'.website('icon')) }}"
-            alt="{{ website('singkatan') }}" class="brand-image img-circle elevation-3"
+            alt="{{ $site_config->singkatan }}" class="brand-image img-circle elevation-3"
             style="opacity: .8">
-        <span class="brand-text font-weight-light">{{ website('singkatan') }}</span>
+        <span class="brand-text font-weight-light">{{ $site_config->singkatan }}</span>
     </a>
 
     <!-- Sidebar -->

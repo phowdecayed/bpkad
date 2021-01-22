@@ -1,3 +1,9 @@
+<?php
+use Illuminate\Support\Facades\DB;
+use App\Models\Nav_model;
+$site_config = DB::table('konfigurasi')->first();
+?>
+
 <!DOCTYPE html>
 <html>
 
