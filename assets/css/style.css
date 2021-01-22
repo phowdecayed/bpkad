@@ -1600,7 +1600,7 @@ a.h-text-dark:hover {
 
 .col-mb-50 > .col,
 .col-mb-50 > [class*="col-"] {
-	padding-bottom: 50px;
+	padding-bottom: 10px;
 }
 
 .col-mb-80 {

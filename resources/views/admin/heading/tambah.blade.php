@@ -9,7 +9,7 @@
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 </div>
 <div class="modal-body">
-    
+
 <form action="{{ url('admin/heading/tambah') }}" enctype="multipart/form-data" method="post" accept-charset="utf-8">
 {{ csrf_field() }}
 
@@ -19,14 +19,11 @@
 		<select name="halaman" class="form-control">
 			<option value="Berita">Berita</option>
 			<option value="Kontak">Halaman Kontak</option>
-			<option value="AWS">AWS Indonesia</option>
-			<option value="Team">Halaman Board and Team</option>
-			<option value="Aksi">Halaman Aksi</option>
-			<option value="Materi">Materi</option>
+			<option value="Tentang">Tentang</option>
+            <option value="Team">Halaman Staff</option>
+            <option value="Materi">Halaman Materi</option>
 			<option value="Dokumen">Dokumen</option>
 			<option value="Layanan">Layanan</option>
-			<option value="Provider">Provider</option>
-			<option value="Terjadi">Apa yang terjadi?</option>
 		</select>
 	</div>
 </div>
@@ -37,7 +34,7 @@
 		<input type="file" name="gambar" class="form-control" placeholder="Upload Gambar" value="" required>
 		@if ($errors->has('gambar'))
 	      	<span class="text-danger">{{ $errors->first('gambar') }}</span>
-	    @endif  
+	    @endif
 	</div>
 </div>
 
@@ -47,7 +44,7 @@
 		<input type="text" name="judul_heading" class="form-control" placeholder="Nama kategori berita" value="" required>
 		@if ($errors->has('judul_heading'))
 	      	<span class="text-danger">{{ $errors->first('judul_heading') }}</span>
-	    @endif  
+	    @endif
 	</div>
 </div>
 
@@ -57,7 +54,7 @@
 		<textarea name="keterangan" class="form-control simple" placeholder="Keterangan"></textarea>
 		@if ($errors->has('keterangan'))
 	      	<span class="text-danger">{{ $errors->first('keterangan') }}</span>
-	    @endif  
+	    @endif
 	</div>
 </div>
 

@@ -22,7 +22,7 @@ class Berita extends Controller
                         'keywords'  => 'Berita dan Artikel',
                         'site'		=> $site,
                         'berita'	=> $berita,
-                        'beritas'    => $berita,
+                        'beritas'   => $berita,
                         'content'   => 'berita/index'
                     );
         return view('layouts/wrapper',$data);

@@ -74,7 +74,7 @@
                                     </div>
                                     <div class="entry-meta">
                                         <ul>
-                                        <li><i class="icon-calendar3"></i>{{ tanggal('tanggal_id',$berita->tanggal_post) }} </li>
+                                        <li><i class="icon-calendar3"></i>{{ tanggal('tanggal_id',$berita->tanggal_post) }}</li>
                                         <li><a href="#"><i class="icon-user"></i>admin</a></li>
                                         <li><i class="icon-folder-open"></i><a href="#">{{ $berita->nama_kategori }}</a></li>
                                         </ul>
@@ -82,8 +82,6 @@
                                             <p align="justify">
                                                 <?php echo \Illuminate\Support\Str::limit(strip_tags($berita->isi), 300, $end='...') ?>
                                             </p>
-                                            <a href="{{ asset('berita/read/'.$berita->slug_berita) }}"
-                                                class="more-link">Baca detail</a>
                                         </div>
                                     </div>
                                 </div>

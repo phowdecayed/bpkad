@@ -22,11 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'App\Http\Controllers\Home@index');
 Route::get('home', 'App\Http\Controllers\Home@index');
 Route::get('kontak', 'App\Http\Controllers\Home@kontak');
-Route::get('berhasil/{par1}', 'App\Http\Controllers\Home@berhasil');
-Route::get('cetak/{par1}', 'App\Http\Controllers\Home@cetak');
 Route::get('tentang', 'App\Http\Controllers\Home@tentang');
-Route::get('aksi', 'App\Http\Controllers\Aksi@index');
-Route::get('aksi/status/{par1}', 'App\Http\Controllers\Aksi@status');
 // Login
 Route::get('login', 'App\Http\Controllers\Login@index');
 Route::post('login/check', 'App\Http\Controllers\Login@check');

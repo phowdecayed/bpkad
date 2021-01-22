@@ -1,13 +1,24 @@
-<?php 
+<?php
+use Illuminate\Support\Facades\DB;
+use App\Models\Berita_model;
+$model 	= new Berita_model();
+$berita = $model->listing();
 $bg   = DB::table('heading')->where('halaman','Berita')->orderBy('id_heading','DESC')->first();
+$site_config = DB::table('konfigurasi')->first();
  ?>
 <!--Inner Header Start-->
-<section class="wf100 p80 inner-header" style="background-image: url('{{ asset('assets/upload/image/'.$bg->gambar) }}'); background-position: bottom center;">
-   <div class="container">
+<section id="page-title" class="page-title-parallax page-title-dark include-header" style="padding: 100px 0; background-image: url('{{ asset('assets/upload/image/'.$bg->gambar) }}'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 400px;" data-top-bottom="background-position:0px -500px;">
+    <div class="container clearfix">
       <h1>{{ $title }}</h1>
+      <span></span>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+        <li class="breadcrumb-item"><a href="#">Pojok Media</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
+    </ol>
    </div>
 </section>
-<!--Inner Header End--> 
+<!--Inner Header End-->
 <!--Blog Start-->
 <section class="wf100 p80 blog">
    <div class="blog-grid">
@@ -29,7 +40,7 @@ $bg   = DB::table('heading')->where('halaman','Berita')->orderBy('id_heading','D
                   </div>
                </div>
             </div>
-            <!--Blog Small Post End--> 
+            <!--Blog Small Post End-->
             <?php } ?>
          </div>
          <div class="gt-pagination">
@@ -38,4 +49,4 @@ $bg   = DB::table('heading')->where('halaman','Berita')->orderBy('id_heading','D
       </div>
    </div>
 </section>
-<!--Blog End--> 
+<!--Blog End-->

@@ -3,7 +3,7 @@ $site_config = DB::table('konfigurasi')->first();
 ?>
 
 <!-- Header ============================================= -->
-<header id="header" class="full-header transparent-header semi-transparent">
+<header id="header" class="full-header transparent-header semi-transparent dark">
     <div id="header-wrap">
         <div class="container">
             <div class="header-row">
