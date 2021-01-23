@@ -17,7 +17,6 @@ class CreateDownloadTable extends Migration
             $table->integer('id_download', true);
             $table->integer('id_kategori_download');
             $table->integer('id_user');
-            $table->enum('bahasa', ['ID', 'EN']);
             $table->string('judul_download', 200)->nullable();
             $table->string('jenis_download', 20);
             $table->text('isi')->nullable();

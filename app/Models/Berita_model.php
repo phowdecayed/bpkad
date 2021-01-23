@@ -3,10 +3,11 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Laravel\Scout\Searchable;
 
 class Berita_model extends Model
 {
-
+    use Searchable;
 	protected $table 		= "berita";
 	protected $primaryKey 	= 'id_berita';
 
@@ -55,8 +56,8 @@ class Berita_model extends Model
             ->join('kategori', 'kategori.id_kategori', '=', 'berita.id_kategori','LEFT')
             ->join('users', 'users.id_user', '=', 'berita.id_user','LEFT')
             ->select('berita.*', 'kategori.slug_kategori', 'kategori.nama_kategori','users.nama')
-            ->where('berita.judul_berita', 'LIKE', "%{$keywords}%") 
-            ->orWhere('berita.isi', 'LIKE', "%{$keywords}%") 
+            ->where('berita.judul_berita', 'LIKE', "%{$keywords}%")
+            ->orWhere('berita.isi', 'LIKE', "%{$keywords}%")
             ->orderBy('id_berita','DESC')
            ->paginate(25);
         return $query;

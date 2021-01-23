@@ -3,10 +3,11 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Laravel\Scout\Searchable;
 
 class Agenda_model extends Model
 {
-
+    use Searchable;
 	protected $table 		= "agenda";
 	protected $primaryKey 	= 'id_agenda';
 
@@ -42,8 +43,8 @@ class Agenda_model extends Model
             ->join('kategori_agenda', 'kategori_agenda.id_kategori_agenda', '=', 'agenda.id_kategori_agenda','LEFT')
             ->join('users', 'users.id_user', '=', 'agenda.id_user','LEFT')
             ->select('agenda.*', 'kategori_agenda.slug_kategori_agenda', 'kategori_agenda.nama_kategori_agenda','users.nama')
-            ->where('agenda.judul_agenda', 'LIKE', "%{$keywords}%") 
-            ->orWhere('agenda.isi', 'LIKE', "%{$keywords}%") 
+            ->where('agenda.judul_agenda', 'LIKE', "%{$keywords}%")
+            ->orWhere('agenda.isi', 'LIKE', "%{$keywords}%")
             ->orderBy('id_agenda','DESC')
            ->paginate(25);
         return $query;

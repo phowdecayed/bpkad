@@ -2,10 +2,11 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Laravel\Scout\Searchable;
 
 class Galeri_model extends Model
 {
-
+    use Searchable;
 	protected $table 		= "galeri";
 	protected $primaryKey 	= 'id_galeri';
 
@@ -26,8 +27,8 @@ class Galeri_model extends Model
         $query = DB::table('galeri')
             ->join('kategori_galeri', 'kategori_galeri.id_kategori_galeri', '=', 'galeri.id_kategori_galeri','LEFT')
             ->select('galeri.*', 'kategori_galeri.slug_kategori_galeri', 'kategori_galeri.nama_kategori_galeri')
-            ->where('galeri.judul_galeri', 'LIKE', "%{$keywords}%") 
-            ->orWhere('galeri.isi', 'LIKE', "%{$keywords}%") 
+            ->where('galeri.judul_galeri', 'LIKE', "%{$keywords}%")
+            ->orWhere('galeri.isi', 'LIKE', "%{$keywords}%")
             ->orderBy('id_galeri','DESC')
             ->get();
         return $query;

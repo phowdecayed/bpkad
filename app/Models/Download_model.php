@@ -2,10 +2,11 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Laravel\Scout\Searchable;
 
 class Download_model extends Model
 {
-
+    use Searchable;
 	protected $table 		= "download";
 	protected $primaryKey 	= 'id_download';
 
@@ -26,8 +27,8 @@ class Download_model extends Model
         $query = DB::table('download')
             ->join('kategori_download', 'kategori_download.id_kategori_download', '=', 'download.id_kategori_download','LEFT')
             ->select('download.*', 'kategori_download.slug_kategori_download', 'kategori_download.nama_kategori_download')
-            ->where('download.judul_download', 'LIKE', "%{$keywords}%") 
-            ->orWhere('download.isi', 'LIKE', "%{$keywords}%") 
+            ->where('download.judul_download', 'LIKE', "%{$keywords}%")
+            ->orWhere('download.isi', 'LIKE', "%{$keywords}%")
             ->orderBy('id_download','DESC')
             ->get();
         return $query;
