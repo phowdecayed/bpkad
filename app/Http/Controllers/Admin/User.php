@@ -66,14 +66,14 @@ class User extends Controller
             $filenamewithextension  = $request->file('gambar')->getClientOriginalName();
             $filename               = pathinfo($filenamewithextension, PATHINFO_FILENAME);
             $input['nama_file']     = Str::slug($filename, '-').'-'.time().'.'.$image->getClientOriginalExtension();
-            $destinationPath        = './assets/upload/user/thumbs/';
+            $destinationPath        = './public/upload/user/thumbs/';
             $img = Image::make($image->getRealPath(),array(
                 'width'     => 150,
                 'height'    => 150,
                 'grayscale' => false
             ));
             $img->save($destinationPath.'/'.$input['nama_file']);
-            $destinationPath = './assets/upload/user/';
+            $destinationPath = './public/upload/user/';
             $image->move($destinationPath, $input['nama_file']);
             // END UPLOAD
             DB::table('users')->insert([
@@ -114,14 +114,14 @@ class User extends Controller
             $filenamewithextension  = $request->file('gambar')->getClientOriginalName();
             $filename               = pathinfo($filenamewithextension, PATHINFO_FILENAME);
             $input['nama_file']     = Str::slug($filename, '-').'-'.time().'.'.$image->getClientOriginalExtension();
-            $destinationPath        = './assets/upload/user/thumbs/';
+            $destinationPath        = './public/upload/user/thumbs/';
             $img = Image::make($image->getRealPath(),array(
                 'width'     => 150,
                 'height'    => 150,
                 'grayscale' => false
             ));
             $img->save($destinationPath.'/'.$input['nama_file']);
-            $destinationPath = './assets/upload/user/';
+            $destinationPath = './public/upload/user/';
             $image->move($destinationPath, $input['nama_file']);
             // END UPLOAD
             $slug_user = Str::slug($request->nama, '-');

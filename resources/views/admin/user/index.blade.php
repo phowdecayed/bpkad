@@ -18,7 +18,7 @@
     <div class="btn-group">
       <button class="btn btn-danger" type="submit" name="hapus" onClick="check();" >
           <i class="fa fa-trash"></i>
-      </button> 
+      </button>
         <button type="button" class="btn btn-success " data-toggle="modal" data-target="#Tambah">
             <i class="fa fa-plus"></i> Tambah Baru
         </button>
@@ -60,7 +60,7 @@
     </td>
       <td class="text-center">
         <?php if($user->gambar != "") { ?>
-            <img src="{{ asset('assets/upload/user/thumbs/'.$user->gambar) }}" class="img img-fluid img-thumbnail">
+            <img src="{{ asset('public/upload/user/thumbs/'.$user->gambar) }}" class="img img-fluid img-thumbnail">
         <?php }else{ echo '<small class="btn btn-sm btn-warning">Tidak ada</small>'; } ?>
     </td>
 
@@ -70,7 +70,7 @@
     <td><?php echo $user->akses_level ?></td>
     <td>
         <div class="btn-group">
-        <a href="{{ asset('admin/user/edit/'.$user->id_user) }}" 
+        <a href="{{ asset('admin/user/edit/'.$user->id_user) }}"
           class="btn btn-warning btn-sm"><i class="fa fa-edit"></i></a>
 
           <a href="{{ asset('admin/user/delete/'.$user->id_user) }}" class="btn btn-danger btn-sm  delete-link">
