@@ -5,8 +5,8 @@ $site_config = DB::table('konfigurasi')->first();
 <!--Inner Header Start-->
 <section id="page-title" class="page-title-parallax page-title-dark include-header" style="padding: 100px 0; background-image: url('{{ asset('assets/upload/image/'.$bg->gambar) }}'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 400px;" data-top-bottom="background-position:0px -500px;">
     <div class="container clearfix">
-        <h1>{{ $title }}</h1>
-        <span></span>
+        <h1 data-animate="fadeInUp">{{ $title }}</h1>
+        <span data-animate="fadeInUp" data-delay="300"></span>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Beranda</a></li>
           <li class="breadcrumb-item"><a href="#">Produk Hukum</a></li>

@@ -21,7 +21,7 @@ $nav_materi  = $myprofil->nav_materi();
     </svg>
 </div>
 
-<nav class="primary-menu">
+<nav class="primary-menu with-arrows">
 
     <ul class="menu-container">
         <li class="menu-item">
@@ -67,15 +67,20 @@ $nav_materi  = $myprofil->nav_materi();
                                     <?php } ?>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="{{ asset('download') }}"><div>Lihat Semua Data</div></a>
+                            <a class="menu-link" href="{{ asset('download') }}"><div><i class="icon-download"></i>Semua Data</div></a>
                         </li>
                     </ul>
                 </li>
-                <!-- <li class="menu-item">
-                    <a class="menu-link" href="{{ asset('video') }}"><div>Video</div></a>
-                </li> -->
                 <li class="menu-item">
-                    <a class="menu-link" href="{{ asset('galeri') }}"><div>Galeri</div></a>
+                    <a class="menu-link" href="#"><div>Galeri</div></a>
+                        <ul class="sub-menu-container">
+                            <li class="menu-item">
+                                <a class="menu-link" href="{{ asset('galeri') }}"><div><i class="icon-photo"></i>Galeri Foto</div></a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="{{ asset('video') }}"><div><i class="icon-video1"></i>Galeri Video</div></a>
+                            </li>
+                        </ul>
                 </li>
                 <li class="menu-item">
                     <a class="menu-link" href="{{ asset('kontak') }}"><div>Kontak</div></a>

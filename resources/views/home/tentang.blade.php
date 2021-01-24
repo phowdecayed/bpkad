@@ -4,8 +4,8 @@ $bg   = DB::table('heading')->where('halaman','Tentang')->orderBy('id_heading','
 <!--Inner Header Start-->
 <section id="page-title" class="page-title-parallax page-title-dark include-header" style="padding: 100px 0; background-image: url('{{ asset('assets/upload/image/'.$bg->gambar) }}'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 400px;" data-top-bottom="background-position:0px -500px;">
     <div class="container clearfix">
-      <h1>Profil Organisasi</h1>
-      <span>{{ $site_config->nama_singkat }}</span>
+      <h1 data-animate="fadeInUp">Profil Organisasi</h1>
+      <span data-animate="fadeInUp" data-delay="300">{{ $site_config->nama_singkat }}</span>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Beranda</a></li>
         <li class="breadcrumb-item"><a href="#">Profil Organisasi</a></li>

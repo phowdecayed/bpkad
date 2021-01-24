@@ -8,7 +8,7 @@ $nav_profilf  = $myprofil->nav_profil();
 $nav_layananf = $myprofil->nav_layanan();
 ?>
 <!--Footer Start-->
-<footer id="footer" class="dark">
+<footer id="footer" class="light">
     <div class="container">
         <!-- Footer Widgets
 				============================================= -->

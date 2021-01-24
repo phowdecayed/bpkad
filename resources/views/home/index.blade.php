@@ -74,9 +74,12 @@
                                     </div>
                                     <div class="entry-meta">
                                         <ul>
-                                        <li><i class="icon-calendar3"></i>{{ tanggal('tanggal_id',$berita->tanggal_post) }}</li>
-                                        <li><a href="#"><i class="icon-user"></i>admin</a></li>
-                                        <li><i class="icon-folder-open"></i><a href="#">{{ $berita->nama_kategori }}</a></li>
+                                            <li><i
+                                                    class="icon-calendar3"></i>{{ tanggal('tanggal_id',$berita->tanggal_post) }}
+                                            </li>
+                                            <li><a href="#"><i class="icon-user"></i>admin</a></li>
+                                            <li><i class="icon-folder-open"></i><a
+                                                    href="#">{{ $berita->nama_kategori }}</a></li>
                                         </ul>
                                         <div class="entry-content">
                                             <p align="justify">
@@ -93,42 +96,64 @@
                 </div>
             </div>
         </div>
-
+<hr>
         <div class="container clearfix">
             <div class="heading-block center">
                 <h1>Sosial Media</h1>
                 <span>Informasi dari Sosial Media Kami</span>
             </div>
             <div id="portfolio" class="portfolio row grid-container gutter-30" data-layout="fitRows">
-            <article class="portfolio-item col-md-4 col-sm-6 col-12">
-                <div class="heading-block center">
-                    <h3>Instagram</h3>
-                    <span>@bpkadjabarprov</span>
-                </div>
-                <div class="grid-inner">
-                    <div class="instagram-photos" data-user="bpkadjabarprov" data-count="1"></div>
-                </div>
-            </article>
-            <article class="portfolio-item col-md-4 col-sm-6 col-12">
-                <div class="heading-block center">
-                    <h3>Facebook</h3>
-                    <span>bpkadjabar</span>
-                </div>
-                <div class="grid-inner">
-                    <?php echo $site_config->facebook_page ?>
-                </div>
-            </article>
-            <article class="portfolio-item col-md-4 col-sm-6 col-12">
-                <div class="heading-block center">
-                    <h3>Twitter</h3>
-                    <span>@bpkadjabarprov</span>
-                </div>
-                <div class="grid-inner">
-                    <?php echo $site_config->twitter_feeds ?>
-                </div>
-            </article>
-
+                <article class="portfolio-item col-md-4 col-sm-6 col-12">
+                    <div class="heading-block center">
+                        <h3>Instagram</h3>
+                        <span>@bpkadjabarprov</span>
+                    </div>
+                    <div class="grid-inner">
+                        <div class="instagram-photos" data-user="bpkadjabarprov" data-count="1"></div>
+                    </div>
+                </article>
+                <article class="portfolio-item col-md-4 col-sm-6 col-12">
+                    <div class="heading-block center">
+                        <h3>Facebook</h3>
+                        <span>bpkadjabar</span>
+                    </div>
+                    <div class="grid-inner">
+                        <?php echo $site_config->facebook_page ?>
+                    </div>
+                </article>
+                <article class="portfolio-item col-md-4 col-sm-6 col-12">
+                    <div class="heading-block center">
+                        <h3>Twitter</h3>
+                        <span>@bpkadjabarprov</span>
+                    </div>
+                    <div class="grid-inner">
+                        <?php echo $site_config->twitter_feeds ?>
+                    </div>
+                </article>
             </div>
+        </div>
+<hr>
+        <div class="container clearfix">
+            <div class="heading-block center">
+                <h1>Link Terkait</h1>
+                <span></span>
+            </div>
+       <!-- <div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="30"
+            data-nav="true" data-pagi="true" data-autoplay="2000" data-items-xs="3" data-items-sm="3" data-items-md="5"
+            data-items-lg="6" data-items-xl="7">
+            <div class="oc-item"><a href="#"><img src="images/clients/1.png" alt="Brands"></a></div>
+			<div class="oc-item"><a href="#"><img src="images/clients/2.png" alt="Brands"></a></div>
+			<div class="oc-item"><a href="#"><img src="images/clients/3.png" alt="Brands"></a></div>
+			<div class="oc-item"><a href="#"><img src="images/clients/4.png" alt="Brands"></a></div>
+			<div class="oc-item"><a href="#"><img src="images/clients/5.png" alt="Brands"></a></div>
+			<div class="oc-item"><a href="#"><img src="images/clients/6.png" alt="Brands"></a></div>
+			<div class="oc-item"><a href="#"><img src="images/clients/7.png" alt="Brands"></a></div>
+			<div class="oc-item"><a href="#"><img src="images/clients/8.png" alt="Brands"></a></div>
+			<div class="oc-item"><a href="#"><img src="images/clients/9.png" alt="Brands"></a></div>
+			<div class="oc-item"><a href="#"><img src="images/clients/10.png" alt="Brands"></a></div>
+			<div class="oc-item"><a href="#"><img src="images/clients/11.png" alt="Brands"></a></div>
+			<div class="oc-item"><a href="#"><img src="images/clients/12.png" alt="Brands"></a></div>
+        </div> -->
         </div>
     </div>
 </section>
