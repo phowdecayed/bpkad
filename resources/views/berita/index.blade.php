@@ -33,6 +33,8 @@ $site_config = DB::table('konfigurasi')->first();
                                 <?php foreach($berita as $berita) { ?>
 								<div class="entry">
 									<div class="entry-timeline">
+                                        <i class="icon-folder-open"></i>
+                                        <span><i class="icon-news"></i></span>
                                         <div class="timeline-divider"></div>
                                     </div>
                                     <div class="entry-image">
@@ -48,9 +50,9 @@ $site_config = DB::table('konfigurasi')->first();
 											<li><i class="icon-folder-open"></i> <a href="#">{{ $berita->nama_kategori }}</a></li>
 										</ul>
                                     </div>
-                                    <div class="entry-content">
-										<p><?php echo \Illuminate\Support\Str::limit(strip_tags($berita->isi), 300, $end='...') ?></p>
-										<a href="{{ asset('berita/read/'.$berita->slug_berita) }}" class="more-link">Baca detail</a>
+                                    <div class="entry-content" data-readmore="true" data-readmore-maskcolor="#DDD" data-readmore-masksize="50%" data-readmore-trigger-open="<i class='icon-angle-down i-plain i-large m-0 float-none'></i>" data-readmore-trigger-close="<i class='icon-angle-up i-plain i-large m-0 float-none'></i>">
+										<p class="mb-0" align='justify'><?php echo \Illuminate\Support\Str::limit(strip_tags($berita->isi), 1500, $end='...') ?></p>
+										<a href="{{ asset('berita/read/'.$berita->slug_berita) }}" class="read-more-trigger">Baca detail</a>
 									</div>
                                 </div>
                                 <?php } ?>
