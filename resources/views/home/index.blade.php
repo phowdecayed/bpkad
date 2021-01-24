@@ -80,13 +80,13 @@
                                         </ul>
                                         <div class="entry-content">
                                             <p align="justify">
-                                                <?php echo \Illuminate\Support\Str::limit(strip_tags($berita->isi), 300, $end='...') ?>
+                                                <?php echo \Illuminate\Support\Str::limit(strip_tags($berita->isi), 250, $end='...') ?>
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <?php if (++$i > 2) break;} ?>
+                            <?php if (++$i > 2) break; } ?>
                         </div>
                     </div>
 

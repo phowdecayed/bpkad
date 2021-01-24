@@ -48,7 +48,7 @@ class Berita extends Controller
                         'keywords'  => $kategori->nama_kategori,
                         'site'      => $site,
                         'berita'    => $berita,
-                        'beritas'    => $berita,
+                        'beritas'   => $berita,
                         'content'   => 'berita/index'
                     );
         return view('layouts/wrapper',$data);

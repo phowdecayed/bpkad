@@ -20,33 +20,46 @@ $site_config = DB::table('konfigurasi')->first();
 </section>
 <!--Inner Header End-->
 <!--Blog Start-->
-<section class="wf100 p80 blog">
-   <div class="blog-grid">
-      <div class="container">
-         <div class="row">
-            <?php foreach($berita as $berita) { ?>
-            <!--Blog Small Post Start-->
-            <div class="col-md-6 col-sm-12">
-               <div class="blog-post">
-                  <div class="blog-thumb"> <a href="{{ asset('berita/read/'.$berita->slug_berita) }}"><i class="fas fa-link"></i></a> <img src="{{ asset('assets/upload/image/thumbs/'.$berita->gambar) }}" alt="><?php  echo $berita->judul_berita ?>"> </div>
-                  <div class="post-txt">
-                     <h5><a href="{{ asset('berita/read/'.$berita->slug_berita) }}"><?php  echo $berita->judul_berita ?></a></h5>
-                     <ul class="post-meta">
-                        <li> <a href="{{ asset('berita/read/'.$berita->slug_berita) }}"><i class="fas fa-calendar-alt"></i> {{ tanggal('tanggal_id',$berita->tanggal_post)}}</a> </li>
-                        <li> <a href="{{ asset('berita/read/'.$berita->slug_berita) }}"><i class="fas fa-comments"></i> {{ $berita->nama_kategori }}</a> </li>
-                     </ul>
-                     <p><?php echo \Illuminate\Support\Str::limit(strip_tags($berita->isi), 100, $end='...') ?></p>
-                     <a href="{{ asset('berita/read/'.$berita->slug_berita) }}" class="read-post">Baca detail</a>
-                  </div>
-               </div>
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+
+            <div class="row gutter-40 col-mb-80">
+
+                		<!-- Post Content
+						============================================= -->
+						<div class="postcontent col-lg-9">
+                            <div id="posts" class="post-timeline">
+                                <?php foreach($berita as $berita) { ?>
+								<div class="entry">
+									<div class="entry-timeline">
+                                        <div class="timeline-divider"></div>
+                                    </div>
+                                    <div class="entry-image">
+										<a href="{{ asset('assets/upload/image/thumbs/'.$berita->gambar) }}" data-lightbox="image"><img src="{{ asset('assets/upload/image/thumbs/'.$berita->gambar) }}" alt="<?php  echo $berita->judul_berita ?>"></a>
+                                    </div>
+                                    <div class="entry-title">
+										<h2><a href="{{ asset('berita/read/'.$berita->slug_berita) }}"><?php  echo $berita->judul_berita ?></a></h2>
+                                    </div>
+                                    <div class="entry-meta">
+										<ul>
+                                            <li><i class="icon-calendar3"></i>{{ tanggal('tanggal_id',$berita->tanggal_post) }}</li>
+											<li><a href="#"><i class="icon-user"></i> admin</a></li>
+											<li><i class="icon-folder-open"></i> <a href="#">{{ $berita->nama_kategori }}</a></li>
+										</ul>
+                                    </div>
+                                    <div class="entry-content">
+										<p><?php echo \Illuminate\Support\Str::limit(strip_tags($berita->isi), 300, $end='...') ?></p>
+										<a href="{{ asset('berita/read/'.$berita->slug_berita) }}" class="more-link">Baca detail</a>
+									</div>
+                                </div>
+                                <?php } ?>
+                            </div>
+                            <div class="pagination justify-content-center">
+                                {{ $beritas->links() }}
+                             </div>
+                        </div>
             </div>
-            <!--Blog Small Post End-->
-            <?php } ?>
-         </div>
-         <div class="gt-pagination">
-            {{ $beritas->links() }}
-         </div>
-      </div>
-   </div>
+        </div>
+    </div>
 </section>
-<!--Blog End-->
