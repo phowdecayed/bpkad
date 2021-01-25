@@ -15,7 +15,7 @@ tinymce.init({
 });
 </script>
 
-<?php 
+<?php
 $sek  = date('Y');
 $awal = $sek-100;
 ?>
@@ -188,6 +188,7 @@ $(document).on("click", ".approval-link", function(e){
 <!-- Sparkline -->
 <script src="{{ asset('assets/admin/plugins/sparklines/sparkline.js') }}"></script>
 <!-- Tempusdominus Bootstrap 4 -->
+<script src="{{ asset('assets/js/moment.js') }}"></script>
 <script src="{{ asset('assets/admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js') }}"></script>
 <!-- Summernote -->
 <script src="{{ asset('assets/admin/plugins/summernote/summernote-bs4.min.js') }}"></script>
@@ -219,13 +220,13 @@ $(document).on("click", ".approval-link", function(e){
           "name": "document",
           "groups": ["mode"]
         },
-        
+
       ],
       // Remove the redundant buttons from toolbar groups defined above.
       removeButtons: 'Underline,Strike,Subscript,Superscript,Anchor,Styles,Specialchar'
     });
     // Tes
-    
+
 // Replace the <textarea id="editor1"> with a CKEditor 4
 // instance, using default configuration.
 CKEDITOR.replace( 'kontenku',
@@ -233,7 +234,7 @@ CKEDITOR.replace( 'kontenku',
         filebrowserBrowseUrl : '{{ asset("assets/ckeditor/filemanager/dialog.php?type=2&editor=ckeditor&fldr=") }}',
         filebrowserUploadUrl : '{{ asset("assets/ckeditor/filemanager/dialog.php?type=2&editor=ckeditor&fldr=") }}',
         filebrowserImageBrowseUrl : '{{ asset("assets/ckeditor/filemanager/dialog.php?type=1&editor=ckeditor&fldr==") }}'
-  } 
+  }
 );
 </script>
 <!-- Page Script -->
@@ -244,11 +245,11 @@ CKEDITOR.replace( 'kontenku',
     $('.select2').select2({
       theme: 'bootstrap4'
     })
-    
+
     $('.mselect2').select2({
       dropdownParent: $('.Tambah')
     });
-   
+
     $('.checkbox-toggle').click(function () {
       var clicks = $(this).data('clicks')
       if (clicks) {

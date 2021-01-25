@@ -1,43 +1,55 @@
-<?php 
+<?php
 $bg   = DB::table('heading')->where('halaman','Berita')->orderBy('id_heading','DESC')->first();
  ?>
 <!--Inner Header Start-->
-<section class="wf100 p80 inner-header" style="background-image: url('{{ asset('assets/upload/image/'.$bg->gambar) }}'); background-position: bottom center;">
-   <div class="container">
-      <h1>{{ $title }}</h1>
-   </div>
+<section id="page-title" class="page-title-parallax page-title-dark include-header" style="padding: 100px 0; background-image: url('{{ asset('assets/upload/image/'.$bg->gambar) }}'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 400px;" data-top-bottom="background-position:0px -500px;">
+    <div class="container clearfix">
+        <h1 data-animate="fadeInUp">Galeri Foto</h1>
+        <span data-animate="fadeInUp" data-delay="300">Badan Pengelolaan Keuangan dan Aset Daerah</span>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+          <li class="breadcrumb-item"><a href="#">Galeri</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Galeri Foto</li>
+      </ol>
+     </div>
 </section>
-<!--Inner Header End--> 
+<!--Inner Header End-->
 <!--Blog Start-->
-<section class="wf100 p80 blog">
-   <div class="blog-grid">
-      <div class="container">
-         <div class="row">
-            
-              <?php foreach($galeris as $galeri) { ?>
-          <!--Blog Small Post Start-->
-            <div class="col-md-6 col-sm-12">
-               <div class="blog-post">
-                  <div class="blog-thumb"> <a href="{{ asset('galeri/detail/'.$galeri->id_galeri) }}"><i class="fas fa-link"></i></a> <img src="{{ asset('assets/upload/image/thumbs/'.$galeri->gambar) }}" alt="><?php  echo $galeri->judul_galeri ?>"> </div>
-                  <div class="post-txt">
-                     <h5><a href="{{ asset('galeri/detail/'.$galeri->id_galeri) }}"><?php  echo $galeri->judul_galeri ?></a></h5>
-                     <ul class="post-meta">
-                        <li> <a href="{{ asset('galeri/detail/'.$galeri->id_galeri) }}"><i class="fas fa-calendar-alt"></i> {{ tanggal('tanggal_id',$galeri->tanggal)}}</a> </li>
-                        <li> <a href="{{ asset('galeri/detail/'.$galeri->id_galeri) }}"><i class="fas fa-comments"></i> {{ $galeri->nama_kategori_galeri }}</a> </li>
-                     </ul>
-                     <p><?php echo \Illuminate\Support\Str::limit(strip_tags($galeri->isi), 100, $end='...') ?></p>
-                     <a href="{{ asset('galeri/detail/'.$galeri->id_galeri) }}" class="read-post">Baca detail</a>
-                  </div>
-               </div>
-            </div>
-            <!--Blog Small Post End--> 
-          <?php } ?>
 
-           </div>
-         <div class="gt-pagination">
-            {{ $galeris->links() }}
-         </div>
-      </div>
-   </div>
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+            <div id="portfolio" class="portfolio row grid-container gutter-30" data-layout="fitRows">
+                <?php foreach($galeris as $galeri) { ?>
+            <article class="portfolio-item col-md-4 col-sm-6 col-12 pf-media pf-icons">
+                <div class="grid-inner">
+                    <div class="portfolio-image">
+                        <a href="{{ asset('galeri/detail/'.$galeri->id_galeri) }}">
+                            <img src="{{ asset('assets/upload/image/thumbs/'.$galeri->gambar) }}" alt="<?php  echo $galeri->judul_galeri ?>">
+                        </a>
+                        <div class="bg-overlay">
+                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                                <a href="{{ asset('assets/upload/image/thumbs/'.$galeri->gambar) }}" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="Image"><i class="icon-line-plus"></i></a>
+                                <a href="{{ asset('galeri/detail/'.$galeri->id_galeri) }}" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
+                            </div>
+                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                        </div>
+                    </div>
+                    <div class="portfolio-desc">
+                        <h3><a href="{{ asset('galeri/detail/'.$galeri->id_galeri) }}"><?php  echo $galeri->judul_galeri ?></a></h3>
+                        <span><i class="icon-calendar3"></i><a href="#"> {{ tanggal('tanggal_id',$galeri->tanggal)}}</a>  <a href="#"><i class="icon-folder-open"></i>{{ $galeri->nama_kategori_galeri }}</a></span>
+                        <div class="entry-content" data-readmore="true" data-readmore-maskcolor="#DDD" data-readmore-masksize="50%" data-readmore-trigger-open="<i class='icon-angle-down i-plain i-large m-0 float-none'></i>" data-readmore-trigger-close="<i class='icon-angle-up i-plain i-large m-0 float-none'></i>">
+                        <p><?php echo \Illuminate\Support\Str::limit(strip_tags($galeri->isi), 100, $end='...') ?></p>
+                        <a href="{{ asset('galeri/detail/'.$galeri->id_galeri) }}" class="read-more-trigger">Baca detail</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+                <?php } ?>
+            </div>
+            <div class="pagination justify-content-center">
+                {{ $galeris->links() }}
+             </div>
+        </div>
+    </div>
 </section>
-<!--Blog End--> 

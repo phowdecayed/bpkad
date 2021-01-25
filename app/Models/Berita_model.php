@@ -113,7 +113,7 @@ class Berita_model extends Model
                             'berita.jenis_berita'       => 'Berita',
                             'berita.status_berita'      => 'Publish'))
             ->orderBy('id_berita','DESC')
-            ->paginate(12);
+            ->paginate(4);
         return $query;
     }
 

@@ -1,8 +1,4 @@
 <?php
-use Illuminate\Support\Facades\DB;
-use App\Models\Berita_model;
-$model 	= new Berita_model();
-$berita = $model->listing();
 $bg   = DB::table('heading')->where('halaman','Berita')->orderBy('id_heading','DESC')->first();
 $site_config = DB::table('konfigurasi')->first();
  ?>

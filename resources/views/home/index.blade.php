@@ -96,7 +96,7 @@
                 </div>
             </div>
         </div>
-<hr>
+        <hr>
         <div class="container clearfix">
             <div class="heading-block center">
                 <h1>Sosial Media</h1>
@@ -108,7 +108,7 @@
                         <h3>Instagram</h3>
                         <span>@bpkadjabarprov</span>
                     </div>
-                    <div class="grid-inner">
+                    <div class="grid-inner center">
                         <div class="instagram-photos" data-user="bpkadjabarprov" data-count="1"></div>
                     </div>
                 </article>
@@ -117,7 +117,7 @@
                         <h3>Facebook</h3>
                         <span>bpkadjabar</span>
                     </div>
-                    <div class="grid-inner">
+                    <div class="grid-inner center">
                         <?php echo $site_config->facebook_page ?>
                     </div>
                 </article>
@@ -126,19 +126,21 @@
                         <h3>Twitter</h3>
                         <span>@bpkadjabarprov</span>
                     </div>
-                    <div class="grid-inner">
+                    <div class="grid-inner center">
                         <?php echo $site_config->twitter_feeds ?>
                     </div>
                 </article>
             </div>
         </div>
-<hr>
-        <div class="container clearfix">
-            <div class="heading-block center">
-                <h1>Link Terkait</h1>
-                <span></span>
-            </div>
-       <!-- <div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="30"
+        <hr>
+        <div class="heading-block center">
+            <h1>Link Terkait</h1>
+            <span></span>
+        </div>
+        <div id="portfolio" class="portfolio row grid-container gutter-30" data-layout="fitRows">
+            <article class="portfolio-item col-md-4 col-sm-6 col-12">
+                <div class="container clearfix">
+                    <!-- <div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="30"
             data-nav="true" data-pagi="true" data-autoplay="2000" data-items-xs="3" data-items-sm="3" data-items-md="5"
             data-items-lg="6" data-items-xl="7">
             <div class="oc-item"><a href="#"><img src="images/clients/1.png" alt="Brands"></a></div>
@@ -154,6 +156,8 @@
 			<div class="oc-item"><a href="#"><img src="images/clients/11.png" alt="Brands"></a></div>
 			<div class="oc-item"><a href="#"><img src="images/clients/12.png" alt="Brands"></a></div>
         </div> -->
+                </div>
+            </article>
         </div>
     </div>
 </section>

@@ -14,17 +14,16 @@ class GaleriTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('galeri')->delete();
-        
+
         \DB::table('galeri')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id_galeri' => 20,
                 'id_kategori_galeri' => 6,
                 'id_user' => 4,
-                'bahasa' => 'ID',
                 'judul_galeri' => 'BPKAD',
                 'jenis_galeri' => 'Homepage',
                 'isi' => 'Test',
@@ -36,12 +35,11 @@ class GaleriTableSeeder extends Seeder
                 'status_text' => 'Ya',
                 'tanggal' => '2021-01-22 15:48:59',
             ),
-            1 => 
+            1 =>
             array (
                 'id_galeri' => 21,
                 'id_kategori_galeri' => 6,
                 'id_user' => 4,
-                'bahasa' => 'ID',
                 'judul_galeri' => 'BPKAD-Test',
                 'jenis_galeri' => 'Homepage',
                 'isi' => 'Donk',
@@ -54,7 +52,7 @@ class GaleriTableSeeder extends Seeder
                 'tanggal' => '2021-01-22 15:48:44',
             ),
         ));
-        
-        
+
+
     }
 }

@@ -17,7 +17,6 @@ class CreateGaleriTable extends Migration
             $table->integer('id_galeri', true);
             $table->integer('id_kategori_galeri');
             $table->integer('id_user');
-            $table->enum('bahasa', ['ID', 'EN']);
             $table->string('judul_galeri', 200)->nullable();
             $table->string('jenis_galeri', 20);
             $table->text('isi')->nullable();
