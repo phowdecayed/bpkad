@@ -25,66 +25,94 @@ $nav_materi  = $myprofil->nav_materi();
 
     <ul class="menu-container">
         <li class="menu-item">
-            <a class="menu-link" href="{{ asset('/') }}"><div>Beranda</div></a>
+            <a class="menu-link" href="{{ asset('/') }}">
+                <div>Beranda</div>
+            </a>
         </li>
         <li class="menu-item">
-            <a class="menu-link" href="#"><div>Profil Organisasi</div></a>
+            <a class="menu-link" href="#">
+                <div>Profil Organisasi</div>
+            </a>
             <ul class="sub-menu-container">
                 <li class="menu-item">
-                    <a class="menu-link" href="{{ asset('tentang') }}"><div><i class="icon-line-users"></i>Struktur Organisasi</div></a>
+                    <a class="menu-link" href="{{ asset('tentang') }}">
+                        <div><i class="icon-line-users"></i>Struktur Organisasi</div>
+                    </a>
                 </li>
             </ul>
         </li>
+        <li class="menu-item">
+            <a class="menu-link" href="#">
+                <div>Pojok Media</div>
+            </a>
+            <ul class="sub-menu-container">
+                <?php foreach($nav_berita as $nav_berita) { ?>
                 <li class="menu-item">
-                    <a class="menu-link" href="#"><div>Pojok Media</div></a>
-                    <ul class="sub-menu-container">
-                        <?php foreach($nav_berita as $nav_berita) { ?>
-                        <li class="menu-item">
-                                <a class="menu-link" href="{{ asset('berita/kategori/'.$nav_berita->slug_kategori) }}"><div><i class="icon-news"></i>
-                                    {{ Str::words($nav_berita->nama_kategori,4) }}</div></a>
-                                    <?php } ?>
-                        </li>
-                    </ul>
+                    <a class="menu-link" href="{{ asset('berita/kategori/'.$nav_berita->slug_kategori) }}">
+                        <div><i class="icon-news"></i>
+                            {{ Str::words($nav_berita->nama_kategori,4) }}</div>
+                    </a>
+                    <?php } ?>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link" href="#">
+                <div>Produk Hukum</div>
+            </a>
+            <ul class="sub-menu-container">
+                <li class="menu-item">
+                    <?php foreach($nav_layanan as $nav_layanan) { ?>
+                    <a class="menu-link" href="{{ asset('berita/layanan/'.$nav_layanan->slug_berita) }}">
+                        <div><i class="icon-news"></i>
+                            {{ Str::words($nav_layanan->judul_berita,4) }}</div>
+                    </a>
+                    <?php } ?>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link" href="#">
+                <div>Download</div>
+            </a>
+            <ul class="sub-menu-container">
+                <?php foreach($nav_materi as $nav_materi) { ?>
+                <li class="menu-item">
+                    <a class="menu-link" href="{{ asset('download/kategori/'.$nav_materi->slug_kategori_download) }}">
+                        <div><i class="icon-file-download"></i>
+                            {{ Str::words($nav_materi->nama_kategori_download,6) }}</div>
+                    </a>
+                    <?php } ?>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link" href="#"><div>Produk Hukum</div></a>
-                    <ul class="sub-menu-container">
-                        <li class="menu-item">
-                            <?php foreach($nav_layanan as $nav_layanan) { ?>
-                                <a class="menu-link" href="{{ asset('berita/layanan/'.$nav_layanan->slug_berita) }}"><div><i class="icon-news"></i>
-                                    {{ Str::words($nav_layanan->judul_berita,4) }}</div></a>
-                                    <?php } ?>
-                        </li>
-                    </ul>
+                    <a class="menu-link" href="{{ asset('download') }}">
+                        <div><i class="icon-download"></i>Semua Data</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link" href="#">
+                <div>Galeri</div>
+            </a>
+            <ul class="sub-menu-container">
+                <li class="menu-item">
+                    <a class="menu-link" href="{{ asset('galeri') }}">
+                        <div><i class="icon-photo"></i>Galeri Foto</div>
+                    </a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link" href="#"><div>Download</div></a>
-                    <ul class="sub-menu-container">
-                        <?php foreach($nav_materi as $nav_materi) { ?>
-                        <li class="menu-item">
-                                <a class="menu-link" href="{{ asset('download/kategori/'.$nav_materi->slug_kategori_download) }}"><div><i class="icon-file-download"></i>
-                                    {{ Str::words($nav_materi->nama_kategori_download,6) }}</div></a>
-                                    <?php } ?>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href="{{ asset('download') }}"><div><i class="icon-download"></i>Semua Data</div></a>
-                        </li>
-                    </ul>
+                    <a class="menu-link" href="{{ asset('video') }}">
+                        <div><i class="icon-video1"></i>Galeri Video</div>
+                    </a>
                 </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="#"><div>Galeri</div></a>
-                        <ul class="sub-menu-container">
-                            <li class="menu-item">
-                                <a class="menu-link" href="{{ asset('galeri') }}"><div><i class="icon-photo"></i>Galeri Foto</div></a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" href="{{ asset('video') }}"><div><i class="icon-video1"></i>Galeri Video</div></a>
-                            </li>
-                        </ul>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="{{ asset('kontak') }}"><div>Kontak</div></a>
-                </li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link" href="{{ asset('kontak') }}">
+                <div>Kontak</div>
+            </a>
+        </li>
     </ul>
 </nav>
 </div>

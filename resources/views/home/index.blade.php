@@ -140,7 +140,7 @@
         <div id="portfolio" class="portfolio row grid-container gutter-30" data-layout="fitRows">
             <article class="portfolio-item col-md-4 col-sm-6 col-12">
                 <div class="container clearfix">
-                    <!-- <div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="30"
+                 <!-- <div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="30"
             data-nav="true" data-pagi="true" data-autoplay="2000" data-items-xs="3" data-items-sm="3" data-items-md="5"
             data-items-lg="6" data-items-xl="7">
             <div class="oc-item"><a href="#"><img src="images/clients/1.png" alt="Brands"></a></div>

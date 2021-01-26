@@ -121,7 +121,7 @@ class Berita_model extends Model
     public function listing()
     {
     	$query = DB::table('berita')
-             ->join('kategori', 'kategori.id_kategori', '=', 'berita.id_kategori','LEFT')
+            ->join('kategori', 'kategori.id_kategori', '=', 'berita.id_kategori','LEFT')
             ->join('users', 'users.id_user', '=', 'berita.id_user','LEFT')
             ->select('berita.*', 'kategori.slug_kategori', 'kategori.nama_kategori','users.nama')
             ->where(array('berita.status_berita'=>'Publish','berita.jenis_berita' => 'Berita'))
