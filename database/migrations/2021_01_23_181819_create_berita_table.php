@@ -17,7 +17,6 @@ class CreateBeritaTable extends Migration
             $table->integer('id_berita', true);
             $table->integer('id_user');
             $table->integer('id_kategori')->nullable()->default(0);
-            $table->enum('bahasa', ['ID', 'EN']);
             $table->string('updater', 32)->nullable()->default('-');
             $table->string('slug_berita');
             $table->string('judul_berita');

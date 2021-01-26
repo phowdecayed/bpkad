@@ -15,7 +15,6 @@ class CreateKategoriGaleriTable extends Migration
     {
         Schema::create('kategori_galeri', function (Blueprint $table) {
             $table->integer('id_kategori_galeri', true);
-            $table->enum('bahasa', ['ID', 'EN']);
             $table->string('slug_kategori_galeri');
             $table->string('nama_kategori_galeri');
             $table->integer('urutan')->nullable();

@@ -17,7 +17,6 @@ class CreateAgendaTable extends Migration
             $table->integer('id_agenda', true);
             $table->integer('id_user');
             $table->integer('id_kategori_agenda');
-            $table->enum('bahasa', ['ID', 'EN']);
             $table->string('slug_agenda');
             $table->string('judul_agenda');
             $table->text('isi');

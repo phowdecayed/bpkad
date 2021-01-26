@@ -15,7 +15,6 @@ class CreateKategoriDownloadTable extends Migration
     {
         Schema::create('kategori_download', function (Blueprint $table) {
             $table->integer('id_kategori_download', true);
-            $table->enum('bahasa', ['ID', 'EN']);
             $table->string('slug_kategori_download');
             $table->string('nama_kategori_download');
             $table->text('keterangan')->nullable();

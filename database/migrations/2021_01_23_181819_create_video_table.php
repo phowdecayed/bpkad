@@ -20,7 +20,6 @@ class CreateVideoTable extends Migration
             $table->text('keterangan')->nullable();
             $table->text('video');
             $table->integer('urutan')->nullable();
-            $table->string('bahasa', 20);
             $table->string('gambar')->nullable();
             $table->integer('id_user');
             $table->timestamp('tanggal')->useCurrent();

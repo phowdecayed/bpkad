@@ -15,7 +15,6 @@ class CreateKonfigurasiTable extends Migration
     {
         Schema::create('konfigurasi', function (Blueprint $table) {
             $table->integer('id_konfigurasi', true);
-            $table->enum('bahasa', ['ID', 'EN']);
             $table->string('namaweb', 200);
             $table->string('nama_singkat', 200)->nullable();
             $table->string('tagline', 200)->nullable();

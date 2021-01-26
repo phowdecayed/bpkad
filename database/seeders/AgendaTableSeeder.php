@@ -14,17 +14,16 @@ class AgendaTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('agenda')->delete();
-        
+
         \DB::table('agenda')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id_agenda' => 1,
                 'id_user' => 4,
                 'id_kategori_agenda' => 6,
-                'bahasa' => 'ID',
                 'slug_agenda' => 'latihan-agenda',
                 'judul_agenda' => 'Latihan Agenda',
                 'isi' => '<p>Latihan</p>',
@@ -46,7 +45,7 @@ class AgendaTableSeeder extends Seeder
                 'tanggal' => '2020-09-13 07:09:38',
             ),
         ));
-        
-        
+
+
     }
 }

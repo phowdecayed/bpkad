@@ -14,12 +14,12 @@ class VideoTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('video')->delete();
-        
+
         \DB::table('video')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id_video' => 68,
                 'judul' => 'Video Profil Nanin Nayani Adam',
@@ -27,13 +27,12 @@ class VideoTableSeeder extends Seeder
                 'keterangan' => 'BPKAD JABAR',
                 'video' => 'ZWgVhhfL_9M',
                 'urutan' => 1,
-                'bahasa' => 'Indonesia',
                 'gambar' => 'maxresdefault-1611106825.jpg',
                 'id_user' => 4,
                 'tanggal' => '2021-01-20 08:40:48',
             ),
         ));
-        
-        
+
+
     }
 }

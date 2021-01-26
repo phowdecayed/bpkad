@@ -14,17 +14,16 @@ class BeritaTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('berita')->delete();
-        
+
         \DB::table('berita')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id_berita' => 29,
                 'id_user' => 4,
                 'id_kategori' => 0,
-                'bahasa' => 'ID',
                 'updater' => '-',
                 'slug_berita' => 'undang-undang',
                 'judul_berita' => 'Undang - Undang',
@@ -81,12 +80,11 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-18 04:40:29',
                 'tanggal' => '2021-01-23 04:03:28',
             ),
-            1 => 
+            1 =>
             array (
                 'id_berita' => 33,
                 'id_user' => 4,
                 'id_kategori' => 6,
-                'bahasa' => 'ID',
                 'updater' => '-',
                 'slug_berita' => 'jabar-juara',
                 'judul_berita' => 'Jabar Juara',
@@ -112,12 +110,11 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-19 05:07:13',
                 'tanggal' => '2021-01-22 21:20:43',
             ),
-            2 => 
+            2 =>
             array (
                 'id_berita' => 34,
                 'id_user' => 4,
                 'id_kategori' => 8,
-                'bahasa' => 'ID',
                 'updater' => '-',
                 'slug_berita' => 'ujang-kemod',
                 'judul_berita' => 'ujang Kemod',
@@ -143,12 +140,11 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-19 05:14:23',
                 'tanggal' => '2021-01-22 21:39:07',
             ),
-            3 => 
+            3 =>
             array (
                 'id_berita' => 35,
                 'id_user' => 4,
                 'id_kategori' => 8,
-                'bahasa' => 'ID',
                 'updater' => '-',
                 'slug_berita' => 'uwoww',
                 'judul_berita' => 'uwoww',
@@ -174,12 +170,11 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-22 16:25:28',
                 'tanggal' => '2021-01-22 23:26:25',
             ),
-            4 => 
+            4 =>
             array (
                 'id_berita' => 36,
                 'id_user' => 4,
                 'id_kategori' => 6,
-                'bahasa' => 'ID',
                 'updater' => '-',
                 'slug_berita' => 'dooor',
                 'judul_berita' => 'dooor',
@@ -205,12 +200,11 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-22 16:26:39',
                 'tanggal' => '2021-01-22 23:26:58',
             ),
-            5 => 
+            5 =>
             array (
                 'id_berita' => 37,
                 'id_user' => 4,
                 'id_kategori' => 8,
-                'bahasa' => 'ID',
                 'updater' => '-',
                 'slug_berita' => 'loggg',
                 'judul_berita' => 'loggg',
@@ -236,12 +230,11 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-22 16:29:33',
                 'tanggal' => '2021-01-22 23:29:45',
             ),
-            6 => 
+            6 =>
             array (
                 'id_berita' => 38,
                 'id_user' => 4,
                 'id_kategori' => 8,
-                'bahasa' => 'ID',
                 'updater' => '-',
                 'slug_berita' => 'dorooon',
                 'judul_berita' => 'dorooon',
@@ -268,7 +261,7 @@ class BeritaTableSeeder extends Seeder
                 'tanggal' => '2021-01-22 23:43:29',
             ),
         ));
-        
-        
+
+
     }
 }

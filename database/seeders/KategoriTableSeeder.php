@@ -14,27 +14,25 @@ class KategoriTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('kategori')->delete();
-        
+
         \DB::table('kategori')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id_kategori' => 6,
                 'id_user' => 4,
-                'bahasa' => 'ID',
                 'slug_kategori' => 'berita',
                 'nama_kategori' => 'Berita',
                 'urutan' => 3,
                 'hits' => 0,
                 'tanggal' => '2020-09-13 04:36:42',
             ),
-            1 => 
+            1 =>
             array (
                 'id_kategori' => 8,
                 'id_user' => 4,
-                'bahasa' => 'ID',
                 'slug_kategori' => 'artikel',
                 'nama_kategori' => 'Artikel',
                 'urutan' => 2,
@@ -42,7 +40,7 @@ class KategoriTableSeeder extends Seeder
                 'tanggal' => '2021-01-18 11:21:24',
             ),
         ));
-        
-        
+
+
     }
 }

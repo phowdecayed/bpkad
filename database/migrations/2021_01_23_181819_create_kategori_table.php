@@ -16,7 +16,6 @@ class CreateKategoriTable extends Migration
         Schema::create('kategori', function (Blueprint $table) {
             $table->integer('id_kategori', true);
             $table->integer('id_user');
-            $table->enum('bahasa', ['ID', 'EN']);
             $table->string('slug_kategori');
             $table->string('nama_kategori')->unique('nama_kategori');
             $table->integer('urutan')->nullable();
