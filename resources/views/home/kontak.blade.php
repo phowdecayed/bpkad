@@ -12,22 +12,48 @@ $bg   = DB::table('heading')->where('halaman','Kontak')->orderBy('id_heading','D
       </ol>
      </div>
 </section>
-<!--Inner Header End-->
-<!--Contact Start-->
-<section class="gmap slider-parallax vh-100">
-    <?php echo $site_config->google_map ?>
-</section>
+
 <section id="content">
     <div class="content-wrap">
-        <div class="container">
-            <div class="row gutter-40 col-mb-80">
-                <!-- Postcontent
+        <div class="container clearfix">
+            <div class="row align-items-stretch col-mb-50 mb-0">
+                <!-- Contact Form
                 ============================================= -->
-                <div class="postcontent col-lg-9">
+                <div class="col-lg-6">
+
                     <div class="form-widget">
-                        <iframe src="https://www.powr.io/poll/u/5760816a_1611115094#platform=iframe" style="width:100%;" height="471px" frameborder="0"></iframe>
+
+                        <div id="comments" class="clearfix">
+
+                            <h3 id="comments-title">Comments</h3>
+
+                            <!-- Disqus Comments
+                            ============================================= -->
+                            <div id="disqus_thread"></div>
+                            <script type="text/javascript">
+                                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                                var disqus_shortname = '{{ $site_config->disqus_shortname }}'; // required: replace example with your forum shortname
+
+                                /* * * DON'T EDIT BELOW THIS LINE * * */
+                                (function() {
+                                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                })();
+                            </script>
+                            <!-- Disqus Comments end -->
+
+                        </div>
                     </div>
-                </div>
+
+                </div><!-- Contact Form End -->
+
+                <!-- Google Map
+                ============================================= -->
+                <div class="col-lg-6 min-vh-50">
+                    <div class="gmap h-100">
+                        <?php echo $site_config->google_map ?>
+                </div><!-- Google Map End -->
             </div>
         </div>
     </div>

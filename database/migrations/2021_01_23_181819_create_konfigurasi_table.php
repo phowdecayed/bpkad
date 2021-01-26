@@ -58,6 +58,7 @@ class CreateKonfigurasiTable extends Migration
             $table->string('nama_youtube')->nullable()->default('NULL');
             $table->string('youtube')->nullable()->default('NULL');
             $table->text('facebook_page')->nullable()->default('NULL');
+            $table->string('disqus_shortname')->nullable()->default('bpkad-jabarprov-go-id');
         });
     }
 

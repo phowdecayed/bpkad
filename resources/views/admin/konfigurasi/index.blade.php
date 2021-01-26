@@ -149,6 +149,14 @@
                     placeholder="Iframe dari twitter publish plugin"><?php echo $site->twitter_feeds ?></textarea>
             </div>
 
+            <div class="form-group">
+                <label>Shortname Disqus</label>
+                <input type="text" name="disqus_shortname" placeholder="Shortname Disquss"
+                    value="<?php echo $site->disqus_shortname ?>" class="form-control">
+                    <small class="text-gray">Contoh: <span class="text-danger">bpkad-jabarprov-go-id</span><strong class="text-success">.disqus.com</strong>.
+                        <br>Copy kode <strong class="text-danger">bpkad-jabarprov-go-id</strong> sebagai shortname Disqus</small>
+            </div>
+
             <h3>Modul SEO (Search Engine Optimization)</h3>
             <hr>
             <div class="form-group">

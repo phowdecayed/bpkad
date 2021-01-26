@@ -128,6 +128,7 @@ class Konfigurasi extends Controller
             'google_map'        => $request->google_map,
             'facebook_page'     => $request->facebook_page,
             'twitter_feeds'     => $request->twitter_feeds,
+            'disqus_shortname'  => $request->disqus_shortname,
             'id_user'           => Session()->get('id_user'),
         ]);
         return redirect('admin/konfigurasi')->with(['sukses' => 'Data telah diupdate']);
