@@ -50,7 +50,7 @@
 </div>
 
 <div class="col-md-3">
-<input type="number" name="urutan" class="form-control" placeholder="Urutan" value="<?php echo $berita->urutan ?>">
+<input hidden="true" type="number" name="urutan" class="form-control" placeholder="Urutan" value="<?php echo $berita->urutan ?>">
 </div>
 </div>
 
@@ -62,7 +62,7 @@
 </div>
 
 <div class="row form-group">
-  <label class="col-md-3 text-right">Isi berita</label> 
+  <label class="col-md-3 text-right">Isi berita</label>
   <div class="col-md-9">
   <textarea name="isi" class="form-control" id="kontenku" placeholder="Isi berita" placeholder="Isi berita"><?php echo $berita->isi ?></textarea>
   </div>

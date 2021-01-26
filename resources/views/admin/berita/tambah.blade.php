@@ -46,7 +46,7 @@
     <input type="file" name="gambar" class="form-control" placeholder="Upload gambar">
   </div>
   <div class="col-md-3">
-    <input type="number" name="urutan" class="form-control" placeholder="Urutan" value="{{ old('urutan') }}">
+    <input hidden="true" type="number" name="urutan" class="form-control" placeholder="Urutan" value="{{ old('urutan') }}">
   </div>
 </div>
 
@@ -58,7 +58,7 @@
 </div>
 
 <div class="row form-group">
-  <label class="col-md-3 text-right">Isi</label> 
+  <label class="col-md-3 text-right">Isi</label>
   <div class="col-md-9">
     <textarea name="isi" class="form-control" id="kontenku" placeholder="Isi berita">{{ old('isi') }}</textarea>
   </div>

@@ -148,7 +148,7 @@ class Berita_model extends Model
     public function read($slug_berita)
     {
         $query = DB::table('berita')
-             ->join('kategori', 'kategori.id_kategori', '=', 'berita.id_kategori','LEFT')
+            ->join('kategori', 'kategori.id_kategori', '=', 'berita.id_kategori','LEFT')
             ->join('users', 'users.id_user', '=', 'berita.id_user','LEFT')
             ->select('berita.*', 'kategori.slug_kategori', 'kategori.nama_kategori','users.nama')
             ->where('berita.slug_berita',$slug_berita)
