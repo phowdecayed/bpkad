@@ -60,16 +60,6 @@
 </div>
 
 <div class="form-group row">
-	<label class="col-sm-3 control-label text-right">Bahasa</label>
-	<div class="col-sm-9">
-		<select name="bahasa" class="form-control">
-			<option value="Indonesia">Bahasa Indonesia</option>
-			<option value="Inggris" <?php if($video->bahasa=="Inggris") { echo 'selected'; } ?>>Bahasa Inggris</option>
-		</select>
-	</div>
-</div>
-
-<div class="form-group row">
 	<label class="col-sm-3 control-label text-right"></label>
 	<div class="col-sm-9">
 		<div class="form-group pull-right btn-group">

@@ -16,7 +16,7 @@
 						<input type="text" name="judul" class="form-control" placeholder="Judul Video" value="{{ old('judul') }}" required>
 					</div>
 				</div>
-				
+
 
 				<div class="form-group row">
 					<label class="col-sm-3 control-label text-right">Kode Video Youtube</label>
@@ -54,16 +54,6 @@
 						<select name="posisi" class="form-control">
 							<option value="Video">Halaman Video</option>
 							<option value="Homepage">Halaman Homepage</option>
-						</select>
-					</div>
-				</div>
-
-				<div class="form-group row">
-					<label class="col-sm-3 control-label text-right">Bahasa</label>
-					<div class="col-sm-9">
-						<select name="bahasa" class="form-control">
-							<option value="Indonesia">Bahasa Indonesia</option>
-							<option value="Inggris">Bahasa Inggris</option>
 						</select>
 					</div>
 				</div>
