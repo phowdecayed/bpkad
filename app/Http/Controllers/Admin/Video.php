@@ -82,7 +82,6 @@ class Video extends Controller
                 'video'         => $request->video,
                 'urutan'        => $request->urutan,
                 'id_user'       => Session()->get('id_user'),
-                'bahasa'        => $request->bahasa
             ]);
             return redirect('admin/video')->with(['sukses' => 'Data telah ditambah']);
         }else{
@@ -94,8 +93,6 @@ class Video extends Controller
                 'video'         => $request->video,
                 'urutan'        => $request->urutan,
                 'id_user'       => Session()->get('id_user'),
-                'bahasa'        => $request->bahasa,
-
             ]);
             return redirect('admin/video')->with(['sukses' => 'Data telah ditambah']);
         }
@@ -132,7 +129,6 @@ class Video extends Controller
                 'video'         => $request->video,
                 'urutan'        => $request->urutan,
                 'id_user'       => Session()->get('id_user'),
-                'bahasa'        => $request->bahasa,
                 'gambar'            => $input['nama_file'],
             ]);
             return redirect('admin/video')->with(['sukses' => 'Data telah diupdate']);
@@ -144,7 +140,6 @@ class Video extends Controller
                 'video'         => $request->video,
                 'urutan'        => $request->urutan,
                 'id_user'       => Session()->get('id_user'),
-                'bahasa'        => $request->bahasa
             ]);
             return redirect('admin/video')->with(['sukses' => 'Data telah diupdate']);
         }
