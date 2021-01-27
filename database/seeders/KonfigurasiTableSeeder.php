@@ -14,12 +14,12 @@ class KonfigurasiTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('konfigurasi')->delete();
-
+        
         \DB::table('konfigurasi')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id_konfigurasi' => 1,
                 'namaweb' => 'Badan Pengelolaan Keuangan dan Aset Daerah',
@@ -75,9 +75,10 @@ class KonfigurasiTableSeeder extends Seeder
                 'nama_youtube' => 'BPKAD PROV JABAR',
                 'youtube' => 'https://www.youtube.com/channel/UCZPhYb-0GV5t_FKE1c2u1ZA',
                 'facebook_page' => '<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbpkadjabar&tabs=timeline%2C%20messages&width=360&height=385&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=424845868955585" width="360" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+                'disqus_shortname' => 'bpkad-jabarprov-go-id',
             ),
         ));
-
-
+        
+        
     }
 }

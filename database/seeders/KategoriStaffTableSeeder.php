@@ -14,29 +14,21 @@ class KategoriStaffTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('kategori_staff')->delete();
-
+        
         \DB::table('kategori_staff')->insert(array (
-            0 =>
+            0 => 
             array (
-                'id_kategori_staff' => 4,
-                'slug_kategori_staff' => 'senyum-programmer',
-                'nama_kategori_staff' => 'Senyum Programmer',
-                'keterangan' => 'Yeay...selain tim tutor kita juga ada tim programmer yang bekerja full time maupun part time',
-                'urutan' => 2,
-            ),
-            1 =>
-            array (
-                'id_kategori_staff' => 6,
-                'slug_kategori_staff' => 'happy-tutor',
-                'nama_kategori_staff' => 'Happy Tutor',
-                'keterangan' => 'Java Web Media didampingi oleh tutor-tutor dan instruktur yang berpengalaman di bidangnya.',
+                'id_kategori_staff' => 1,
+                'slug_kategori_staff' => 'Test',
+                'nama_kategori_staff' => 'Test',
+                'keterangan' => 'Tes',
                 'urutan' => 1,
             ),
         ));
-
-
+        
+        
     }
 }

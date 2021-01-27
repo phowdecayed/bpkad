@@ -14,14 +14,14 @@ class BeritaTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('berita')->delete();
-
+        
         \DB::table('berita')->insert(array (
-            0 =>
+            0 => 
             array (
-                'id_berita' => 29,
+                'id_berita' => 1,
                 'id_user' => 4,
                 'id_kategori' => 0,
                 'updater' => '-',
@@ -80,11 +80,11 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-18 04:40:29',
                 'tanggal' => '2021-01-23 04:03:28',
             ),
-            1 =>
+            1 => 
             array (
-                'id_berita' => 33,
+                'id_berita' => 2,
                 'id_user' => 4,
-                'id_kategori' => 6,
+                'id_kategori' => 1,
                 'updater' => '-',
                 'slug_berita' => 'jabar-juara',
                 'judul_berita' => 'Jabar Juara',
@@ -110,11 +110,11 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-19 05:07:13',
                 'tanggal' => '2021-01-22 21:20:43',
             ),
-            2 =>
+            2 => 
             array (
-                'id_berita' => 34,
+                'id_berita' => 3,
                 'id_user' => 4,
-                'id_kategori' => 8,
+                'id_kategori' => 2,
                 'updater' => '-',
                 'slug_berita' => 'ujang-kemod',
                 'judul_berita' => 'ujang Kemod',
@@ -140,11 +140,11 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-19 05:14:23',
                 'tanggal' => '2021-01-22 21:39:07',
             ),
-            3 =>
+            3 => 
             array (
-                'id_berita' => 35,
+                'id_berita' => 4,
                 'id_user' => 4,
-                'id_kategori' => 8,
+                'id_kategori' => 2,
                 'updater' => '-',
                 'slug_berita' => 'uwoww',
                 'judul_berita' => 'uwoww',
@@ -170,11 +170,11 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-22 16:25:28',
                 'tanggal' => '2021-01-22 23:26:25',
             ),
-            4 =>
+            4 => 
             array (
-                'id_berita' => 36,
+                'id_berita' => 5,
                 'id_user' => 4,
-                'id_kategori' => 6,
+                'id_kategori' => 1,
                 'updater' => '-',
                 'slug_berita' => 'dooor',
                 'judul_berita' => 'dooor',
@@ -200,11 +200,11 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-22 16:26:39',
                 'tanggal' => '2021-01-22 23:26:58',
             ),
-            5 =>
+            5 => 
             array (
-                'id_berita' => 37,
+                'id_berita' => 6,
                 'id_user' => 4,
-                'id_kategori' => 8,
+                'id_kategori' => 2,
                 'updater' => '-',
                 'slug_berita' => 'loggg',
                 'judul_berita' => 'loggg',
@@ -230,11 +230,11 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-22 16:29:33',
                 'tanggal' => '2021-01-22 23:29:45',
             ),
-            6 =>
+            6 => 
             array (
-                'id_berita' => 38,
+                'id_berita' => 7,
                 'id_user' => 4,
-                'id_kategori' => 8,
+                'id_kategori' => 1,
                 'updater' => '-',
                 'slug_berita' => 'dorooon',
                 'judul_berita' => 'dorooon',
@@ -260,8 +260,38 @@ class BeritaTableSeeder extends Seeder
                 'tanggal_publish' => '2021-01-22 16:43:04',
                 'tanggal' => '2021-01-22 23:43:29',
             ),
+            7 => 
+            array (
+                'id_berita' => 8,
+                'id_user' => 4,
+                'id_kategori' => 2,
+                'updater' => '-',
+                'slug_berita' => 'lorem-ipsum',
+                'judul_berita' => 'Lorem Ipsum',
+                'isi' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo, nisi volutpat mattis ultricies, est velit tincidunt erat, ut interdum tortor risus sed arcu. Fusce interdum eget magna molestie consectetur. Aliquam rhoncus ante nisl, lobortis convallis erat malesuada ut. Donec lobortis vulputate bibendum. Cras sit amet porta erat. Vivamus porta nulla eget sapien blandit, nec fringilla libero tristique. Curabitur libero ex, imperdiet ac lectus sit amet, congue iaculis ipsum.</p>
+
+<p>Pellentesque tristique lacus blandit augue tincidunt, sit amet ornare nunc tristique. Curabitur ut leo et elit varius luctus eu ac mauris. Ut ullamcorper libero id felis molestie, vel mattis risus semper. Donec vulputate, justo at dignissim blandit, odio orci gravida urna, sed hendrerit lorem erat sed lectus. Etiam placerat sodales maximus. Donec suscipit efficitur arcu. Phasellus ac mauris at orci gravida dignissim vel et elit. Aenean interdum, turpis non imperdiet tincidunt, magna elit sollicitudin elit, eu maximus magna est id sem. Cras et blandit purus.</p>
+
+<p>Vivamus fermentum pretium vestibulum. Pellentesque laoreet, ligula eget malesuada iaculis, orci mauris congue tortor, a cursus est diam sit amet ipsum. Curabitur mollis eros in elit suscipit laoreet. Nam porttitor auctor justo, a maximus turpis suscipit vel. Fusce a dui dapibus, lobortis lorem eget, egestas quam. Vivamus a tincidunt dolor. Sed eleifend gravida congue.</p>
+
+<p>Proin porta purus non tortor gravida rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent ultricies dolor non felis ultrices, ac auctor ligula cursus. Ut semper odio metus, dapibus lobortis leo condimentum ac. Ut vel vestibulum magna. Vivamus condimentum maximus aliquet. Nullam in dignissim leo. Mauris id vestibulum arcu, in suscipit lectus. Nunc dapibus sed ipsum et condimentum. Vestibulum placerat varius cursus. Vestibulum efficitur risus risus, vel dictum lacus interdum id. Cras non purus in orci viverra pellentesque. Donec vestibulum sodales urna eu porttitor. Donec tincidunt lectus lorem. Curabitur sed justo enim.</p>
+
+<p>Donec varius pulvinar dui at posuere. In hac habitasse platea dictumst. Sed vel augue fringilla, fringilla tellus id, porttitor libero. Integer in massa quis nibh scelerisque posuere eu eu orci. Maecenas eget dolor ut nibh tincidunt ullamcorper et non sem. Sed vitae erat ut diam porttitor vestibulum placerat vel mi. Curabitur dolor nulla, ultricies nec diam sit amet, consequat interdum tortor. Suspendisse efficitur malesuada faucibus. Curabitur nisi ipsum, vulputate eget congue eu, lobortis et leo. Ut facilisis lectus vel enim pellentesque, eget laoreet elit aliquam. Fusce sollicitudin ipsum nunc, id vehicula massa pretium ut. Pellentesque tincidunt massa velit, nec ultrices ante vehicula viverra. Fusce ac dolor nibh. Praesent libero nisl, varius ac odio nec, mollis mattis leo. Sed ullamcorper dolor lacus, at commodo nibh luctus at. Maecenas rutrum malesuada arcu finibus porta.</p>',
+                'status_berita' => 'Publish',
+                'jenis_berita' => 'Berita',
+                'keywords' => NULL,
+                'gambar' => '78847618-3181187181896522-7322660115713097728-o-1611713193.jpg',
+                'icon' => NULL,
+                'hits' => NULL,
+                'urutan' => NULL,
+                'tanggal_mulai' => NULL,
+                'tanggal_selesai' => NULL,
+                'tanggal_post' => '2021-01-27 02:06:33',
+                'tanggal_publish' => '2021-01-27 02:04:47',
+                'tanggal' => '2021-01-27 09:06:33',
+            ),
         ));
-
-
+        
+        
     }
 }
