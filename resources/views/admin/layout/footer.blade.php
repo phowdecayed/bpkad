@@ -201,32 +201,6 @@ $(document).on("click", ".approval-link", function(e){
 <script src="{{ asset('assets/admin/plugins/pace-progress/pace.min.js') }}"></script>
 <script src="{{ asset('assets/admin/dist/js/adminlte.js') }}"></script>
 <script>
-    CKEDITOR.replace('editorku', {
-      height: 60,
-      // Define the toolbar groups as it is a more accessible solution.
-      toolbarGroups: [{
-          "name": "basicstyles",
-          "groups": ["basicstyles"]
-        },
-        {
-          "name": "links",
-          "groups": ["links"]
-        },
-        {
-          "name": "paragraph",
-          "groups": ["list", "blocks"]
-        },
-        {
-          "name": "document",
-          "groups": ["mode"]
-        },
-
-      ],
-      // Remove the redundant buttons from toolbar groups defined above.
-      removeButtons: 'Underline,Strike,Subscript,Superscript,Anchor,Styles,Specialchar'
-    });
-    // Tes
-
 // Replace the <textarea id="editor1"> with a CKEditor 4
 // instance, using default configuration.
 CKEDITOR.replace( 'kontenku',

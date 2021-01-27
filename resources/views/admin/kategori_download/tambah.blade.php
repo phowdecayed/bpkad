@@ -9,7 +9,7 @@
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 </div>
 <div class="modal-body">
-    
+
 <form action="{{ url('admin/kategori_download/tambah') }}" method="post" accept-charset="utf-8">
 {{ csrf_field() }}
 
@@ -19,7 +19,7 @@
 		<input type="text" name="nama_kategori_download" class="form-control" placeholder="Nama kategori berita" value="" required>
 		@if ($errors->has('nama_kategori_download'))
 	      	<span class="text-danger">{{ $errors->first('nama_kategori_download') }}</span>
-	    @endif  
+	    @endif
 	</div>
 </div>
 
@@ -33,7 +33,7 @@
 <div class="row form-group">
 <label class="col-md-3 text-right">Isi/keterangan</label>
 <div class="col-md-9">
-<textarea name="keterangan" id="editorku" class="form-control" id="kontenku" placeholder="Isi download">{{ old('keterangan')  }}</textarea>
+<textarea name="keterangan" id="kontenku" class="form-control" id="kontenku" placeholder="Isi download">{{ old('keterangan')  }}</textarea>
 </div>
 </div>
 

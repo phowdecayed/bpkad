@@ -42,11 +42,7 @@ if(isset($error)) {
 	<div class="col-md-3">
 		<select name="jenis_galeri" class="form-control">
 			<option value="Galeri">Galeri Biasa</option>
-			<option value="Homepage" 
-			<?php if($galeri->jenis_galeri=="Homepage") { echo "selected"; } ?>
-			>Homepage - Gambar Slider</option>
-			<option value="Pop up" <?php if($galeri->jenis_galeri=="Pop up") { echo "selected"; } ?>>Pop up Homepage</option>
-			<option value="Testimonial" <?php if($galeri->jenis_galeri=="Testimonial") { echo "selected"; } ?>>Background Testimonial</option>
+			<option value="Homepage" <?php if($galeri->jenis_galeri=="Homepage") { echo "selected"; } ?>>Homepage - Gambar Slider</option>
 		</select>
 		<small>Posisi galeri</small>
 	</div>
@@ -57,7 +53,7 @@ if(isset($error)) {
 		</select>
 		<small>Tampilkan teks</small>
 	</div>
-	
+
 	<div class="col-md-3">
 		<input type="number" name="urutan" class="form-control" placeholder="No urut tampil"  value="<?php echo $galeri->urutan ?>">
 		<small>Urutan tampil</small>
@@ -69,7 +65,7 @@ if(isset($error)) {
 	<div class="col-md-9">
 		<select name="id_kategori_galeri" class="form-control">
 			<?php foreach($kategori_galeri as $kategori_galeri) { ?>
-				<option value="<?php echo $kategori_galeri->id_kategori_galeri ?>" 
+				<option value="<?php echo $kategori_galeri->id_kategori_galeri ?>"
 					<?php if($galeri->id_kategori_galeri==$kategori_galeri->id_kategori_galeri) { echo "selected"; } ?>
 					><?php echo $kategori_galeri->nama_kategori_galeri ?></option>
 				<?php } ?>

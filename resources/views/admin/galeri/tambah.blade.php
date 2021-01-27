@@ -1,5 +1,5 @@
 <p class="text-right">
-  <a href="{{ asset('admin/galeri') }}" 
+  <a href="{{ asset('admin/galeri') }}"
   class="btn btn-success btn-sm"><i class="fa fa-backward"></i> Kembali</a>
 </p>
 <hr>
@@ -37,8 +37,6 @@
 <select name="jenis_galeri" class="form-control">
   <option value="Galeri">Galeri Biasa</option>
   <option value="Homepage">Homepage - Gambar Slider</option>
-    <option value="Pop up">Pop up Homepage</option>
-    <option value="Testimonial">Background Testimonial</option>
 </select>
 <small>Posisi galeri</small>
 </div>
