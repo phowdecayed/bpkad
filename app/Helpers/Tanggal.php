@@ -57,11 +57,18 @@ function tanggal($perintah,$tanggal)
 			$hasil = date('d-m-Y',strtotime($tanggal));
 			return $hasil;
 		}
+	}elseif($perintah=="tanggal_hari") {
+		if($tanggal=='' || $tanggal==NULL || $tanggal=='0000-00-00' || $tanggal=='1970-01-01') {
+			return FALSE;
+		}else{
+			$hasil = date('d',strtotime($tanggal));
+			return $hasil;
+		}
 	}elseif($perintah=="tanggal_bulan") {
 		if($tanggal=='' || $tanggal==NULL || $tanggal=='0000-00-00' || $tanggal=='1970-01-01') {
 			return FALSE;
 		}else{
-			$hasil = date('Y-m-d',strtotime($tanggal));
+			$hasil = date('M',strtotime($tanggal));
 			return $hasil;
 		}
 	}elseif($perintah=="tanggal_input") {

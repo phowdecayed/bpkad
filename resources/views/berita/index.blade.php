@@ -29,8 +29,8 @@ $site_config = DB::table('konfigurasi')->first();
                                 <?php foreach($berita as $berita) { ?>
 								<div class="entry">
 									<div class="entry-timeline">
-                                        <i class="icon-folder-open"></i>
-                                        <span><i class="icon-news"></i></span>
+                                        {{ tanggal('tanggal_hari',$berita->tanggal_post) }}
+                                        <span>{{ tanggal('tanggal_bulan',$berita->tanggal_post) }}</span>
                                         <div class="timeline-divider"></div>
                                     </div>
                                     <div class="entry-image">
@@ -41,7 +41,6 @@ $site_config = DB::table('konfigurasi')->first();
                                     </div>
                                     <div class="entry-meta">
 										<ul>
-                                            <li><i class="icon-calendar3"></i>{{ tanggal('tanggal_id',$berita->tanggal_post) }}</li>
 											<li><a href="#"><i class="icon-user"></i> admin</a></li>
 											<li><i class="icon-folder-open"></i> <a href="#">{{ $berita->nama_kategori }}</a></li>
 										</ul>
