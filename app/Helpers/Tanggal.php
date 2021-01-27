@@ -69,7 +69,7 @@ function tanggal($perintah,$tanggal)
 			$hasil = NULL;
 			return $hasil;
 		}else{
-			
+
 			$hasil = date('Y-m-d',strtotime($tanggal));
 			return $hasil;
 		}
@@ -124,5 +124,5 @@ function tanggal($perintah,$tanggal)
 			return $hasil;
 		}
 	}
-	
+
 }
