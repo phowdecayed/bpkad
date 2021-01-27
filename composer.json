@@ -21,6 +21,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "intervention/image": "^2.5",
         "jeroennoten/laravel-adminlte": "^3.5",
+        "kwaadpepper/laravel-responsivefilemanager": "^0.1.1",
         "laravel/framework": "^8.0",
         "laravel/scout": "^8.6",
         "laravel/tinker": "^2.0",
