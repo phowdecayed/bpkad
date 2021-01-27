@@ -38,9 +38,8 @@ $bg   = DB::table('heading')->where('halaman','Berita')->orderBy('id_heading','D
                     <div class="portfolio-desc">
                         <h3><a href="{{ asset('galeri/detail/'.$galeri->id_galeri) }}"><?php  echo $galeri->judul_galeri ?></a></h3>
                         <span><i class="icon-calendar3"></i><a href="#"> {{ tanggal('tanggal_id',$galeri->tanggal)}}</a>  <a href="#"><i class="icon-folder-open"></i>{{ $galeri->nama_kategori_galeri }}</a></span>
-                        <div class="entry-content" data-readmore="true" data-readmore-maskcolor="#DDD" data-readmore-masksize="50%" data-readmore-trigger-open="<i class='icon-angle-down i-plain i-large m-0 float-none'></i>" data-readmore-trigger-close="<i class='icon-angle-up i-plain i-large m-0 float-none'></i>">
+                        <div class="entry-content">
                         <p><?php echo \Illuminate\Support\Str::limit(strip_tags($galeri->isi), 100, $end='...') ?></p>
-                        <a href="{{ asset('galeri/detail/'.$galeri->id_galeri) }}" class="read-more-trigger">Baca detail</a>
                         </div>
                     </div>
                 </div>

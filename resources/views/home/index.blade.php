@@ -102,7 +102,18 @@
                 <h1>Sosial Media</h1>
                 <span>Informasi dari Sosial Media Kami</span>
             </div>
-            <div id="portfolio" class="portfolio row grid-container gutter-30" data-layout="fitRows">
+            <div id="portfolio" class="portfolio row grid-container center" data-layout="fitRows">
+                <article class="portfolio-item col-md-4 col-sm-6 col-12">
+                    <div class="heading-block center">
+                        <h3>Facebook</h3>
+                        <span>bpkadjabar</span>
+                    </div>
+                    <div class="grid-inner center" style="min-width: 500px; width: 400px;">
+                        <div style="min-height: 600px; width: 500px">
+                        <?php echo $site_config->facebook_page ?>
+                        </div>
+                    </div>
+                </article>
                 <article class="portfolio-item col-md-4 col-sm-6 col-12">
                     <div class="heading-block center">
                         <h3>Instagram</h3>
@@ -114,20 +125,13 @@
                 </article>
                 <article class="portfolio-item col-md-4 col-sm-6 col-12">
                     <div class="heading-block center">
-                        <h3>Facebook</h3>
-                        <span>bpkadjabar</span>
-                    </div>
-                    <div class="grid-inner center">
-                        <?php echo $site_config->facebook_page ?>
-                    </div>
-                </article>
-                <article class="portfolio-item col-md-4 col-sm-6 col-12">
-                    <div class="heading-block center">
                         <h3>Twitter</h3>
                         <span>@bpkadjabarprov</span>
                     </div>
-                    <div class="grid-inner center">
+                    <div class="grid-inner center" style="min-width: 500px; width: 400px;">
+                        <div style="min-height: 600px; width: 500px">
                         <?php echo $site_config->twitter_feeds ?>
+                        </div>
                     </div>
                 </article>
             </div>

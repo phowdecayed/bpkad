@@ -103,6 +103,84 @@ class MigrationsTableSeeder extends Seeder
                 'migration' => '2021_01_23_143749_create_video_table',
                 'batch' => 0,
             ),
+            14 => 
+            array (
+                'id' => 15,
+                'migration' => '2021_01_27_082849_create_agenda_table',
+                'batch' => 0,
+            ),
+            15 => 
+            array (
+                'id' => 16,
+                'migration' => '2021_01_27_082849_create_berita_table',
+                'batch' => 0,
+            ),
+            16 => 
+            array (
+                'id' => 17,
+                'migration' => '2021_01_27_082849_create_contacts_table',
+                'batch' => 0,
+            ),
+            17 => 
+            array (
+                'id' => 18,
+                'migration' => '2021_01_27_082849_create_download_table',
+                'batch' => 0,
+            ),
+            18 => 
+            array (
+                'id' => 19,
+                'migration' => '2021_01_27_082849_create_galeri_table',
+                'batch' => 0,
+            ),
+            19 => 
+            array (
+                'id' => 20,
+                'migration' => '2021_01_27_082849_create_heading_table',
+                'batch' => 0,
+            ),
+            20 => 
+            array (
+                'id' => 21,
+                'migration' => '2021_01_27_082849_create_kategori_table',
+                'batch' => 0,
+            ),
+            21 => 
+            array (
+                'id' => 22,
+                'migration' => '2021_01_27_082849_create_kategori_download_table',
+                'batch' => 0,
+            ),
+            22 => 
+            array (
+                'id' => 23,
+                'migration' => '2021_01_27_082849_create_kategori_galeri_table',
+                'batch' => 0,
+            ),
+            23 => 
+            array (
+                'id' => 24,
+                'migration' => '2021_01_27_082849_create_kategori_staff_table',
+                'batch' => 0,
+            ),
+            24 => 
+            array (
+                'id' => 25,
+                'migration' => '2021_01_27_082849_create_konfigurasi_table',
+                'batch' => 0,
+            ),
+            25 => 
+            array (
+                'id' => 26,
+                'migration' => '2021_01_27_082849_create_users_table',
+                'batch' => 0,
+            ),
+            26 => 
+            array (
+                'id' => 27,
+                'migration' => '2021_01_27_082849_create_video_table',
+                'batch' => 0,
+            ),
         ));
         
         

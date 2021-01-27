@@ -26,7 +26,7 @@ class KonfigurasiTableSeeder extends Seeder
                 'nama_singkat' => 'Struktur Organisasi',
                 'tagline' => 'Bersama Kita Bisa',
                 'tagline2' => 'Jabar Juara Lahir Batin Dengan Kolaborasi dan Inovasi',
-                'tentang' => '<p style="text-align:center"><img alt="" src="http://bpkad.jabarprov.go.id/nr_image/berita/0796323c1ee617ecf38ddf8e0692c4cc.png" style="height:612px; width:712px" /></p>
+                'tentang' => '<p style="text-align:center"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/7/77/Struktur_Organisasi_Pusdiklat.png" style="height:612px; width:712px" /></p>
 
 <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a justo rutrum, suscipit dolor nec, accumsan orci. Maecenas leo mi, mollis ac velit vitae, eleifend feugiat tortor. Integer libero ante, ultrices ac hendrerit ac, ultricies ac nibh. Integer aliquet, tellus non semper aliquet, magna lacus suscipit tortor, a varius nisl libero in massa. In at suscipit ipsum. Ut ut tincidunt risus. Ut vitae maximus ligula, in dapibus metus. Fusce quis ligula ac eros molestie dictum. Sed justo leo, dignissim ut purus ultricies, tristique aliquet urna.</p>
 
@@ -55,7 +55,7 @@ class KonfigurasiTableSeeder extends Seeder
                 'google_plus' => 'https://www.youtube.com/channel/UCmm6mFZXYQ3ZylUMa0Tmc2Q',
                 'nama_facebook' => 'Badan Pengelolaan Keuangan dan Aset Daerah',
                 'nama_twitter' => 'BPKAD PROV JABAR',
-                'nama_instagram' => 'BPKAD Provinsi Jawa Barat',
+                'nama_instagram' => 'bpkadjabarprov',
                 'nama_google_plus' => '',
                 'singkatan' => 'BPKAD',
                 'google_map' => '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.634383807166!2d107.618288!3d-6.901534000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5543cd68e7b6719d!2sBadan%20Pengelolaan%20Keuangan%20dan%20Aset%20Daerah%20Provinsi%20Jawa%20Barat!5e0!3m2!1sen!2sid!4v1610946848456!5m2!1sen!2sid" width="250" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>',
@@ -68,13 +68,13 @@ class KonfigurasiTableSeeder extends Seeder
                 'smtp_timeout' => '12',
                 'smtp_user' => 'info@mail.com',
                 'smtp_pass' => '1234',
-                'twitter_feeds' => '<a class="twitter-timeline" data-width="500" data-height="365" href="https://twitter.com/bpkadjabarprov?ref_src=twsrc%5Etfw">Tweets by bpkadjabarprov</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
+                'twitter_feeds' => '<a class="twitter-timeline" data-width="400" data-height="500" href="https://twitter.com/bpkadjabarprov?ref_src=twsrc%5Etfw">Tweets by bpkadjabarprov</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
                 'text_bawah_peta' => 'Badan Pengelolaan Keuangan dan Aset Daerah',
                 'id_user' => 4,
                 'tanggal' => '2021-01-23 02:41:40',
                 'nama_youtube' => 'BPKAD PROV JABAR',
                 'youtube' => 'https://www.youtube.com/channel/UCZPhYb-0GV5t_FKE1c2u1ZA',
-                'facebook_page' => '<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbpkadjabar&tabs=timeline%2C%20messages&width=360&height=385&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=424845868955585" width="360" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+                'facebook_page' => '<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbpkadjabar&tabs=timeline,messages&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
                 'disqus_shortname' => 'bpkad-jabarprov-go-id',
             ),
         ));

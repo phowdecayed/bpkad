@@ -45,7 +45,7 @@ class GaleriTableSeeder extends Seeder
                 'isi' => 'Donk',
                 'gambar' => '13-1611305324.jpg',
                 'website' => 'http://bpkad.jabarprov.go.id',
-                'hits' => NULL,
+                'hits' => 2,
                 'popup_status' => 'Publish',
                 'urutan' => NULL,
                 'status_text' => 'Ya',

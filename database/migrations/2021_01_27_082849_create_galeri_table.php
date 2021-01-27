@@ -23,7 +23,7 @@ class CreateGaleriTable extends Migration
             $table->string('gambar');
             $table->string('website')->nullable();
             $table->integer('hits')->nullable();
-            $table->enum('popup_status', ['Publish', 'Draft', '', ''])->nullable();;
+            $table->enum('popup_status', ['Publish', 'Draft', '', ''])->nullable();
             $table->integer('urutan')->nullable();
             $table->enum('status_text', ['Ya', 'Tidak', '', '']);
             $table->timestamp('tanggal')->useCurrent();

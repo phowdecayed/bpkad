@@ -23,7 +23,7 @@ class VideoTableSeeder extends Seeder
             array (
                 'id_video' => 1,
                 'judul' => 'Video Profil Nanin Nayani Adam',
-                'posisi' => 'Homepage',
+                'posisi' => 'Video',
                 'keterangan' => 'BPKAD JABAR',
                 'video' => 'ZWgVhhfL_9M',
                 'urutan' => 1,
