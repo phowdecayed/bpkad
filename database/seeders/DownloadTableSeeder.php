@@ -14,15 +14,15 @@ class DownloadTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('download')->delete();
-        
+
         \DB::table('download')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id_download' => 1,
-                'id_kategori_download' => 7,
+                'id_kategori_download' => 1,
                 'id_user' => 4,
                 'judul_download' => 'Undang Undang Nomor 12 Tahun 2008',
                 'jenis_download' => 'Artikel',
@@ -33,7 +33,7 @@ class DownloadTableSeeder extends Seeder
                 'tanggal' => '2021-01-19 11:41:16',
             ),
         ));
-        
-        
+
+
     }
 }
