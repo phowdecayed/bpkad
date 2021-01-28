@@ -31,7 +31,7 @@ $nav_materi  = $myprofil->nav_materi();
         </li>
         <li class="menu-item">
             <a class="menu-link" href="#">
-                <div>Profil Organisasi</div>
+                <div>Profil & Organisasi</div>
             </a>
             <ul class="sub-menu-container">
                 <li class="menu-item">

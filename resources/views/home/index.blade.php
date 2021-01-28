@@ -29,6 +29,7 @@
                 <div class="slide-number-current"></div><span>/</span>
                 <div class="slide-number-total"></div>
             </div>
+            <a href="#" data-scrollto="#content" data-offset="100" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
         </div>
     </div>
 </section>
