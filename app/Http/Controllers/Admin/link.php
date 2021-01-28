@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Image;
-use App\Models\link_model;
+use App\Models\Link_model;
 
 class link extends Controller
 {
@@ -14,7 +14,7 @@ class link extends Controller
     public function index()
     {
     	if(Session()->get('username')=="") { return redirect('login')->with(['warning' => 'Mohon maaf, Anda belum login']);}
-    	$mylink 			= new link_model();
+    	$mylink 			= new Link_model();
 		$link 			= $mylink->semua();
 		$kategori_link 	= DB::table('kategori_link')->orderBy('urutan','ASC')->get();
 
