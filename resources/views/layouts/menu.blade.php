@@ -46,14 +46,14 @@ $nav_materi  = $myprofil->nav_materi();
                 <div>Pojok Media</div>
             </a>
             <ul class="sub-menu-container">
+                <?php foreach($nav_berita as $nav_berita) { ?>
                 <li class="menu-item">
-                    <?php foreach($nav_berita as $nav_berita) { ?>
                     <a class="menu-link" href="{{ asset('berita/kategori/'.$nav_berita->slug_kategori) }}">
                         <div><i class="icon-news"></i>
                             {{ Str::words($nav_berita->nama_kategori,4) }}</div>
                     </a>
-                    <?php } ?>
                 </li>
+                <?php } ?>
             </ul>
         </li>
         <li class="menu-item">
@@ -61,14 +61,14 @@ $nav_materi  = $myprofil->nav_materi();
                 <div>Produk Hukum</div>
             </a>
             <ul class="sub-menu-container">
+                <?php foreach($nav_layanan as $nav_layanan) { ?>
                 <li class="menu-item">
-                    <?php foreach($nav_layanan as $nav_layanan) { ?>
                     <a class="menu-link" href="{{ asset('berita/layanan/'.$nav_layanan->slug_berita) }}">
                         <div><i class="icon-news"></i>
                             {{ Str::words($nav_layanan->judul_berita,4) }}</div>
                     </a>
-                    <?php } ?>
                 </li>
+                <?php } ?>
             </ul>
         </li>
         <li class="menu-item">
