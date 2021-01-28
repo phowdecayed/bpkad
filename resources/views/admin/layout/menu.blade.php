@@ -80,6 +80,13 @@ $site_config = DB::table('konfigurasi')->first();
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a href="{{ asset('admin/link') }}" class="nav-link">
+                        <i class="nav-icon fas fa-book"></i>
+                        <p>Link Terkait</p>
+                    </a>
+                </li>
+
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-image"></i>

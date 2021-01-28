@@ -123,6 +123,16 @@ Route::get('admin/galeri/delete/{par1}', 'App\Http\Controllers\Admin\Galeri@dele
 Route::post('admin/galeri/tambah_proses', 'App\Http\Controllers\Admin\Galeri@tambah_proses');
 Route::post('admin/galeri/edit_proses', 'App\Http\Controllers\Admin\Galeri@edit_proses');
 Route::post('admin/galeri/proses', 'App\Http\Controllers\Admin\Galeri@proses');
+// link
+Route::get('admin/link', 'App\Http\Controllers\Admin\link@index');
+Route::get('admin/link/cari', 'App\Http\Controllers\Admin\link@cari');
+Route::get('admin/link/tambah', 'App\Http\Controllers\Admin\link@tambah');
+Route::get('admin/link/edit/{par1}', 'App\Http\Controllers\Admin\link@edit');
+Route::get('admin/link/delete/{par1}', 'App\Http\Controllers\Admin\link@delete');
+Route::post('admin/link/tambah_proses', 'App\Http\Controllers\Admin\link@tambah_proses');
+Route::post('admin/link/edit_proses', 'App\Http\Controllers\Admin\link@edit_proses');
+Route::post('admin/link/proses', 'App\Http\Controllers\Admin\link@proses');
+
 // download
 Route::get('admin/download', 'App\Http\Controllers\Admin\Download@index');
 Route::get('admin/download/cari', 'App\Http\Controllers\Admin\Download@cari');

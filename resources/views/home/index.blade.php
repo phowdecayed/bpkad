@@ -141,27 +141,10 @@
             <h1>Link Terkait</h1>
             <span></span>
         </div>
-        <div id="portfolio" class="portfolio row grid-container gutter-30" data-layout="fitRows">
-            <article class="portfolio-item col-md-4 col-sm-6 col-12">
-                <div class="container clearfix">
-                 <!-- <div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="30"
-            data-nav="true" data-pagi="true" data-autoplay="2000" data-items-xs="3" data-items-sm="3" data-items-md="5"
-            data-items-lg="6" data-items-xl="7">
-            <div class="oc-item"><a href="#"><img src="images/clients/1.png" alt="Brands"></a></div>
-			<div class="oc-item"><a href="#"><img src="images/clients/2.png" alt="Brands"></a></div>
-			<div class="oc-item"><a href="#"><img src="images/clients/3.png" alt="Brands"></a></div>
-			<div class="oc-item"><a href="#"><img src="images/clients/4.png" alt="Brands"></a></div>
-			<div class="oc-item"><a href="#"><img src="images/clients/5.png" alt="Brands"></a></div>
-			<div class="oc-item"><a href="#"><img src="images/clients/6.png" alt="Brands"></a></div>
-			<div class="oc-item"><a href="#"><img src="images/clients/7.png" alt="Brands"></a></div>
-			<div class="oc-item"><a href="#"><img src="images/clients/8.png" alt="Brands"></a></div>
-			<div class="oc-item"><a href="#"><img src="images/clients/9.png" alt="Brands"></a></div>
-			<div class="oc-item"><a href="#"><img src="images/clients/10.png" alt="Brands"></a></div>
-			<div class="oc-item"><a href="#"><img src="images/clients/11.png" alt="Brands"></a></div>
-			<div class="oc-item"><a href="#"><img src="images/clients/12.png" alt="Brands"></a></div>
-        </div> -->
-                </div>
-            </article>
+        <div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="30" data-nav="true" data-pagi="false" data-autoplay="5000" data-items-xs="3" data-items-sm="3" data-items-md="5" data-items-lg="6" data-items-xl="7">
+            <?php foreach($link as $link) { ?>
+                <div class="oc-item"><a href="{{ $link->website }}" target="_blank"><img src="{{ asset('assets/upload/image/'.$link->gambar) }}" alt="{{ $link -> judul_link }}"></a></div>
+            <?php } ?>
         </div>
     </div>
 </section>

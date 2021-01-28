@@ -28,5 +28,6 @@ class DatabaseSeeder extends Seeder
         $this->call(MigrationsTableSeeder::class);
         $this->call(UsersTableSeeder::class);
         $this->call(VideoTableSeeder::class);
+        $this->call(LinkTableSeeder::class);
     }
 }
