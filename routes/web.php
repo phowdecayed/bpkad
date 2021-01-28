@@ -146,6 +146,12 @@ Route::post('admin/download/tambah_proses', 'App\Http\Controllers\Admin\Download
 Route::post('admin/download/edit_proses', 'App\Http\Controllers\Admin\Download@edit_proses');
 Route::post('admin/download/proses', 'App\Http\Controllers\Admin\Download@proses');
 
+// heading
+Route::get('admin/heading', 'App\Http\Controllers\Admin\Heading@index');
+Route::post('admin/heading/tambah', 'App\Http\Controllers\Admin\Heading@tambah');
+Route::post('admin/heading/edit', 'App\Http\Controllers\Admin\Heading@edit');
+Route::get('admin/heading/delete/{par1}', 'App\Http\Controllers\Admin\Heading@delete');
+
 /* END BACK END*/
 
 Auth::routes();

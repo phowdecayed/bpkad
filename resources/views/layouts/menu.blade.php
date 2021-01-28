@@ -46,8 +46,8 @@ $nav_materi  = $myprofil->nav_materi();
                 <div>Pojok Media</div>
             </a>
             <ul class="sub-menu-container">
-                <?php foreach($nav_berita as $nav_berita) { ?>
                 <li class="menu-item">
+                    <?php foreach($nav_berita as $nav_berita) { ?>
                     <a class="menu-link" href="{{ asset('berita/kategori/'.$nav_berita->slug_kategori) }}">
                         <div><i class="icon-news"></i>
                             {{ Str::words($nav_berita->nama_kategori,4) }}</div>
