@@ -56,7 +56,7 @@ $nav_materi  = $myprofil->nav_materi();
                 <?php } ?>
             </ul>
         </li>
-        <li class="menu-item">
+        <!-- <li class="menu-item">
             <a class="menu-link" href="#">
                 <div>Produk Hukum</div>
             </a>
@@ -70,10 +70,10 @@ $nav_materi  = $myprofil->nav_materi();
                 </li>
                 <?php } ?>
             </ul>
-        </li>
+        </li> -->
         <li class="menu-item">
             <a class="menu-link" href="#">
-                <div>Download</div>
+                <div>PPID</div>
             </a>
             <ul class="sub-menu-container">
                 <?php foreach($nav_materi as $nav_materi) { ?>
@@ -113,8 +113,16 @@ $nav_materi  = $myprofil->nav_materi();
                 <div>Kontak</div>
             </a>
         </li>
+        <!-- Top Search
+		============================================= -->
+		<div id="top-search" class="header-misc-icon">
+		<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
+		</div><!-- #top-search end -->
     </ul>
 </nav>
+<form class="top-search-form" action="search.html" method="get">
+    <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+</form>
 </div>
 </div>
 </div>
