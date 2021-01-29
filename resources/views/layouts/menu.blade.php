@@ -121,7 +121,7 @@ $nav_materi  = $myprofil->nav_materi();
     </ul>
 </nav>
 <form class="top-search-form" action="search.html" method="get">
-    <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+    <input type="text" name="q" class="form-control" value="" placeholder="Ketik &amp; Tekan Enter.." autocomplete="off">
 </form>
 </div>
 </div>
