@@ -15,7 +15,7 @@ class Home extends Controller
     // Homepage
     public function index()
     {
-    	$site_config   = DB::table('konfigurasi')->first();
+    	$site_config    = DB::table('konfigurasi')->first();
         $video          = DB::table('video')->orderBy('id_video','DESC')->first();
     	$slider         = DB::table('galeri')->where('jenis_galeri','Homepage')->limit(5)->orderBy('id_galeri', 'DESC')->get();
         $link           = DB::table('link')->orderBy('id_link', 'DESC')->get();
@@ -41,9 +41,9 @@ class Home extends Controller
     // Homepage
     public function tentang()
     {
-        $site_config   = DB::table('konfigurasi')->first();
-        $news   = new Berita_model();
-        $berita = $news->home();
+        $site_config    = DB::table('konfigurasi')->first();
+        $news           = new Berita_model();
+        $berita         = $news->home();
         // Staff
         $kategori_staff  = DB::table('kategori_staff')->orderBy('urutan','ASC')->get();
         $layanan = DB::table('berita')->where(array('jenis_berita' => 'Layanan','status_berita' => 'Publish'))->orderBy('urutan', 'ASC')->get();
@@ -59,6 +59,22 @@ class Home extends Controller
                     );
         return view('layouts/wrapper',$data);
     }
+
+     // Cari
+     public function cari(Request $request)
+     {
+        $myberita           = new Berita_model();
+        $keywords           = $request->keywords;
+        $berita             = $myberita->cari($keywords);
+        $kategori           = DB::table('kategori')->orderBy('urutan','ASC')->get();
+
+        $data = array(  'title'             => 'Hasil Pencarian',
+                        'berita'            => $berita,
+                        'kategori'          => $kategori,
+                        'content'           => 'home/search'
+                    );
+        return view('layouts/wrapper',$data);
+     }
 
     // kontak
     public function kontak()

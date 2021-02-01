@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
 use App\Models\Download_model;
+use App\Models\Berita_model;
 
 class Download extends Controller
 {
@@ -18,11 +21,11 @@ class Download extends Controller
                     ->orderBy('kategori_download.urutan','ASC')
                     ->get();
 
-		$data = array(  'title'		             => 'Dokumen '.website('namaweb'),
-						'deskripsi'	          => 'Dokumen '.website('namaweb'),
-						'keywords'	           => 'Dokumen '.website('namaweb'),
-						'kategori_download'	  => $kategori_download,
-                        'content'	          => 'download/kategori'
+		$data = array(  'title'		                => 'Dokumen '.website('namaweb'),
+						'deskripsi'	                => 'Dokumen '.website('namaweb'),
+						'keywords'	                => 'Dokumen '.website('namaweb'),
+						'kategori_download'	        => $kategori_download,
+                        'content'	                => 'download/kategori'
                     );
         return view('layouts/wrapper',$data);
     }
@@ -80,6 +83,36 @@ class Download extends Controller
         ]);
         $pathToFile           = './assets/upload/file/'.$download->gambar;
         return response()->download($pathToFile, $download->gambar);
+    }
+
+    public function pencarian(Request $request)
+    {
+        $keywords = $request->keywords;
+        $queryDownload = Download_model::where('judul_download','LIKE','%'.$keywords.'%')->orWhere('isi','LIKE','%'.$keywords.'%')->get();
+        $queryBerita = Berita_model::where('jenis_berita','LIKE','%'.$keywords.'%')->orWhere('isi','LIKE','%'.$keywords.'%')->get();
+        $searchResults = array_merge($queryDownload->toArray(), $queryBerita->toArray());
+        //Get current page form url e.g. &page=6
+        $currentPage = LengthAwarePaginator::resolveCurrentPage();
+        //Create a new Laravel collection from the array data
+        $collection = new Collection($searchResults);
+
+        //Define how many items we want to be visible in each page
+        $perPage = 10;
+
+        //Slice the collection to get the items to display in current page
+        $currentPageSearchResults = $collection->slice(($currentPage-1) * $perPage, $perPage)->all();
+
+        //Create our paginator and pass it to the view
+        $paginatedSearchResults= new LengthAwarePaginator ($currentPageSearchResults, count($collection), $perPage);
+
+        $data = array(  'title'		        => 'Hasil Pencarian',
+                        'deskripsi'	        => 'Dokumen '.website('namaweb'),
+                        'keywords'	        => $keywords,
+                        'search'            => $searchResults,
+                        'hasilpencarian'    => $paginatedSearchResults,
+                        'content'           => 'home/search'
+                    );
+        return view('layouts/wrapper', $data);
     }
 
 }

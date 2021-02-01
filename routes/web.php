@@ -23,6 +23,7 @@ Route::get('/', 'App\Http\Controllers\Home@index');
 Route::get('home', 'App\Http\Controllers\Home@index');
 Route::get('kontak', 'App\Http\Controllers\Home@kontak');
 Route::get('tentang', 'App\Http\Controllers\Home@tentang');
+Route::get('cari', 'App\Http\Controllers\Home@cari');
 // Login
 Route::get('login', 'App\Http\Controllers\Login@index');
 Route::post('login/check', 'App\Http\Controllers\Login@check');
@@ -42,6 +43,7 @@ Route::get('dokumen', 'App\Http\Controllers\Download@index');
 Route::get('dokumen/unduh/{par1}', 'App\Http\Controllers\Download@unduh');
 Route::get('dokumen/detail/{par1}/{par2}', 'App\Http\Controllers\Download@detail');
 Route::get('download/detail/{par1}/{par2}', 'App\Http\Controllers\Download@detail');
+Route::get('pencarian', 'App\Http\Controllers\Download@Pencarian');
 // galeri
 Route::get('galeri', 'App\Http\Controllers\Galeri@index');
 Route::get('galeri/detail/{par1}', 'App\Http\Controllers\Galeri@detail');

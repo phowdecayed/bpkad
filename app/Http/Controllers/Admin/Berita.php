@@ -48,7 +48,7 @@ class Berita extends Controller
 
         $data = array(  'title'             => 'Data Berita',
                         'berita'            => $berita,
-                        'kategori'   => $kategori,
+                        'kategori'          => $kategori,
                         'content'           => 'admin/berita/index'
                     );
         return view('admin/layout/wrapper',$data);

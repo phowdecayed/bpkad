@@ -120,8 +120,8 @@ $nav_materi  = $myprofil->nav_materi();
 		</div><!-- #top-search end -->
     </ul>
 </nav>
-<form class="top-search-form" action="search.html" method="get">
-    <input type="text" name="q" class="form-control" value="" placeholder="Ketik &amp; Tekan Enter.." autocomplete="off">
+<form class="top-search-form" action="{{ asset('pencarian') }}" method="get">
+    <input type="text" name="keywords" class="form-control" value="<?php if(isset($_GET['keywords'])) { echo strip_tags($_GET['keywords']); } ?>" placeholder="Ketik &amp; Tekan Enter.." autocomplete="off">
 </form>
 </div>
 </div>

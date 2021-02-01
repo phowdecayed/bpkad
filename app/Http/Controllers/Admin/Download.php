@@ -31,7 +31,7 @@ class Download extends Controller
     {
         if(Session()->get('username')=="") { return redirect('login')->with(['warning' => 'Mohon maaf, Anda belum login']);}
         $mydownload           = new Download_model();
-        $keywords           = $request->keywords;
+        $keywords             = $request->keywords;
         $download             = $mydownload->cari($keywords);
         $kategori_download    = DB::table('kategori_download')->orderBy('urutan','ASC')->get();
 
