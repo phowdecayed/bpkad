@@ -1,5 +1,6 @@
 <?php
 use App\Models\Berita_model;
+use Illuminate\Support\Str;
 $bg   = DB::table('heading')->where('halaman','Berita')->orderBy('id_heading','DESC')->first();
 $site_config = DB::table('konfigurasi')->first();
 $berita 	= new Berita_model();
@@ -29,17 +30,33 @@ $berita 	= new Berita_model();
                     <div class="table-responsive">
                         <table class="table">
                             <tbody>
-                                <?php $i=1; foreach($search as $search) {
-                                    if (count($search) > 10) { ?>
+
+                                @foreach($hasilpencarian as $key => $v)
+
+                                    @if(count($v) > 10)
                                     <tr>
-                                    <td> <a href="{{ asset('berita/read/'.$berita->slug_berita) }}"
-                                            target="_blank">
-                                            <h4 class="mb-2"><?php  echo $berita->judul_berita ?></h4>
-                                        </a>
-                                        <p class="mb-0" align='justify'><?php echo \Illuminate\Support\Str::limit(strip_tags($berita->isi), 100, $end='...') ?></p>
-                                    </td>
+                                        <td> <a href="{{ asset('berita/read/'. $v['slug_berita']) }}"
+                                                target="_blank">
+                                                <h4 class="mb-2">{{ $v['judul_berita']  }} </h4>
+                                            </a>
+                                            <p class="mb-0" align='justify'>
+                                                {{ Str::substr(strip_tags($v['isi']),0,100) }}...
+                                            </p>
+                                        </td>
                                     </tr>
-                                    <?php $i++; }} ?>
+                                    @else
+                                    <tr>
+                                        <td> <a href="{{ asset('dokumen/detail/'.$v['id_download'].'/'.Str::slug($v['judul_download'], '-')) }}"
+                                                target="_blank">
+                                                <h4 class="mb-2">{{ $v['judul_download']  }} </h4>
+                                            </a>
+                                            <p class="mb-0" align='justify'>
+                                                {{ Str::substr(strip_tags($v['isi']),0,100) }}...
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    @endif
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
