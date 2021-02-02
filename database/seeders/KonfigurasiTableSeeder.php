@@ -26,17 +26,71 @@ class KonfigurasiTableSeeder extends Seeder
                 'nama_singkat' => 'Struktur Organisasi',
                 'tagline' => 'Bersama Kita Bisa',
                 'tagline2' => 'Jabar Juara Lahir Batin Dengan Kolaborasi dan Inovasi',
-                'tentang' => '<p style="text-align:center"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/7/77/Struktur_Organisasi_Pusdiklat.png" style="height:612px; width:712px" /></p>
+                'tentang' => '<p><img alt="struktur organisasi" src="https://i.ibb.co/0ynNzLn/Struktur-Organisasi-BPKAD2021-3-page-0001.jpg" /></p>
 
-<p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a justo rutrum, suscipit dolor nec, accumsan orci. Maecenas leo mi, mollis ac velit vitae, eleifend feugiat tortor. Integer libero ante, ultrices ac hendrerit ac, ultricies ac nibh. Integer aliquet, tellus non semper aliquet, magna lacus suscipit tortor, a varius nisl libero in massa. In at suscipit ipsum. Ut ut tincidunt risus. Ut vitae maximus ligula, in dapibus metus. Fusce quis ligula ac eros molestie dictum. Sed justo leo, dignissim ut purus ultricies, tristique aliquet urna.</p>
+<p>&nbsp;</p>
 
-<p style="text-align:justify">Mauris sed ultrices diam. Morbi luctus laoreet ullamcorper. Suspendisse aliquet libero et auctor interdum. Aenean mattis odio eget lacus fermentum, eget semper diam semper. Sed pretium scelerisque enim in efficitur. Quisque pretium lorem quis leo ullamcorper placerat. Nam aliquet lectus id fermentum varius. Donec ut turpis eget ligula suscipit ornare quis a nisl. Mauris facilisis ipsum dolor, eu dignissim tortor molestie ac. Aliquam nec enim in arcu sollicitudin consectetur. Duis aliquet, arcu ut rutrum luctus, enim eros bibendum tellus, ac dapibus odio sem eu purus.</p>
+<p>BPKAD Provinsi Jawa Barat merupakan Perangkat Daerah yang di bentuk berdasarkan Peraturan Daerah Nomor 6 Tahun 2016 tentang Pembentukan dan Susunan Perangkat Daerah Provinsi Jawa Barat yang merupakan penggabungan tugas dan fungsi dari Biro Keuangan dan Biro Pengelolaan Barang Milik Daerah. Selanjutnya untuk memenuhi ketentuan-ketentuan sebagaimana tersebut diatas, BPKAD juga menyusun Rencana Strategis tahun 2017-2018 yang dalam hal ini menggabungkan, menyesuaikan, dan melanjutkan Rencana Strategis Biro Keuangan dan Rencana Strategis Biro Pengelolaan Barang Milik Daerah yang telah disusun sebelumnya (Tahun 2013-2018). Hal ini merupakan upaya dari BPKAD dalam mempertahankan dan bahkan meningkatkan pencapaian kinerja yang telah diraih oleh Biro Keuangan dan Biro Pengelolaan Barang Milik Daerah.<br />
+<br />
+<strong>Visi BPKAD Provinsi Jawa Barat :&nbsp;</strong></p>
 
-<p style="text-align:justify">Donec maximus neque lacus, sit amet lacinia felis semper at. Vestibulum at lacus vitae enim ultrices condimentum. Integer eget dui metus. Nunc purus enim, accumsan ac dui vitae, rhoncus tristique dui. Proin a imperdiet ante. Donec sed dapibus urna, non mollis urna. Integer tincidunt, nibh vel congue finibus, ligula neque semper leo, a bibendum felis eros ac est. Sed interdum arcu vel dapibus pharetra. Nullam efficitur nisl nunc, eu venenatis magna accumsan sagittis. Quisque non accumsan mauris.</p>
+<p>Badan Pengelolaan Keuangan dan Aset Daerah Provinsi Jawa Barat menetapkan komitmen untuk mewujudkan visi BPKAD kedepan yaitu: &rdquo;Mewujudkan Pengelolaan Keuangan dan Aset Daerah yang Akuntabel&rdquo;.</p>
 
-<p style="text-align:justify">Vestibulum eu quam nec urna ullamcorper dictum ut at nibh. Curabitur ut porta lacus. Donec congue convallis purus, in vulputate urna luctus ut. Vestibulum massa risus, accumsan eget porttitor semper, pulvinar nec orci. Integer ac accumsan turpis. Curabitur pharetra lorem eu felis interdum, et rhoncus nisi blandit. Praesent vestibulum ornare metus nec bibendum. Ut dictum turpis quis sagittis elementum. Vivamus venenatis est ut risus dignissim, in viverra ligula auctor. Sed pretium erat vel luctus tempus. Praesent nec purus at augue eleifend condimentum. Morbi id accumsan ipsum, quis varius arcu. Mauris nec nisi ac libero egestas dignissim sit amet ut ante. Vivamus egestas arcu a ligula sodales venenatis.</p>
+<p><br />
+<strong>Misi&nbsp;BPKAD Provinsi Jawa Barat :&nbsp;</strong></p>
 
-<p style="text-align:justify">Nullam a fringilla velit. Integer ullamcorper nunc faucibus efficitur hendrerit. Sed ut feugiat lectus. Praesent a egestas tortor. In ac metus sit amet velit semper rhoncus. Proin et erat tristique magna venenatis consequat fringilla id ex. Quisque feugiat enim in mollis ornare. Nullam lacus orci, elementum ut sem et, accumsan dignissim metus. Phasellus metus turpis, tristique id ligula ac, bibendum fermentum quam. Nam orci mi, condimentum at dapibus eget, pulvinar eget mauris. Pellentesque sollicitudin nunc est, sed hendrerit libero iaculis ut. Sed accumsan mauris enim, sit amet faucibus velit pellentesque nec. Maecenas porta dictum elit quis molestie. Nunc dignissim tortor vel maximus malesuada.</p>',
+<ol>
+<li>Meningkatkan akuntabilitas pengelolaan keuangan dan aset daerah serta&nbsp;&nbsp; pembinaan pengelolaan keuangan kabupaten/kota;</li>
+<li>Meningkatkan kualitas pengelolaan barang milik daerah;</li>
+<li>Meningkatkan kompetensi aparatur pengelola keuangan dan barang milik daerah.<br />
+&nbsp;</li>
+</ol>
+
+<p><strong>Tujuan&nbsp; BPKAD Provinsi Jawa Barat:&nbsp;</strong></p>
+
+<p>Tujuan BPKAD dalam melaksanakan tupoksinya adalah :</p>
+
+<ul>
+<li>Mewujudkan&nbsp; manajemen&nbsp; pengelolaan keuangan daerah yang handal dan terintegrasi berbasis teknologi informasi&nbsp; serta Mewujudkan pengelolaan keuangan daerah kab./Kota yang akuntabel dan taat azaz;</li>
+<li>Mewujudkan&nbsp; manajemen pengelolaan barang daerah&nbsp; yang&nbsp; tertib dan optimal yang&nbsp; terintegrasi berbasis teknologi informasi;</li>
+<li>Mewujudkan&nbsp; manajemen pengelolaan sdm keuangan dan barang milik daerah Profesional dan kompeten.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong>Sasaran</strong>&nbsp;<strong>BPKAD</strong>&nbsp;<strong>Provinsi Jawa Barat:&nbsp;</strong></p>
+
+<p>Sasaran merupakan suatu kondisi ideal yang hendak dicapai dalam rangka pengelolaan keuangan dan asset daerah. Sasaran yang ingin dicapai tersebut antara lain :</p>
+
+<ul>
+<li>Meningkatnya kualitas pengelolaan keuangan daerah;</li>
+<li>Meningkatnya kualitas pengelolaan aset daerah;</li>
+<li>Meningkatkan kapasitas dan akuntabilitas kinerja pengelolaan keuangan dan aset daerah;</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong>Tugas Pokok BPKAD Provinsi Jawa Barat&nbsp;</strong></p>
+
+<p>Pengelolaan&nbsp; Keuangan Dan Aset&nbsp; Daerah Pemerintah Daerah&nbsp; Provinsi&nbsp; Jawa Barat&nbsp; mempunyai&nbsp; tugas&nbsp; pokok melaksanakan&nbsp;&nbsp; fungsi penunjang urusan&nbsp;&nbsp; pemerintahan&nbsp;&nbsp;&nbsp; bidang&nbsp;&nbsp; keuangan,&nbsp;&nbsp;&nbsp; aspek&nbsp;&nbsp;&nbsp; pengelolaan keuangan dan aset Daerah, meliputi anggaran, perbendaharaan, akuntansi&nbsp; dan&nbsp; pelaporan serta&nbsp; pengelolaan&nbsp; barang&nbsp; milik Daerah yang&nbsp; menjadi&nbsp; kewenangan&nbsp; Daerah&nbsp; Provinsi, melaksanakan&nbsp;&nbsp; tugas dekonsentrasi&nbsp;&nbsp;&nbsp; sampai&nbsp;&nbsp; dengan&nbsp;&nbsp; dibentuk&nbsp;&nbsp; Sekretariat&nbsp;&nbsp;&nbsp; Gubernur sebagai&nbsp; Wakil Pemerintah&nbsp; Pusat&nbsp; dan&nbsp; melaksanakan&nbsp; tugas pembantuan sesuai&nbsp; bidang tugasnya</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Fungsi BPKAD Provinsi Jawa Barat</strong></p>
+
+<p>Dalam menyelenggarakan tugas pokok sebagaimana tersebut di atas, BPKAD Provinsi Jawa Barat mempunyai fungsi :</p>
+
+<ol>
+<li>
+<ol>
+<li>Penyelenggaraan perumusan kebijakan teknis di bidang pengelolaan keuangan dan asset daerah yang menjadi kewenangan Provinsi;</li>
+<li>Penyelenggaraan pengelolaan keuangan dan asset daerah yang menjadi kewenangan Provinsi;</li>
+<li>Penyelenggaraan administrasi Badan;</li>
+<li>Penyelenggaraan evaluasi dan pelaporan Badan; dan</li>
+<li>Penyelenggaraan fungsi lain sesuai dengan tugas pokok dan fungsinya</li>
+</ol>
+</li>
+</ol>',
                 'deskripsi' => 'Website Resmi Badan Pengelolaan Keuangan dan Aset Daerah',
                 'website' => 'https://bpkad.jabarprov.go.id',
                 'email' => 'bpkad@jabarprov.go.id',
