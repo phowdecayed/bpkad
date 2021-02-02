@@ -76,7 +76,7 @@ $site_config = DB::table('konfigurasi')->first();
                 <li class="nav-item">
                     <a href="{{ asset('admin/berita/jenis_berita/Layanan') }}" class="nav-link">
                         <i class="nav-icon fas fa-book"></i>
-                        <p>Produk Hukum</p>
+                        <p>Layanan</p>
                     </a>
                 </li>
 

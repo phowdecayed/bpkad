@@ -56,9 +56,9 @@ $nav_materi  = $myprofil->nav_materi();
                 <?php } ?>
             </ul>
         </li>
-        <!-- <li class="menu-item">
+        <li class="menu-item">
             <a class="menu-link" href="#">
-                <div>Produk Hukum</div>
+                <div>Layanan</div>
             </a>
             <ul class="sub-menu-container">
                 <?php foreach($nav_layanan as $nav_layanan) { ?>
@@ -70,7 +70,7 @@ $nav_materi  = $myprofil->nav_materi();
                 </li>
                 <?php } ?>
             </ul>
-        </li> -->
+        </li>
         <li class="menu-item">
             <a class="menu-link" href="#">
                 <div>PPID</div>
@@ -120,8 +120,13 @@ $nav_materi  = $myprofil->nav_materi();
 		</div><!-- #top-search end -->
     </ul>
 </nav>
-<form class="top-search-form" action="{{ asset('pencarian') }}" method="get">
-    <input type="text" name="keywords" class="form-control" value="<?php if(isset($_GET['keywords'])) { echo strip_tags($_GET['keywords']); } ?>" placeholder="Ketik &amp; Tekan Enter.." autocomplete="off">
+<form class="top-search-form row" action="{{ asset('pencarian') }}" method="get">
+    <input type="text" name="keywords" class="form-control col-6" value="<?php if(isset($_GET['keywords'])) { echo strip_tags($_GET['keywords']); } ?>" placeholder="Ketik &amp; Tekan Enter.." autocomplete="off">
+    <!-- <select name="search-categories" class="form-control col-5 h-100 form-control-lg border-0 shadow-none">
+        <option value="All">All Categories</option>
+        <option value="sports">Berita & Artikel</option>
+        <option value="health">PPID</option>
+    </select> -->
 </form>
 </div>
 </div>
