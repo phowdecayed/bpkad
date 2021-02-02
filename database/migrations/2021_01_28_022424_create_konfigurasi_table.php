@@ -55,9 +55,9 @@ class CreateKonfigurasiTable extends Migration
             $table->string('text_bawah_peta')->nullable();
             $table->integer('id_user')->nullable();
             $table->timestamp('tanggal')->useCurrent();
-            $table->string('nama_youtube')->nullable()->default('NULL');
-            $table->string('youtube')->nullable()->default('NULL');
-            $table->text('facebook_page')->nullable()->default('NULL');
+            $table->string('nama_youtube')->nullable();
+            $table->string('youtube')->nullable();
+            $table->text('facebook_page')->nullable();
             $table->string('disqus_shortname')->nullable()->default('bpkad-jabarprov-go-id');
         });
     }
