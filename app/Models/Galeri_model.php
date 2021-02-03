@@ -2,11 +2,9 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-use Laravel\Scout\Searchable;
 
 class Galeri_model extends Model
 {
-    use Searchable;
 	protected $table 		= "galeri";
 	protected $primaryKey 	= 'id_galeri';
 

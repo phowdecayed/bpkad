@@ -3,11 +3,9 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-use Laravel\Scout\Searchable;
 
 class Agenda_model extends Model
 {
-    use Searchable;
 	protected $table 		= "agenda";
 	protected $primaryKey 	= 'id_agenda';
 
