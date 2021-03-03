@@ -21,6 +21,16 @@ $nav_materi  = $myprofil->nav_materi();
     </svg>
 </div>
 
+<div class="header-misc">
+        <!-- Top Search
+		============================================= -->
+		<div id="top-search" class="header-misc-icon">
+		<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
+		</div><!-- #top-search end -->
+</div>
+    
+
+
 <nav class="primary-menu with-arrows">
 
     <ul class="menu-container">
@@ -113,11 +123,6 @@ $nav_materi  = $myprofil->nav_materi();
                 <div>Kontak</div>
             </a>
         </li>
-        <!-- Top Search
-		============================================= -->
-		<div id="top-search" class="header-misc-icon">
-		<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
-		</div><!-- #top-search end -->
     </ul>
 </nav>
 <form class="top-search-form row" action="{{ asset('pencarian') }}" method="get">
