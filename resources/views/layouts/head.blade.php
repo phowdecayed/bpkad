@@ -33,7 +33,7 @@ $site_config = DB::table('konfigurasi')->first();
 
 </head>
 
-<body class="sticky-footer stretched page-transition adaptive-color-scheme" data-loader="1" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800">
+<body class="sticky-footer stretched page-transition" data-loader="1" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800">
     <!-- Document Wrapper
 	============================================= -->
     <div id="wrapper" class="clearfix">
