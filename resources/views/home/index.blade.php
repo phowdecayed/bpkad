@@ -121,7 +121,7 @@
                         <span>@bpkadjabarprov</span>
                     </div>
                     <div class="grid-inner center">
-                        <div class="instagram-photos" data-user="<?php echo $site_config->nama_instagram ?>" data-count="1"></div>
+                        <div id="ugc_container"></div>
                     </div>
                 </article>
                 <article class="portfolio-item col-md-4 col-sm-6 col-12">
@@ -149,3 +149,5 @@
         </div>
     </div>
 </section>
+
+

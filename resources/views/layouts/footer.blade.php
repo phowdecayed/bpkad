@@ -89,6 +89,29 @@ $nav_layananf = $myprofil->nav_layanan();
 	============================================= -->
 <script src="{{ asset('/assets/js/jquery.js') }}"></script>
 <script src="{{ asset('/assets/js/plugins.js') }}"></script>
+<script>
+    $.get('https://www.instagram.com/explore/tags/BPKADJUARA/?__a=1', function (data, status) {
+        for(var i = 0; i < 8; i++) {
+            var imageUrl = data.graphql.hashtag.edge_hashtag_to_top_posts.edges[i].node;
+            //membaca id per post
+            var id_user = data.graphql.hashtag.edge_hashtag_to_top_posts.edges[i].node.owner.id
+            //call api to get username profile
+            $.get({
+                url:'https://www.instagram.com/graphql/query/?query_hash=c9100bf9110dd6361671f113dd02e7d6&variables={"user_id":"'+id_user+'","include_chaining":false,"include_reel":true,"include_suggested_users":false,"include_logged_out_extras":false,"include_highlight_reels":false,"include_related_profiles":false}',
+                async:false
+            }, function (result, status) {
+                var username = result.data.user.reel.owner.username
+                $('#ugc_container').append('' +
+                    '<div class="col-6 col-sm-6 col-lg-3 wow fadeIn ig_feed" data-wow-duration="2s" data-wow-delay="0.2s" id="list_ugc"> ' +
+                      '<div class="dlab-post-media dlab-img-effect zoom"> ' +
+                        '<a target="_blank" href="https://instagram.com/'+username+'"><img src="'+  imageUrl.thumbnail_resources[2].src +'" alt="" class="img-cover"></a>' +
+                      '</div>' +
+                    '</div>' +
+                    '');
+            });
+        }
+    });
+    </script>
 
 <!-- Footer Scripts
     ============================================= -->
